@@ -1,0 +1,65 @@
+.\" Embedding images, URLs and such
+.\"
+.\" vim: ft=groff
+.
+.
+.\" Default URL color (you can define "col_url" for
+.\" custom colors, this is used as fallback default).
+.ds def_col_url #216287
+.
+.
+.\" PDF Picture (Requires: NeatRoff, ms/mm)
+.\" .PDF <adjust> <path> <width> <height> [scale]
+.\" <adjust> l, c, r or a number for custom indent
+.\" <path> can be relative or absolute,
+.\" <width>,
+.\" <height>,
+.\" [scale] (default 1000 = max width)
+.\" If scale is omitted, the image will only be
+.\" shrunk if it's wider than current page estate
+.\" (taking current indent into account).
+.de PDF
+.nr _maxw \\n(.l-\\n(.i
+.nr _w 99
+.ie \\n(.$==5 .nr _w \\n[_maxw]*\\$5/1000 \" Scale width and height
+.el .ie \\$3>\\n[_maxw] .nr _w \\n[_maxw]
+.el .nr _w \\$3
+.nr _h \\n(_w*\\$4/\\$3
+.ie "\\$1"l" .nr _i 0
+.el .ie "\\$1"r" .nr _i \\n[_maxw]-\\n(_w
+.el .ie "\\$1"c" .nr _i (\\n[_maxw]-\\n(_w)/2u
+.el .nr _i \\$1
+.br \" Print out the image
+.DS
+.sp \\n(_hu
+.ti \\n(_iu
+\X'pdf "\\$2" \\n(_w \\n(_h'
+.DE
+.rr _w
+.rr _h
+.rr _i
+.rr _maxw
+..
+.
+.
+.\" Clickable URL (Requires: NeatRoff, mpost)
+.\" \*[URL <destination> [text]]
+.\" This macro works exactly like the "post.url"
+.\" one that ships with neatroff's "post" package,
+.\" but displays the link with a custom color.
+.de URL
+.ie "\\*[col_url]"" .ds _col \\*[def_col_url]
+.el .ds _col \\*[col_url]
+.post.url "\\$1" "\\m[\\*[_col]]\\$2\\m[]"
+..
+.\" Initializes ms configuration for a simple note.
+.de NOTE
+.fl
+.rs
+.ds LH \" Clear headers/footers
+.ds CH
+.ds RH
+.ds LF
+.ds LC
+.ds LR
+..

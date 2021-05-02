@@ -1,0 +1,9 @@
+The "rnd" macro package is based on the "ms" macro package originally
+developed and used by Bell Labs. The specific code of the "ms" macros
+which served as the foundation for the "rnd" macros was the one
+distributed in Plan 9 operating system by Lucent and its modifications
+are under Lucent Public License, version 1.02.
+
+  Copyright (C) 2003, Lucent Technologies Inc. and others. All Rights Reserved.
+
+Further modifications were made by Randoragon.
