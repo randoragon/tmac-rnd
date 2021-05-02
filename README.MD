@@ -3,7 +3,7 @@
 ## Description
 
 `rnd` is a general-purpose macro package for troff that is based on
-the old `ms` macros, originally used by Bell Labs, with numerous
+the old `ms` macros originally used by Bell Labs, with numerous
 extensions and/or slight modifications.
 
 The `rnd` macros serve as my primary tool for writing documents in
@@ -15,8 +15,8 @@ The macro package is written with Ali Gholami Rudi's Neatroff
 implementation of roff in mind. To learn more about Neatroff you
 can start [here](https://litcave.rudi.ir/neatroff.pdf). The majority
 of features shouldn't rely on Neatroff's extended language, but
-I don't dedicate time to compatibility checking with other
-implementations of the roff language, so nothing is guaranteed.
+I don't care to check compatibility with other implementations of
+the roff language, so nothing is guaranteed.
 
 ## Installation
 
