@@ -3,7 +3,7 @@
 .
 .
 .ds sd \n(.D
-.\"	RT -  reset everything to normal state
+.\" RT -  reset everything to normal state
 .de RT
 .if \\n(CS \{\
 .SR 1
@@ -13,29 +13,29 @@
 .if !\\n(IK .if !\\n(IF .if !\\n(IX .if !\\n(BE .if !\\n(FT .di
 .ul 0
 .if \\n(QP \{\
-.	ll +\\n(QIu
-.	in -\\n(QIu
-.	nr QP -1\}
+.   ll +\\n(QIu
+.   in -\\n(QIu
+.   nr QP -1\}
 .if \\n(NX<=1 .if \\n(AJ=0 .if \\n(FT=0 .ll \\n(LLu
 .if !\\n(IF \{\
-.	ps \\n(PS
-.	ie \\n(VS>=41 .vs \\n(VSu
-.	el .vs \\n(VSp\}
+.   ps \\n(PS
+.   ie \\n(VS>=41 .vs \\n(VSu
+.   el .vs \\n(VSp\}
 .ie \\n(IP \{\
-.	in \\n(I\\n(IRu
-.	nr IP -1\}
+.   in \\n(I\\n(IRu
+.   nr IP -1\}
 .el .if !\\n(IR \{\
-.	nr I1 \\n(PIu
-.	nr I2 0
-.	nr I3 0
-.	nr I4 0
-.	nr I5 0\}
+.   nr I1 \\n(PIu
+.   nr I2 0
+.   nr I3 0
+.   nr I4 0
+.   nr I5 0\}
 .ft 1
 .ta 5n 10n 15n 20n 25n 30n 35n 40n 45n 50n 55n 60n 65n 70n 75n 80n
 .hy \\n(HY
 .fi
 ..
-.	\"IZ - initialization
+.   \"IZ - initialization
 .de IZ
 .so \\*(sd/tmac.sdisp
 .nr TN 0
@@ -49,9 +49,9 @@
 . \" TILDE and CIRCUMFLEX
 .ds ^ \\\\k:\\h'-\\\\n(.fu+1u/2u*2u+\\\\n(.fu-1u*0.13m+0.06m'\\z^\\h'|\\\\n:u'
 .ds ~ \\\\k:\\h'-\\\\n(.fu+1u/2u*2u+\\\\n(.fu-1u*0.13m+0.06m'\\z~\\h'|\\\\n:u'
-.	\" czech v symbol
+.   \" czech v symbol
 .ds v \\\\k:\\\\h'+\\\\w'e'u/4u'\\\\v'-0.6m'\\\\s6v\\\\s0\\\\v'0.6m'\\\\h'|\\\\n:u'
-.		\" cedilla
+.       \" cedilla
 .ds , \\\\k:\\\\h'\\\\w'c'u*0.4u'\\\\z,\\\\h'|\\\\n:u'
 .so \\*(sd/tmac.srefs
 .ch FO \\n(YYu
@@ -66,11 +66,11 @@
 .nr VS 12
 .nr HY 14
 .ie n \{\
-.	if !\\n(PD .nr PD 1v
-.	nr DV 1v\}
+.   if !\\n(PD .nr PD 1v
+.   nr DV 1v\}
 .el \{\
-.	if !\\n(PD .nr PD 0.3v
-.	nr DV .5v\}
+.   if !\\n(PD .nr PD 0.3v
+.   nr DV .5v\}
 .nr ML 3v
 .ps \\n(PS
 .ie \\n(VS>=41 .vs \\n(VSu
@@ -122,7 +122,7 @@
 .if \\n(.$-2 .ds CC \\$3
 .rm RP S0 S2 AX
 ..
-.		\" IM - internal memorandum
+.       \" IM - internal memorandum
 .de IM
 .nr IM 1
 .TM "\\$1" "\\$2" "\\$3"
@@ -130,7 +130,7 @@
 .RA
 .rm RA RP MF MR
 ..
-.		\" MF - memorandum for file.
+.       \" MF - memorandum for file.
 .de MF
 .nr MN 1
 .TM "\\$1" "\\$2" "\\$3"
@@ -139,7 +139,7 @@
 .RA
 .rm RA RP TM
 ..
-.		\" MR - memo for record
+.       \" MR - memo for record
 .de MR
 .nr MN 2
 .TM "\\$1" "\\$2" "\\$3"
@@ -148,7 +148,7 @@
 .RA
 .rm RA RP IM TM
 ..
-.	\" LT - letter
+.   \" LT - letter
 .de LT
 .if !\\n(PO .ie n .nr PO 1.5i
 .el .nr PO 1.3i
@@ -156,40 +156,40 @@
 .LP
 .rs
 .if !"\\$1"" \{\
-.	vs -2p
+.   vs -2p
 .if "\\$1"LT" .ta 3.9i 4.45i
 .if !"\\$1"LT" .ta 3.9i 4.45i
-.	sp .2i
-.	nf
-.	if "\\$1"LT" 	\s(36\(FA\s0
-.	if !"\\$1"LT" 	\s(36\(LH\s0
-.	br
+.   sp .2i
+.   nf
+.   if "\\$1"LT"    \s(36\(FA\s0
+.   if !"\\$1"LT"   \s(36\(LH\s0
+.   br
 \s7\l'7i'\s0
 .sp
-.	br
-.	if !"\\$2"" .ds xR "		\\$2
-.	ds xP 908-582-3000
-.	if !"\\$3"" .ds xP \\$3
-.	if "\\$1"LT" \s8\f(HBBell Laboratories\fP		\fH600 Mountain Avenue
-.	if !"\\$1"LT" \s8\f(HBBell Laboratories\fP		\fH600 Mountain Avenue
-.	if !"\\$2"" \\*(xR
-		Murray Hill, NJ 07974-0636
-		\\*(xP
-.	if !"\\$4"" 		\\$4
-.	if !"\\$5"" 		\\$5
-.	if !"\\$6"" 		\\$6
-.	if !"\\$7"" 		\\$7
+.   br
+.   if !"\\$2"" .ds xR "        \\$2
+.   ds xP 908-582-3000
+.   if !"\\$3"" .ds xP \\$3
+.   if "\\$1"LT" \s8\f(HBBell Laboratories\fP       \fH600 Mountain Avenue
+.   if !"\\$1"LT" \s8\f(HBBell Laboratories\fP      \fH600 Mountain Avenue
+.   if !"\\$2"" \\*(xR
+        Murray Hill, NJ 07974-0636
+        \\*(xP
+.   if !"\\$4""         \\$4
+.   if !"\\$5""         \\$5
+.   if !"\\$6""         \\$6
+.   if !"\\$7""         \\$7
 .ft 1
 .ps
-.	sp -.75i
-.	vs
-.	fi \}
+.   sp -.75i
+.   vs
+.   fi \}
 .if n \{\
-.	sp 1i
-.	in 4.55i\}
+.   sp 1i
+.   in 4.55i\}
 .if t \{\
-.	sp 1.45i
-.	in 3.5i\}
+.   sp 1.45i
+.   in 3.5i\}
 .ll 8i
 \\*(DY
 .ll
@@ -197,16 +197,16 @@
 .br
 .if t .sp 3
 .if n \{\
-.	sp
-.	na\}
+.   sp
+.   na\}
 .nf
 .rm CF
-.de SG	\" nested defn
+.de SG  \" nested defn
 .sp 2
 .ta 3.5i
-	Sincerely,
+    Sincerely,
 .sp 3
-	\\\\$1
+    \\\\$1
 .ds CH
 \\..
 ..
@@ -215,92 +215,92 @@
 .di
 .di OD
 ..
-.de RP		\" released paper
+.de RP      \" released paper
 .nr ST 2
 .pn 0
 .rm SG CS TM QF IM MR MF EG
 .br
 ..
-.de TR		\" Comp. Sci. Tech Rept series.
+.de TR      \" Comp. Sci. Tech Rept series.
 .nr ST 3
 .pn 0
 .ds MN \\$1
 .rm SG CS TM QF IM MR M EG
 .br
 ..
-.	\"FP - font position for a family
+.   \"FP - font position for a family
 .de FP
 .ds TF \\$1
 .if '\\$1'palatino'\{\
-.	fp 1 R PA
-.	fp 2 I PI
-.	fp 3 B PB
-.	fp 4 BI PX\}
+.   fp 1 R PA
+.   fp 2 I PI
+.   fp 3 B PB
+.   fp 4 BI PX\}
 .if '\\$1'lucidabright'\{\
-.	fp 1 R LucidaBright
-.	fp 2 I LucidaBright-Italic
-.	fp 3 B LucidaBright-Demi
-.	fp 4 BI LucidaBright-DemiItalic
-.	fp 5 CW LucidaSansCW\}
+.   fp 1 R LucidaBright
+.   fp 2 I LucidaBright-Italic
+.   fp 3 B LucidaBright-Demi
+.   fp 4 BI LucidaBright-DemiItalic
+.   fp 5 CW LucidaSansCW\}
 .if '\\$1'lucidasans'\{\
-.	fp 1 R LucidaSans
-.	fp 2 I LucidaSansI
-.	fp 3 B LucidaSansB
-.	fp 5 CW LucidaCW\}
+.   fp 1 R LucidaSans
+.   fp 2 I LucidaSansI
+.   fp 3 B LucidaSansB
+.   fp 5 CW LucidaCW\}
 .if '\\$1'syntax'\{\
-.	fp 1 R Syntax
-.	fp 2 I SyntaxI
-.	fp 3 B SyntaxB
-.	fp 5 CW LucidaCW\}
+.   fp 1 R Syntax
+.   fp 2 I SyntaxI
+.   fp 3 B SyntaxB
+.   fp 5 CW LucidaCW\}
 .if '\\$1'century'\{\
-.	ie '\\*(.T'202'\{\
-.		fp 1 NR Centsb
-.		fp 2 NI CentI
-.		fp 3 NB CentB
-.		fp 4 NX CentBI\}
-.	el \{\
-.		fp 1 NR
-.		fp 2 NI
-.		fp 3 NB
-.		fp 4 NX\}\}
+.   ie '\\*(.T'202'\{\
+.       fp 1 NR Centsb
+.       fp 2 NI CentI
+.       fp 3 NB CentB
+.       fp 4 NX CentBI\}
+.   el \{\
+.       fp 1 NR
+.       fp 2 NI
+.       fp 3 NB
+.       fp 4 NX\}\}
 .if '\\$1'helvetica'\{\
-.	fp 1 H
-.	fp 2 HI
-.	fp 3 HB
-.	fp 4 HX\}
+.   fp 1 H
+.   fp 2 HI
+.   fp 3 HB
+.   fp 4 HX\}
 .if '\\$1'bembo'\{\
-.	ie '\\*(.T'202'\{\
-.		fp 1 B1 Bembo
-.		fp 2 B2 BemboI
-.		fp 3 B3 BemboB
-.		fp 4 B4 BemboBI\}
-.	el \{\
-.		fp 1 B1
-.		fp 2 B2
-.		fp 3 B3
-.		fp 4 B4\}\}
+.   ie '\\*(.T'202'\{\
+.       fp 1 B1 Bembo
+.       fp 2 B2 BemboI
+.       fp 3 B3 BemboB
+.       fp 4 B4 BemboBI\}
+.   el \{\
+.       fp 1 B1
+.       fp 2 B2
+.       fp 3 B3
+.       fp 4 B4\}\}
 .if '\\$1'optima'\{\
-.	fp 1 R Optima
-.	fp 2 I OptimaI
-.	fp 3 B OptimaB
-.	fp 4 BI OptimaBI\}
+.   fp 1 R Optima
+.   fp 2 I OptimaI
+.   fp 3 B OptimaB
+.   fp 4 BI OptimaBI\}
 .if '\\$1'souvenir'\{\
-.	fp 1 R Souvenir
-.	fp 2 I SouvenirI
-.	fp 3 B SouvenirB
-.	fp 4 BI SouvenirBI\}
+.   fp 1 R Souvenir
+.   fp 2 I SouvenirI
+.   fp 3 B SouvenirB
+.   fp 4 BI SouvenirBI\}
 .if '\\$1'melior'\{\
-.	fp 1 R Melior
-.	fp 2 I MeliorI
-.	fp 3 B MeliorB
-.	fp 4 BI MeliorBI\}
+.   fp 1 R Melior
+.   fp 2 I MeliorI
+.   fp 3 B MeliorB
+.   fp 4 BI MeliorBI\}
 .if '\\$1'times'\{\
-.	fp 1 R
-.	fp 2 I
-.	fp 3 B
-.	fp 4 BI\}
+.   fp 1 R
+.   fp 2 I
+.   fp 3 B
+.   fp 4 BI\}
 ..
-.	\"TL - title and initialization
+.   \"TL - title and initialization
 .de TL
 .br
 .nr TV 1
@@ -319,9 +319,9 @@
 .ft 3
 .ps \\n(PS
 .if !\\n(TN \{\
-.	ps +2
-.	vs \\n(.s+2
-.	rm CS\}
+.   ps +2
+.   vs \\n(.s+2
+.   rm CS\}
 .hy 0
 .if h .ce 999
 ..
@@ -342,7 +342,7 @@
 .ce 0
 .ul 0
 ..
-.	\"	AU - author(s)
+.   \"  AU - author(s)
 .de AU
 .nr AV 1
 .ad \\n(SJ
@@ -356,15 +356,15 @@
 .di A\\n(NA
 .ll \\n(LLu
 .ie t \{\
-.	ie !\\n(TN .ft 2
-.	el \{\
-.		ft 3
-.		ll 1.4i\}\}
+.   ie !\\n(TN .ft 2
+.   el \{\
+.       ft 3
+.       ll 1.4i\}\}
 .el \{\
-.	ie !\\n(TN .ft 1
-.	el \{\
-.		ft 3
-.		ll 16\}\}
+.   ie !\\n(TN .ft 1
+.   el \{\
+.       ft 3
+.       ll 16\}\}
 .ps \\n(PS
 .if h .ce 999
 ..
@@ -378,100 +378,100 @@
 .el .vs \\n(VSp
 .nf
 .if t \{\
-.	sp
-.	A1
-.	sp 0.5
-.	ns
-.	I1
-.	if \\n(NA-1 .sp
-.	A2
-.	if \\n(NA-1 .sp 0.5
-.	ns
-.	I2
-.	if \\n(NA-2 .sp
-.	A3
-.	if \\n(NA-2 .sp 0.5
-.	ns
-.	I3
-.	if \\n(NA-3 .sp
-.	A4
-.	if \\n(NA-3 .sp 0.5
-.	ns
-.	I4
-.	if \\n(NA-4 .sp
-.	A5
-.	if \\n(NA-4 .sp 0.5
-.	ns
-.	I5
-.	if \\n(NA-5 .sp
-.	A6
-.	if \\n(NA-5 .sp 0.5
-.	ns
-.	I6
-.	if \\n(NA-6 .sp
-.	A7
-.	if \\n(NA-6 .sp 0.5
-.	ns
-.	I7
-.	if \\n(NA-7 .sp
-.	A8
-.	if \\n(NA-7 .sp 0.5
-.	ns
-.	I8
-.	if \\n(NA-8 .sp
-.	A9
-.	if \\n(NA-8 .sp 0.5
-.	ns
-.	I9\}
+.   sp
+.   A1
+.   sp 0.5
+.   ns
+.   I1
+.   if \\n(NA-1 .sp
+.   A2
+.   if \\n(NA-1 .sp 0.5
+.   ns
+.   I2
+.   if \\n(NA-2 .sp
+.   A3
+.   if \\n(NA-2 .sp 0.5
+.   ns
+.   I3
+.   if \\n(NA-3 .sp
+.   A4
+.   if \\n(NA-3 .sp 0.5
+.   ns
+.   I4
+.   if \\n(NA-4 .sp
+.   A5
+.   if \\n(NA-4 .sp 0.5
+.   ns
+.   I5
+.   if \\n(NA-5 .sp
+.   A6
+.   if \\n(NA-5 .sp 0.5
+.   ns
+.   I6
+.   if \\n(NA-6 .sp
+.   A7
+.   if \\n(NA-6 .sp 0.5
+.   ns
+.   I7
+.   if \\n(NA-7 .sp
+.   A8
+.   if \\n(NA-7 .sp 0.5
+.   ns
+.   I8
+.   if \\n(NA-8 .sp
+.   A9
+.   if \\n(NA-8 .sp 0.5
+.   ns
+.   I9\}
 .if n \{\
-.	sp 2
-.	A1
-.	sp 
-.	ns
-.	I1
-.	if \\n(NA-1 .sp 2
-.	A2
-.	if \\n(NA-1 .sp
-.	ns
-.	I2
-.	if \\n(NA-2 .sp 2
-.	A3
-.	if \\n(NA-2 .sp
-.	ns
-.	I3
-.	if \\n(NA-3 .sp 2
-.	A4
-.	if \\n(NA-3 .sp
-.	ns
-.	I4
-.	if \\n(NA-4 .sp 2
-.	A5
-.	if \\n(NA-4 .sp
-.	ns
-.	I5
-.	if \\n(NA-5 .sp 2
-.	A6
-.	if \\n(NA-5 .sp
-.	ns
-.	I6
-.	if \\n(NA-6 .sp 2
-.	A7
-.	if \\n(NA-6 .sp
-.	ns
-.	I7
-.	if \\n(NA-7 .sp 2
-.	A8
-.	if \\n(NA-7 .sp
-.	ns
-.	I8
-.	if \\n(NA-8 .sp 2
-.	A9
-.	if \\n(NA-8 .sp
-.	ns
-.	I9\}
+.   sp 2
+.   A1
+.   sp 
+.   ns
+.   I1
+.   if \\n(NA-1 .sp 2
+.   A2
+.   if \\n(NA-1 .sp
+.   ns
+.   I2
+.   if \\n(NA-2 .sp 2
+.   A3
+.   if \\n(NA-2 .sp
+.   ns
+.   I3
+.   if \\n(NA-3 .sp 2
+.   A4
+.   if \\n(NA-3 .sp
+.   ns
+.   I4
+.   if \\n(NA-4 .sp 2
+.   A5
+.   if \\n(NA-4 .sp
+.   ns
+.   I5
+.   if \\n(NA-5 .sp 2
+.   A6
+.   if \\n(NA-5 .sp
+.   ns
+.   I6
+.   if \\n(NA-6 .sp 2
+.   A7
+.   if \\n(NA-6 .sp
+.   ns
+.   I7
+.   if \\n(NA-7 .sp 2
+.   A8
+.   if \\n(NA-7 .sp
+.   ns
+.   I8
+.   if \\n(NA-8 .sp 2
+.   A9
+.   if \\n(NA-8 .sp
+.   ns
+.   I9\}
 .fi
 ..
-.	\"AI - authors institution
+.   \"AI - authors institution
 .de AI
 .br
 .ft 1
@@ -479,7 +479,7 @@
 .di I\\n(NA
 .nf
 ..
-.	\"AB - begin an abstract
+.   \"AB - begin an abstract
 .de AB
 .br
 .di
@@ -496,8 +496,8 @@
 .if n .ul
 .ll \\n(LLu
 .ie \\n(.$ \{\
-.	if !"\\$1"-" .if !"\\$1"no" \\$1
-.	if !"\\$1"-" .if !"\\$1"no" .sp\}
+.   if !"\\$1"-" .if !"\\$1"no" \\$1
+.   if !"\\$1"-" .if !"\\$1"no" .sp\}
 .el \{\
 ABSTRACT
 .sp\}
@@ -515,7 +515,7 @@ ABSTRACT
 .el .vs \\n(VSp
 .ti +\\n(PIu
 ..
-.	\"AE - end of an abstract
+.   \"AE - end of an abstract
 .de AE
 .br
 .di
@@ -532,8 +532,8 @@ ABSTRACT
 .if \\n(ST=2 .S2
 .if \\n(ST<3 .rm SY
 ..
-.	\"S2 - release paper style
-.	\"SY - cover sheet of released paper
+.   \"S2 - release paper style
+.   \"SY - cover sheet of released paper
 .de SY
 .ll \\n(LLu
 .ns
@@ -555,7 +555,7 @@ ABSTRACT
 .if \\n(GA=1 .nr GA 2
 .fi
 ..
-.	\"S2 - first text page, released paper format
+.   \"S2 - first text page, released paper format
 .de S2
 .ce 0
 .br
@@ -569,7 +569,7 @@ ABSTRACT
 .ft 1
 .ad \\n(SJ
 ..
-.	\"S0- mike lesk conserve paper style
+.   \"S0- mike lesk conserve paper style
 .de S0
 .ce 0
 .br
@@ -582,50 +582,50 @@ ABSTRACT
 .if \\n(TV .sp 2
 .ls 1
 .if \\n(FP \{\
-.	FJ
-.	nf
-.	FG
-.	fi
-.	FK
-.	nr FP 0\}
+.   FJ
+.   nf
+.   FG
+.   fi
+.   FK
+.   nr FP 0\}
 .nf
 .WB
 .ls
 .fi
 .ad \\n(SJ
 ..
-.	\"S3 - CSTR style
+.   \"S3 - CSTR style
 .de S3
 .rs
 .sp |2.25i
 .ce 1000
 .I1
 .if \\n(NA>1 \{\
-.	sp .5
-.	I2\}
+.   sp .5
+.   I2\}
 .if \\n(NA>2 \{\
-.	sp .5
-.	I3\}
+.   sp .5
+.   I3\}
 .if \\n(NA>3 \{\
-.	sp .5
-.	I4\}
+.   sp .5
+.   I4\}
 .if \\n(NA>4 \{\
-.	sp .5
-.	I5\}
+.   sp .5
+.   I5\}
 .if \\n(NA>5 \{\
-.	sp .5
-.	I6\}
+.   sp .5
+.   I6\}
 .if \\n(NA>6 \{\
-.	sp .5
-.	I7\}
+.   sp .5
+.   I7\}
 .if \\n(NA>7 \{\
-.	sp .5
-.	I8\}
+.   sp .5
+.   I8\}
 .if \\n(NA>8 \{\
-.	sp .5
-.	I9\}
+.   sp .5
+.   I9\}
 .sp |4i
-.	\"check how long title is: can space extra .25 inch if short
+.   \"check how long title is: can space extra .25 inch if short
 .di EZ
 .WT
 .di
@@ -664,7 +664,7 @@ Computing Science Technical Report No. \\*(MN
 .ft 1
 .S2
 ..
-.	\"SG - signature
+.   \"SG - signature
 .de SG
 .br
 .KS
@@ -704,7 +704,7 @@ Computing Science Technical Report No. \\*(MN
 .br
 .KE
 ..
-.	\"Tables.  TS - table start, TE - table end
+.   \"Tables.  TS - table start, TE - table end
 .de TS
 .br
 .if !\\n(1T .RT
@@ -721,8 +721,8 @@ Computing Science Technical Report No. \\*(MN
 ..
 .de TH
 .if \\n(.d>0.5v \{\
-.	nr T. 0
-.	T# 0\}
+.   nr T. 0
+.   T# 0\}
 .di
 .nr TQ \\n(.i
 .nr HT 1
@@ -740,11 +740,11 @@ Computing Science Technical Report No. \\*(MN
 .de TE
 .nr IX 0
 .if \\n(IT .if !\\n(HT \{\
-.	di
-.	nr EF \\n(.u
-.	nf
-.	TT
-.	if \\n(EF .fi\}
+.   di
+.   nr EF \\n(.u
+.   nf
+.   TT
+.   if \\n(EF .fi\}
 .nr IT 0
 .nr HT 0
 .if n .sp 1
@@ -758,20 +758,20 @@ Computing Science Technical Report No. \\*(MN
 .de EQ  \"equation, breakout and display
 .nr EF \\n(.u
 .rm EE
-.nr LE 1	\" 1 is center
+.nr LE 1    \" 1 is center
 .ds EL \\$1
 .if "\\$1"L" \{\
-.	ds EL \\$2
-.	nr LE 0\}
+.   ds EL \\$2
+.   nr LE 0\}
 .if "\\$1"C" .ds EL \\$2
 .if "\\$1"R" \{\
-.	ds EL \\$2 \" 2 is right adjust
-.	nr LE 2\}
+.   ds EL \\$2 \" 2 is right adjust
+.   nr LE 2\}
 .if "\\$1"I" \{\
-.	nr LE 0
-.	if "\\$3"" .ds EE \\h'|10n'
-.	el .ds EE \\h'\\$3'
-.	ds EL \\$2\}
+.   nr LE 0
+.   if "\\$3"" .ds EE \\h'|10n'
+.   el .ds EE \\h'\\$3'
+.   ds EL \\$2\}
 .if \\n(YE .nf
 .di EZ
 ..
@@ -783,32 +783,32 @@ Computing Science Technical Report No. \\*(MN
 .if \\n(ZN .if !\\n(YE .LP
 .if !\\n(ZN .if !"\\*(EL"" .nr ZN 1
 .if \\n(ZN \{\
-.	ie "\\n(.z"" \{\
-.		if t .if !\\n(nl=\\n(PE .sp .5
-.		if n .if !\\n(nl=\\n(PE .sp 1\}
-.	el \{\
-.		if t .if !\\n(.d=\\n(PE .sp .5
-.		if n .if !\\n(.d=\\n(PE .sp 1\}\}
+.   ie "\\n(.z"" \{\
+.       if t .if !\\n(nl=\\n(PE .sp .5
+.       if n .if !\\n(nl=\\n(PE .sp 1\}
+.   el \{\
+.       if t .if !\\n(.d=\\n(PE .sp .5
+.       if n .if !\\n(.d=\\n(PE .sp 1\}\}
 'pc
 .if \\n(BD .nr LE 0 \" don't center if block display or mark/lineup
 .if \\n(MK \{\
-.	if \\n(LE=1 .ds EE \\h'|10n'
-.	nr LE 0\}
+.   if \\n(LE=1 .ds EE \\h'|10n'
+.   nr LE 0\}
 'lt \\n(.lu
 .if !\\n(EP .if \\n(ZN \{\
-.	if \\n(LE=1 .tl \(ts\(ts\\*(10\(ts\\*(EL\(ts
-.	if \\n(LE=2 .tl \(ts\(ts\(ts\\*(10\\*(EL\(ts
-.	if !\\n(LE \{\
-.		if !\\n(BD .tl \(ts\\*(EE\\*(10\(ts\(ts\\*(EL\(ts
-.		if \\n(BD .if \\n(BD<\\w\(ts\\*(10\(ts .nr BD \\w\(ts\\*(10\(ts
-.		if \\n(BD \!\\*(10\\t\\*(EL\}\}
+.   if \\n(LE=1 .tl \(ts\(ts\\*(10\(ts\\*(EL\(ts
+.   if \\n(LE=2 .tl \(ts\(ts\(ts\\*(10\\*(EL\(ts
+.   if !\\n(LE \{\
+.       if !\\n(BD .tl \(ts\\*(EE\\*(10\(ts\(ts\\*(EL\(ts
+.       if \\n(BD .if \\n(BD<\\w\(ts\\*(10\(ts .nr BD \\w\(ts\\*(10\(ts
+.       if \\n(BD \!\\*(10\\t\\*(EL\}\}
 .if \\n(EP .if \\n(ZN \{\
-.	if \\n(LE=1 .tl \(ts\\*(EL\(ts\\*(10\(ts\(ts
-.	if \\n(LE=2 .tl \(ts\\*(EL\(ts\(ts\\*(10\(ts
-.	if !\\n(LE \{\
-.		if !\\n(BD .tl \(ts\\*(EL\\*(EE\\*(10\(ts\(ts\(ts
-.		if \\n(BD .if \\n(BD<\\w\(ts\\*(10\(ts .nr BD \\w\(ts\\*(10\(ts
-.		if \\n(BD \!\\h'-\\\\n(.iu'\\*(EL\\h'|0'\\*(10\}\}
+.   if \\n(LE=1 .tl \(ts\\*(EL\(ts\\*(10\(ts\(ts
+.   if \\n(LE=2 .tl \(ts\\*(EL\(ts\(ts\\*(10\(ts
+.   if !\\n(LE \{\
+.       if !\\n(BD .tl \(ts\\*(EL\\*(EE\\*(10\(ts\(ts\(ts
+.       if \\n(BD .if \\n(BD<\\w\(ts\\*(10\(ts .nr BD \\w\(ts\\*(10\(ts
+.       if \\n(BD \!\\h'-\\\\n(.iu'\\*(EL\\h'|0'\\*(10\}\}
 'lt \\n(LLu
 'pc %
 .if \\n(YE .if \\n(EF .fi
@@ -817,24 +817,24 @@ Computing Science Technical Report No. \\*(MN
 .ie "\\n(.z"" .nr PE \\n(nl
 .el .nr PE \\n(.d
 ..
-.de PS	\" start picture
-.	\" $1 is height, $2 is width, both in inches
+.de PS  \" start picture
+.   \" $1 is height, $2 is width, both in inches
 .if \\$1>0 .sp .35
 .ie \\$1>0 .nr $1 \\$1
 .el .nr $1 0
 .in (\\n(.lu-\\$2)/2u
 .ne \\$1
 ..
-.de PE	\" end of picture
+.de PE  \" end of picture
 .in
 .if \\n($1>0 .sp .65
 ..
-.			\" .P1/.P2 macros for programs
+.           \" .P1/.P2 macros for programs
 .
-.nr XP 1	\" delta point size for program
-.nr XV 1p	\" delta vertical for programs
-.nr XT 8	\" delta tab stop for programs
-.nr DV .5v	\" space before start of program
+.nr XP 1    \" delta point size for program
+.nr XV 1p   \" delta vertical for programs
+.nr XT 8    \" delta tab stop for programs
+.nr DV .5v  \" space before start of program
 .
 .de P1
 .br
@@ -899,23 +899,23 @@ Computing Science Technical Report No. \\*(MN
 .if "\\*(DY"" .ds DY \\*(MO \\n(dy, \\n(yP\\n(yD
 .if "\\*(CF"" .if n .ds CF "\\*(DY
 ..
-.	\"EM end up macro - process left over keep-release
+.   \"EM end up macro - process left over keep-release
 .de EM
 .br
 .if \\n(AJ .tm Syntax error: no .AE
 .if \\n(IF .ab Missing .FE somewhere
 .if t .if \\n(TB=0 .wh -1p CM
 .if \\n(TB \{\&\c
-'	bp
-.	ch CM 160\}
+'   bp
+.   ch CM 160\}
 ..
-.	\"NP new page
+.   \"NP new page
 .de NP
 .rr PE
 .if \\n(FM+\\n(HM>=\\n(.p \{\
-.	tm Margins bigger than page length.
-.	ab
-.	ex\}
+.   tm Margins bigger than page length.
+.   ab
+.   ex\}
 .if t .CM
 .if !\\n(HM .nr HM 1i
 'sp \\n(HMu/2u
@@ -952,11 +952,11 @@ Computing Science Technical Report No. \\*(MN
 .nr TQ \\n(.i
 .nr TK \\n(.u
 .if \\n(IT \{\
-.	in 0
-.	nf
-.	TT
-.	in \\n(TQu
-.	if \\n(TK .fi\
+.   in 0
+.   nf
+.   TT
+.   in \\n(TQu
+.   if \\n(TK .fi\
 \}
 .mk #T
 ....if t .if \\n(.o+\\n(LL>7.75i .tm Offset + line length exceeds 7.75 inches, too wide
@@ -977,25 +977,25 @@ Computing Science Technical Report No. \\*(MN
 .ls
 .fi
 .if (\\n(nl+1v)>(\\n(.p-\\n(FM) \{\
-.	if \\n(NX>1 .RC
-.	if \\n(NX<=1 .bp\}
+.   if \\n(NX>1 .RC
+.   if \\n(NX<=1 .bp\}
 .nr TD 0
 ..
 .de KD
 .nr KM 0
 .if "\\n(.z"" .if \\$2>0 .if \\n(nl>\\n(HM \{\
-.	if (\\n(nl+1v)<(\\n(.p-\\n(FM) .di KJ \" full page figure must have new page
-.	sp 15i\}
+.   if (\\n(nl+1v)<(\\n(.p-\\n(FM) .di KJ \" full page figure must have new page
+.   sp 15i\}
 .if "\\n(.z"" .if \\n(nl>\\n(HM .if \\$2=0 .if (\\n(nl+1v)>(\\n(.p-\\n(FM) .sp 15i
 .if "\\n(.z"KJ" .nr KM 1 \" KM is 1 if in a rediversion of keeps
 .if \\n(KM>0 \!.KD \\$1 \\$2
 .nr KR \\n(.t
 .if \\n(nl<=\\n(HM .nr KR 32767
 .if \\n(KM=0 \{\
-.	if \\n(KR<\\$1 \{\
-.		di KJ
-.		nr KM 1\}
-.	if \\$2>0 .if (\\n(nl+1v)>(\\n(.p-\\n(FM) .sp 15i\}
+.   if \\n(KR<\\$1 \{\
+.       di KJ
+.       nr KM 1\}
+.   if \\$2>0 .if (\\n(nl+1v)>(\\n(.p-\\n(FM) .sp 15i\}
 .rs
 .if \\n(KM=0 .if \\$2>0 .sp \\n(.tu-\\$1u
 ..
@@ -1006,13 +1006,13 @@ Computing Science Technical Report No. \\*(MN
 .if \\n%-1 .tl \\*(LH\\*(CH\\*(RH
 .lt \\n(.lu
 ..
-.	\"FO - footer of page
+.   \"FO - footer of page
 .de FO
 .rn FO FZ
 .if \\n(IT>0 \{\
-.	nr T. 1
-.	if \\n(FC=0  .T# 1
-.	br\}
+.   nr T. 1
+.   if \\n(FC=0  .T# 1
+.   br\}
 .nr FC +1
 .if \\n(NX<2 .nr WF 0
 .nr dn 0
@@ -1021,16 +1021,16 @@ Computing Science Technical Report No. \\*(MN
 .nr MF 0
 .if \\n(dn  .nr MF 1
 .if !\\n(WF \{\
-.	nr YY 0-\\n(FMu
-.	ch FO \\n(YYu\}
+.   nr YY 0-\\n(FMu
+.   ch FO \\n(YYu\}
 .if !\\n(dn .nr WF 0
 .if \\n(FC<=1 .if \\n(XX=0 \{\
-.	if \\n(NX>1 .RC
-.	if \\n(NX<=1 'bp\}
+.   if \\n(NX>1 .RC
+.   if \\n(NX<=1 'bp\}
 .nr FC -1
 .if \\n(ML>0 .ne \\n(MLu
 ..
-.	\"2C - begin double column
+.   \"2C - begin double column
 .de 2C
 .MC \" default MC is double column
 ..
@@ -1044,16 +1044,16 @@ Computing Science Technical Report No. \\*(MN
 .if \\n(NQ<1 .nr NQ 1
 .if \\n(NQ>2 .if (\\n(LL%\\n(L1)=0 .nr NQ -1
 .if !\\n(1T \{\
-.	BG
-.	if n .sp 4
-.	if t .sp 2\}
+.   BG
+.   if n .sp 4
+.   if t .sp 2\}
 .if \\n(NX=0 .nr NX 1
 .if !\\n(NX=\\n(NQ \{\
-.	RT
-.	if \\n(NX>1 .bp
-.	mk
-.	nr NC 1
-.	po \\n(POu\}
+.   RT
+.   if \\n(NX>1 .bp
+.   mk
+.   nr NC 1
+.   po \\n(POu\}
 .if \\n(NQ>1 .hy \\n(HY
 .nr NX \\n(NQ
 .if \\n(NX>1 .nr CW \\n(L1
@@ -1082,9 +1082,9 @@ Computing Science Technical Report No. \\*(MN
 .ev
 .nr TQ \\n(.i
 .if \\n(IT \{\
-.	in 0
-.	TT
-.	in \\n(TQu\}
+.   in 0
+.   TT
+.   in \\n(TQu\}
 .mk #T
 .ns
 ..
@@ -1094,7 +1094,7 @@ Computing Science Technical Report No. \\*(MN
 .if \\n(NC>\\n(NX .nr NC 1
 'bp
 ..
-.	\"1C - return to single column format
+.   \"1C - return to single column format
 .de 1C
 .MC \\n(LLu
 .hy \\n(HY
@@ -1122,14 +1122,14 @@ Bell Laboratories
 .ft \\n(PF
 .ps \\n(PX
 ..
-.	\"PP - paragraph
+.   \"PP - paragraph
 .de PP
 .RT
 .if \\n(1T .sp \\n(PDu
 .ne 2v
 .ti +\\n(PIu
 ..
-.	\"SH - (unnumbered) section heading
+.   \"SH - (unnumbered) section heading
 .de SH
 .ti \\n(.iu
 .RT
@@ -1140,7 +1140,7 @@ Bell Laboratories
 .ft 3
 .if n .ul 1000
 ..
-.	\"NH - numbered heading
+.   \"NH - numbered heading
 .de N{
 .RT
 .ie \\n(1T .sp 1
@@ -1169,7 +1169,7 @@ Bell Laboratories
 .N{ \\$1
 \\*(SN
 ..
-.	\"BG - begin, execute at first PP
+.   \"BG - begin, execute at first PP
 .de BG
 .br
 .ME
@@ -1217,9 +1217,9 @@ Bell Laboratories
 .if \\n(GA>1 .if \\n(KG=0 .nr GA 0 \" next UNIX must be flagged.
 .nr KG 0 
 .if \\n(FP \{\
-.	FS
-.	FG
-.	FE\}
+.   FS
+.   FG
+.   FE\}
 .br
 .if n .if \\n(TV .sp 2
 .if t .if \\n(TV .sp 1
@@ -1237,7 +1237,7 @@ Bell Laboratories
 .ce 1
 .sp 1
 .ie \\n(.$ \{\
-.	if !"\\$1"-" .if !"\\$1"no" \{\
+.   if !"\\$1"-" .if !"\\$1"no" \{\
 \\$1
 .sp\}\}
 .el \{\
@@ -1258,25 +1258,25 @@ ABSTRACT
 .el .vs \\n(VSp
 \\..
 ..
-.	\"IP - indented paragraph
+.   \"IP - indented paragraph
 .de IP
-.	RT
-.	if !\\n(IP .nr IP +1
-.	ie \\n(ID>0 .sp \\n(IDu
-.	el .sp \\n(PDu
-.	nr IU \\n(IR+1
-.	if \\n(.$>1 .nr I\\n(IU \\n(I\\n(IRu+\\$2n
-.	if \\n(I\\n(IU=0 .nr I\\n(IU \\n(PIu+\\n(I\\n(IRu
-.	in \\n(I\\n(IUu
-.	nr TY \\n(TZ-\\n(.i
-.	nr JQ \\n(I\\n(IU-\\n(I\\n(IR
-.	ta \\n(JQu \\n(TYuR
-.	if \\n(.$ \{\
-.		ti \\n(I\\n(IRu
+.   RT
+.   if !\\n(IP .nr IP +1
+.   ie \\n(ID>0 .sp \\n(IDu
+.   el .sp \\n(PDu
+.   nr IU \\n(IR+1
+.   if \\n(.$>1 .nr I\\n(IU \\n(I\\n(IRu+\\$2n
+.   if \\n(I\\n(IU=0 .nr I\\n(IU \\n(PIu+\\n(I\\n(IRu
+.   in \\n(I\\n(IUu
+.   nr TY \\n(TZ-\\n(.i
+.   nr JQ \\n(I\\n(IU-\\n(I\\n(IR
+.   ta \\n(JQu \\n(TYuR
+.   if \\n(.$ \{\
+.       ti \\n(I\\n(IRu
 \&\\$1\t\c
-.	\}
+.   \}
 ..
-.	\"LP - left aligned (block) paragraph
+.   \"LP - left aligned (block) paragraph
 .de LP
 .ti \\n(.iu
 .RT
@@ -1292,31 +1292,31 @@ ABSTRACT
 .ll -\\n(QIu
 .ti \\n(.iu
 ..
-.	\"IE - synonym for .LP
+.   \"IE - synonym for .LP
 .de IE
 .LP
 ..
-.	\"RS - prepare for double indenting
+.   \"RS - prepare for double indenting
 .de RS
-.	nr IS \\n(IP
-.	RT
-.	nr IP \\n(IS
-.	nr IU \\n(IR+1
-.	if !\\n(I\\n(IU .nr I\\n(IU \\n(I\\n(IR+\\n(PIu
-.	nr IR +1
-.	nr IU +1
-.	in \\n(I\\n(IRu
-.	nr TY \\n(TZ-\\n(.i
-.	ta \\n(TYuR
+.   nr IS \\n(IP
+.   RT
+.   nr IP \\n(IS
+.   nr IU \\n(IR+1
+.   if !\\n(I\\n(IU .nr I\\n(IU \\n(I\\n(IR+\\n(PIu
+.   nr IR +1
+.   nr IU +1
+.   in \\n(I\\n(IRu
+.   nr TY \\n(TZ-\\n(.i
+.   ta \\n(TYuR
 ..
-.	\"RE - retreat to the left
+.   \"RE - retreat to the left
 .de RE
-.	nr IS \\n(IP
-.	RT
-.	nr IP \\n(IS
-.	nr IU \\n(IR
-.	if \\n(IR>0 .nr IR -1
-.	in \\n(I\\n(IRu
+.   nr IS \\n(IP
+.   RT
+.   nr IP \\n(IS
+.   nr IU \\n(IR
+.   if \\n(IR>0 .nr IR -1
+.   in \\n(I\\n(IRu
 ..
 .de TC
 .nr TZ \\n(.lu
@@ -1327,7 +1327,7 @@ ABSTRACT
 .LP
 .nr TZ 0
 ..
-.	\"CM - cut mark
+.   \"CM - cut mark
 .de CM
 .po 0
 .lt 7.6i
@@ -1341,8 +1341,8 @@ ABSTRACT
 .ps
 .ft
 ..
-.		\" fontname(CW) fontstr(\f(CW) first_arg goes_after goes_before
-.de OF		\" this is completely WRONG if any argument contains "'s
+.       \" fontname(CW) fontstr(\f(CW) first_arg goes_after goes_before
+.de OF      \" this is completely WRONG if any argument contains "'s
 .nr PQ \\n(.f
 .hy 0
 .if t .if "\\$3"" .ft \\$1
@@ -1350,57 +1350,57 @@ ABSTRACT
 \&\\$5\\$2\\$3\\f\\n(PQ\\$4
 .hy \\n(HY\}
 .if n \{\
-.	if \\n(.$=5 \&\\$5
-.	ie "\\$3"" .ul 1000
-.	el .ul 1
-.	if \\n(.$=3 \&\\$3
-.	if \\n(.$>3 \&\\$3\\c
-.	if \\n(.$>3 \&\\$4
-.	hy \\n(HY\}
+.   if \\n(.$=5 \&\\$5
+.   ie "\\$3"" .ul 1000
+.   el .ul 1
+.   if \\n(.$=3 \&\\$3
+.   if \\n(.$>3 \&\\$3\\c
+.   if \\n(.$>3 \&\\$4
+.   hy \\n(HY\}
 ..
-.	\"B - bold font
+.   \"B - bold font
 .de B
 .OF 3 \\f3 "\\$1" "\\$2" "\\$3"
 ..
-.de BI	\" bold italic -- only on 202
+.de BI  \" bold italic -- only on 202
 .OF 4 \\f4 "\\$1" "\\$2" "\\$3"
 ..
-.	\"R - Roman font
+.   \"R - Roman font
 .de R
 .nr PQ \\n(.f
 .ft 1
 .ie \\n(.$>0 \&\\$1\f\\n(PQ\\$2
 .el .if n .ul 0
 ..
-.	\"I - italic font
+.   \"I - italic font
 .de I
 .OF 2 \\f2 "\\$1" "\\$2" "\\$3"
 ..
-.	\"CW - constant width font
+.   \"CW - constant width font
 .de CW
 .nr PQ \\n(.f
 .if t .if \\n(.$>0 \%\&\\$3\f(CW\\$1\f\\n(PQ\&\\$2
 .if t .if \\n(.$=0 .OF CW \\f(CW "\\$1" "\\$2" "\\$3"
 .if n .OF CW \\f(CW "\\$1" "\\$2" "\\$3"
 ..
-.	\"TA - tabs set in ens or chars
+.   \"TA - tabs set in ens or chars
 .de TA
 .ta \\$1n \\$2n \\$3n \\$4n \\$5n \\$6n \\$7n \\$8n \\$9n
 ..
-.	\"SM - make smaller size
+.   \"SM - make smaller size
 .de SM
 .ie \\n(.$ \&\\$3\s-2\\$1\s0\\$2
 .el .ps -2
 ..
-.	\"LG - make larger size
+.   \"LG - make larger size
 .de LG
 .ps +2
 ..
-.	\"NL - return to normal size
+.   \"NL - return to normal size
 .de NL
 .ps \\n(PS
 ..
-.	\"DA - force date; ND - no date or new date.
+.   \"DA - force date; ND - no date or new date.
 .de DA
 .if \\n(.$ .ds DY \\$1 \\$2 \\$3 \\$4
 .ds CF \\*(DY
@@ -1414,7 +1414,7 @@ ABSTRACT
 .de FN
 .FS
 ..
-.	\"FS - begin footnote
+.   \"FS - begin footnote
 .de FJ
 'ce 0
 .nr IA \\n(IP
@@ -1424,12 +1424,12 @@ ABSTRACT
 .da FF
 .br
 .if \\n(IF \{\
-.	tm Footnote within footnote-illegal.
-.	ab\}
+.   tm Footnote within footnote-illegal.
+.   ab\}
 .nr IF 1
 .if !\\n+(XX-1 .FA
 ..
-.	\"FE - footnote end
+.   \"FE - footnote end
 .de FK
 .br
 .in 0
@@ -1442,13 +1442,13 @@ ABSTRACT
 .if \\n(dl>\\n(CW .nr WF 1
 .ie (\\n(nl+\\n(.v)<=(\\n(.p+\\n(YY) .ch FO \\n(YYu
 .el \{\
-.	if \\n(nl>(\\n(HM+1.5v) .ch FO \\n(nlu+\\n(.vu
-.	if \\n(nl+\\n(FM+1v>\\n(.p .ch FX \\n(.pu-\\n(FMu+2v
-.	if \\n(nl<=(\\n(HM+1.5v) .ch FO \\n(HMu+(4u*\\n(.vu)\}
+.   if \\n(nl>(\\n(HM+1.5v) .ch FO \\n(nlu+\\n(.vu
+.   if \\n(nl+\\n(FM+1v>\\n(.p .ch FX \\n(.pu-\\n(FMu+2v
+.   if \\n(nl<=(\\n(HM+1.5v) .ch FO \\n(HMu+(4u*\\n(.vu)\}
 .nr IP \\n(IA
 'in \\n(IBu
 ..
-.\"	First page footer.
+.\" First page footer.
 .de FS
 .ev 1
 .br
@@ -1479,8 +1479,8 @@ ABSTRACT
 ..
 .de FX
 .if \\n(XX \{\
-.	di FY
-.	ns\}
+.   di FY
+.   ns\}
 ..
 .de XF
 .if \\n(nlu+1v>(\\n(.pu-\\n(FMu) .ch FX \\n(nlu+1.9v
