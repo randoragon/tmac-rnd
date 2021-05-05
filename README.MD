@@ -18,6 +18,13 @@ of features shouldn't rely on Neatroff's extended language, but
 I don't care to check compatibility with other implementations of
 the roff language, so nothing is guaranteed.
 
+## Vanilla ms Modifications
+
+1. Removed the following macros:
+    - TM, IM, MF, MR, LT, RP, TR
+    - UX, US
+    - MH, PY, AW
+
 ## Installation
 
 To keep maintenance and writing new extensions easy and sane, the
