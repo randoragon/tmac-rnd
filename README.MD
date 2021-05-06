@@ -25,6 +25,14 @@ the roff language, so nothing is guaranteed.
     - UX, US
     - MH, PY, AW
 
+## Dependencies
+
+`rnd` relies on the following packages provided by Neatroff:
+
+- `mpost`: URLs
+- `msdisp`: display macros
+- `mskeep`: keep blocks (needed by display macros)
+
 ## Installation
 
 To keep maintenance and writing new extensions easy and sane, the

@@ -37,7 +37,6 @@
 ..
 .   \"IZ - initialization
 .de IZ
-.so \\*(sd/tmac.sdisp
 .nr TN 0
 .em EM
 . \"  ACCENTS  say \*'e or \*`e to get e acute or e grave both were 4/10
@@ -53,7 +52,6 @@
 .ds v \\\\k:\\\\h'+\\\\w'e'u/4u'\\\\v'-0.6m'\\\\s6v\\\\s0\\\\v'0.6m'\\\\h'|\\\\n:u'
 .       \" cedilla
 .ds , \\\\k:\\\\h'\\\\w'c'u*0.4u'\\\\z,\\\\h'|\\\\n:u'
-.so \\*(sd/tmac.srefs
 .ch FO \\n(YYu
 .if !\\n(FM .nr FM 1i
 .nr YY -\\n(FMu
@@ -636,7 +634,6 @@ Computing Science Technical Report No. \\*(MN
 .rr a| b| c| d| e| f| g| h| i| j| k| l| m|
 .rr a- b- c- d- e- f- g- h- i- j- k- l- m-
 ..
-.so \*(sd/tmac.skeep
 .de EQ  \"equation, breakout and display
 .nr EF \\n(.u
 .rm EE
