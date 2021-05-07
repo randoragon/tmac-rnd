@@ -1,5 +1,5 @@
 FILES = src/media.tmac src/main.tmac
-TARGET = rnd.tmac
+TARGET = tmac.rnd
 
 all:
 	cat -- $(FILES) >$(TARGET)
