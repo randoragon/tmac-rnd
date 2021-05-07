@@ -10,6 +10,7 @@
 .BG\}
 .if !\\n(1T .BG
 .ce 0
+.ad b
 .if !\\n(IK .if !\\n(IF .if !\\n(IX .if !\\n(BE .if !\\n(FT .di
 .ul 0
 .if \\n(QP \{\
@@ -102,6 +103,17 @@
 .if n .bd 3
 .nr CW 0-1
 .nr GW 0-1
+.\" Default heading sizes
+.nr SH1 16
+.nr NH1 16
+.nr SH2 15
+.nr NH2 15
+.nr SH3 14
+.nr NH3 14
+.nr SH4 13
+.nr NH4 13
+.nr SH5 12
+.nr NH5 12
 ..
 .de OK
 .br
@@ -996,6 +1008,35 @@ Computing Science Technical Report No. \\*(MN
 .ne 2v
 .ti +\\n(PIu
 ..
+.   \"SHs - set section heading point sizes
+.de SHs
+.nr SH1 \\$1
+.ie \\n(.$>1 .nr SH2 \\$2
+.el .nr SH2 \\n[SH1]
+.ie \\n(.$>2 .nr SH3 \\$3
+.el .nr SH3 \\n[SH2]
+.ie \\n(.$>3 .nr SH4 \\$4
+.el .nr SH4 \\n[SH3]
+.ie \\n(.$>4 .nr SH5 \\$5
+.el .nr SH5 \\n[SH4]
+..
+.   \"NHs - set numbered heading point sizes
+.de NHs
+.nr NH1 \\$1
+.ie \\n(.$>1 .nr NH2 \\$2
+.el .nr NH2 \\n[NH1]
+.ie \\n(.$>2 .nr NH3 \\$3
+.el .nr NH3 \\n[NH2]
+.ie \\n(.$>3 .nr NH4 \\$4
+.el .nr NH4 \\n[NH3]
+.ie \\n(.$>4 .nr NH5 \\$5
+.el .nr NH5 \\n[NH4]
+..
+.   \"Hs - set all headings' point sizes
+.de Hs
+.SHs "\\$1" "\\$2" "\\$3" "\\$4" "\\$5"
+.NHs "\\$1" "\\$2" "\\$3" "\\$4" "\\$5"
+..
 .   \"SH - (unnumbered) section heading
 .de SH
 .ti \\n(.iu
@@ -1005,6 +1046,9 @@ Computing Science Technical Report No. \\*(MN
 .RT
 .ne 4
 .ft 3
+.if !\\n[SH\\$1] .nr SH\\$1 \\n(PS
+.if \\n(.$>1 .ad \\$2
+.ps \\n[SH\\$1]
 .if n .ul 1000
 ..
 .   \"NH - numbered heading
@@ -1034,6 +1078,9 @@ Computing Science Technical Report No. \\*(MN
 ..
 .de NH
 .N{ \\$1
+.if !\\n[NH\\$1] .nr NH\\$1 \\n(PS
+.if \\n(.$>1 .ad \\$2
+.ps \\n[NH\\$1]
 \\*(SN
 ..
 .   \"BG - begin, execute at first PP

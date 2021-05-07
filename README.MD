@@ -24,6 +24,47 @@ the roff language, so nothing is guaranteed.
     - TM, IM, MF, MR, LT, RP, TR
     - UX, US
     - MH, PY, AW
+2. Modified the following macros:
+    - RT
+    - SH, NH
+3. Added the following macros:
+    - SHs, NHs, Hs
+4. Added the following number registers:
+    - SH1..SH5, NH1..NH2
+
+### New Headings
+
+The new heading syntax is as follows:
+
+    .SH <level> [adjust]
+    .NH <level> [adjust]
+
+The second argument (adjust) is transparently passed to `.ad`.
+
+Headings have configurable point sizes per level. The point size
+of each level is stored in `SH1..SH5` for section headings and
+in `NH1..NH2` for numbered headings. You can easily set these
+registers to desired values using the new `SHs`, `NHs` and `Hs`
+macros:
+
+    .SHs 16 15 14 13 12
+    .NHs 16 15 14 13 12
+    .Hs  16 15 14 13 12
+
+`Hs` sets the same point sizes for both `SH` and `NH`, it's just
+a shorthand for calling `SHs` and `NHs` with the same arguments.
+You can omit up to 4 arguments to initialize the remaining values
+to the last one. The following 2 lines do the same thing:
+
+    .NHs 14 13 12 12 12
+    .NHs 14 13 12
+
+This functionality is inspired by the `mm` macros.
+
+### Miscellaneous Changes
+
+`RT` now invokes `.ad b` every time. This was a necessary addition
+to allow `.NH` and `.SH` to accept adjust arguments.
 
 ## Dependencies
 
