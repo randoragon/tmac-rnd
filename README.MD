@@ -74,6 +74,10 @@ to allow `.NH` and `.SH` to accept adjust arguments.
 - `msdisp`: display macros
 - `mskeep`: keep blocks (needed by display macros)
 
+The `rnd` macro file does not source any external files;
+it is up to you to include the dependencies with `-m`
+when calling Neatroff.
+
 ## Installation
 
 To keep maintenance and writing new extensions easy and sane, the
