@@ -29,7 +29,7 @@ the roff language, so nothing is guaranteed.
     - SH, NH
 3. Added the following macros:
     - **headings:** SHs, NHs, Hs, Hf
-    - **lists:** BL, NL, LI, LE
+    - **lists:** BL, AL, LI, LE
 4. Reserved the following number registers:
     - **headings:** SH1..SH5, NH1..NH2
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9
