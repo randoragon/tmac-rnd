@@ -106,9 +106,13 @@ By default it's equal to `0`, which results in simple line breaks.
 
 After initializing a list, each list item can be added with
 
-    .LI
+    .LI [symbol] [indent] [offset]
 
 Followed by the body of the item.
+The arguments for `LI` are identical to those of `BL` (except
+*spacing*), and they serve as an optional override that affects
+only a particular item.
+
 At the end, the list must be terminated with
 
     .LE

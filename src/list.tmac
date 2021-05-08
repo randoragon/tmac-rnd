@@ -46,24 +46,26 @@
 .de LI
 .ie \\n(LV=0 ERROR: missing start of list
 .el \{\
+.   nr Lv \\n(LV-1
+.   ie !"\\$2"" .nr _d \\n[LD\\n(Lv]u+\\$2
+.   el .nr _d \\n[LD\\n(LV]
+.   ie !"\\$3"" .nr _o \\$3
+.   el .nr _o \\n[LO\\n(LV]
+.   RT
 .   if \\n[LT\\n(LV]=0 \{\
-.       RT
-.       if !"\\*[LS\\n(LV]"" .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
-.       el .nr Ls\\n(LV 1
-.       in \\n[LD\\n(LV]u+\\n[LO\\n(LV]u
-.       ti \\n[LD\\n(LV]u
-.       ta \\n[LO\\n(LV]u
-\&\\*[LC\\n(LV]\t\c
+.       ie !"\\$1"" .ds Li \\$1
+.       el .ds Li \\*[LC\\n(LV]
 .   \}
 .   if \\n[LT\\n(LV]=1 \{\
-.       RT
-.       if !"\\*[LS\\n(LV]"" .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
-.       el .nr Ls\\n(LV 1
-.       in \\n[LD\\n(LV]u+\\n[LO\\n(LV]u
-.       ti \\n[LD\\n(LV]u
-.       ta \\n[LO\\n(LV]u
-\&\\n+[LC\\n(LV].\t\c
+.       ie !"\\$1"" .ds Li \\$1
+.       el .ds Li \\n+[LC\\n(LV].
 .   \}
+.   if !"\\*[LS\\n(LV]"" .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
+.   el .nr Ls\\n(LV 1
+.   in \\n(_du+\\n(_ou
+.   ti \\n(_du
+.   ta \\n(_ou
+\&\\*(Li\t\c
 .\}
 ..
 .   \"LE - list end
