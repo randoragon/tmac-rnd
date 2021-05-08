@@ -32,7 +32,8 @@ the roff language, so nothing is guaranteed.
     - **lists:** BL, AL, LI, LE
 4. Reserved the following number registers:
     - **headings:** SH1..SH5, NH1..NH2
-    - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9
+    - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
+    - **misc:** \_d, \_o
 
 ### New Headings
 
