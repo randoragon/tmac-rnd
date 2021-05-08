@@ -10,7 +10,7 @@
 .nr Lv \\n(LV
 .nr LV +1
 .nr LT\\n(LV 0
-.ie \\n(LV>7 ERROR: maximum list level surpassed
+.ie \\n(LV>9 ERROR: maximum list level surpassed
 .el \{\
 .   ie !"\\$1"" .ds LC\\n(LV \\$1
 .   el .ds LC\\n(LV \(bu
@@ -28,7 +28,7 @@
 .nr Lv \\n(LV
 .nr LV +1
 .nr LT\\n(LV 1
-.ie \\n(LV>7 ERROR: maximum list level surpassed
+.ie \\n(LV>9 ERROR: maximum list level surpassed
 .el \{\
 .   ie !"\\$1"" .af LC\\n(LV \\$1
 .   el .af LC\\n(LV 1
