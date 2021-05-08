@@ -28,7 +28,7 @@ the roff language, so nothing is guaranteed.
     - RT
     - SH, NH
 3. Added the following macros:
-    - **headings:** SHs, NHs, Hs
+    - **headings:** SHs, NHs, Hs, Hf
     - **lists:** BL, NL, LI, LE
 4. Reserved the following number registers:
     - **headings:** SH1..SH5, NH1..NH2
@@ -62,6 +62,14 @@ to the last one. The following 2 lines do the same thing:
     .NHs 14 13 12
 
 This functionality is inspired by the `mm` macros.
+
+For numbered headings, you can set number formats for each
+level separately with the `Hf` macro, e.g.:
+
+    .Hf A a i 1 1
+
+Empty or missing arguments will be silently ignored. By default,
+all formats are set to arabic (1).
 
 ### Lists
 

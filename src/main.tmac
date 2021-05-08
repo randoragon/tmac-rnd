@@ -1011,31 +1011,39 @@ Computing Science Technical Report No. \\*(MN
 .   \"SHs - set section heading point sizes
 .de SHs
 .nr SH1 \\$1
-.ie \\n(.$>1 .nr SH2 \\$2
+.ie !"\\$2"" .nr SH2 \\$2
 .el .nr SH2 \\n[SH1]
-.ie \\n(.$>2 .nr SH3 \\$3
+.ie !"\\$3"" .nr SH3 \\$3
 .el .nr SH3 \\n[SH2]
-.ie \\n(.$>3 .nr SH4 \\$4
+.ie !"\\$4"" .nr SH4 \\$4
 .el .nr SH4 \\n[SH3]
-.ie \\n(.$>4 .nr SH5 \\$5
+.ie !"\\$5"" .nr SH5 \\$5
 .el .nr SH5 \\n[SH4]
-..
+.
 .   \"NHs - set numbered heading point sizes
 .de NHs
 .nr NH1 \\$1
-.ie \\n(.$>1 .nr NH2 \\$2
+.ie !"\\$2"" .nr NH2 \\$2
 .el .nr NH2 \\n[NH1]
-.ie \\n(.$>2 .nr NH3 \\$3
+.ie !"\\$3"" .nr NH3 \\$3
 .el .nr NH3 \\n[NH2]
-.ie \\n(.$>3 .nr NH4 \\$4
+.ie !"\\$4"" .nr NH4 \\$4
 .el .nr NH4 \\n[NH3]
-.ie \\n(.$>4 .nr NH5 \\$5
+.ie !"\\$5"" .nr NH5 \\$5
 .el .nr NH5 \\n[NH4]
 ..
 .   \"Hs - set all headings' point sizes
 .de Hs
 .SHs "\\$1" "\\$2" "\\$3" "\\$4" "\\$5"
 .NHs "\\$1" "\\$2" "\\$3" "\\$4" "\\$5"
+..
+.   \"Hf - set numbered headings formats
+.de Hf
+.if !"\\$1"" .af H1 \\$1
+.if !"\\$2"" .af H2 \\$2
+.if !"\\$3"" .af H3 \\$3
+.if !"\\$4"" .af H4 \\$4
+.if !"\\$5"" .af H5 \\$5
 ..
 .   \"SH - (unnumbered) section heading
 .de SH
@@ -1047,7 +1055,7 @@ Computing Science Technical Report No. \\*(MN
 .ne 4
 .ft 3
 .if !\\n[SH\\$1] .nr SH\\$1 \\n(PS
-.if \\n(.$>1 .ad \\$2
+.if !"\\$2"" .ad \\$2
 .ps \\n[SH\\$1]
 .if n .ul 1000
 ..
@@ -1079,7 +1087,7 @@ Computing Science Technical Report No. \\*(MN
 .de NH
 .N{ \\$1
 .if !\\n[NH\\$1] .nr NH\\$1 \\n(PS
-.if \\n(.$>1 .ad \\$2
+.if !"\\$2"" .ad \\$2
 .ps \\n[NH\\$1]
 \\*(SN
 ..
