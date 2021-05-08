@@ -28,9 +28,11 @@ the roff language, so nothing is guaranteed.
     - RT
     - SH, NH
 3. Added the following macros:
-    - SHs, NHs, Hs
-4. Added the following number registers:
-    - SH1..SH5, NH1..NH2
+    - **headings:** SHs, NHs, Hs
+    - **lists:** BL, NL, LI, LE
+4. Reserved the following number registers:
+    - **headings:** SH1..SH5, NH1..NH2
+    - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9
 
 ### New Headings
 
@@ -60,6 +62,35 @@ to the last one. The following 2 lines do the same thing:
     .NHs 14 13 12
 
 This functionality is inspired by the `mm` macros.
+
+### Lists
+
+Lists are much inspired by the `mm` macros. You can start a
+new list with the following macros, for bulleted and enumerated
+lists respectively:
+
+    .BL [symbol] [indent] [offset] [spacing]
+    .AL [format] [indent] [offset] [spacing]
+
+- *symbol* is `\(bu` by default, but any non-empty string is valid
+- *format* is transparently passed to `.af` for different number
+formatting
+- *indent* is additional indentation, set to `4n` by default
+- *offset* is indentation added to all prior indentation to separate
+the symbol/number from the item body. Set to `4n` by default
+- *spacing* is vertical distance added inbetween all list items.
+By default it's equal to `0`, which results in simple line breaks.
+
+After initializing a list, each list item can be added with
+
+    .LI
+
+Followed by the body of the item.
+At the end, the list must be terminated with
+
+    .LE
+
+Lists can be nested up to 9 levels.
 
 ### Miscellaneous Changes
 
