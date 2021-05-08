@@ -1056,6 +1056,7 @@ Computing Science Technical Report No. \\*(MN
 .ft 3
 .if !\\n[SH\\$1] .nr SH\\$1 \\n(PS
 .if !"\\$2"" .ad \\$2
+.if !"\\$3"" .post.name "\\$3"
 .ps \\n[SH\\$1]
 .if n .ul 1000
 ..
@@ -1088,6 +1089,8 @@ Computing Science Technical Report No. \\*(MN
 .N{ \\$1
 .if !\\n[NH\\$1] .nr NH\\$1 \\n(PS
 .if !"\\$2"" .ad \\$2
+.ie \\n(.$>2 .if !"\\$3"" .post.name "\\$3"
+.el .post.name "h\\*(SN"
 .ps \\n[NH\\$1]
 \\*(SN
 ..

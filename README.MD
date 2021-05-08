@@ -38,10 +38,24 @@ the roff language, so nothing is guaranteed.
 
 The new heading syntax is as follows:
 
-    .SH <level> [adjust]
-    .NH <level> [adjust]
+    .SH <level> [adjust] [label]
+    .NH <level> [adjust] [label]
 
 The second argument (adjust) is transparently passed to `.ad`.
+
+#### Named references
+
+For all numbered headings, a Neatroff **named reference** is
+automatically created, and the reference name matches the
+"prefix" string of a header. For example, a heading with prefix
+equal to "1." will have a reference `h1.`, while a heading with
+prefix "A.3.ii." will have a reference `hA.3.ii.`.
+
+Named references can be overridden by supplying the *label*
+argument. Note that section headings don't have references
+by default, so this is the only way for them to have one.
+
+#### Point size
 
 Headings have configurable point sizes per level. The point size
 of each level is stored in `SH1..SH5` for section headings and
@@ -63,7 +77,7 @@ to the last one. The following 2 lines do the same thing:
 
 This functionality is inspired by the `mm` macros.
 
-For numbered headings, you can set number formats for each
+For numbered headings, you can also set number formats for each
 level separately with the `Hf` macro, e.g.:
 
     .Hf A a i 1 1
