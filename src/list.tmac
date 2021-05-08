@@ -1,0 +1,75 @@
+.\" Bulleted and ordered list implementation
+.
+.\" List level
+.nr LV 0
+.\" List body indent
+.nr LO 4n
+.
+.   \"BL - begin bullet list
+.de BL
+.nr Lv \\n(LV
+.nr LV +1
+.nr LT\\n(LV 0
+.ie \\n(LV>7 ERROR: maximum list level surpassed
+.el \{\
+.   ie !"\\$1"" .ds LC\\n(LV \\$1
+.   el .ds LC\\n(LV \(bu
+.   if \\n(Lv=0 .nr LD\\n(Lv \\n(.i
+.   ie !"\\$2"" .nr LD\\n(LV \\n[LD\\n(Lv]+\\$2
+.   el .nr LD\\n(LV \\n[LD\\n(Lv]+4n
+.   ie !"\\$3"" .nr LO\\n(LV \\$3
+.   el .nr LO\\n(LV \\n(LO
+.   ds LS\\n(LV \\$4
+.\}
+.if \\n(1T .sp \\n(PDu
+..
+.   \"AL - begin enumerated list
+.de AL
+.nr Lv \\n(LV
+.nr LV +1
+.nr LT\\n(LV 1
+.ie \\n(LV>7 ERROR: maximum list level surpassed
+.el \{\
+.   ie !"\\$1"" .af LC\\n(LV \\$1
+.   el .af LC\\n(LV 1
+.   nr LC\\n(LV 0 1
+.   if \\n(Lv=0 .nr LD\\n(Lv \\n(.i
+.   ie !"\\$2"" .nr LD\\n(LV \\n[LD\\n(Lv]+\\$2
+.   el .nr LD\\n(LV \\n[LD\\n(Lv]+4n
+.   ie !"\\$3"" .nr LO\\n(LV \\$3
+.   el .nr LO\\n(LV \\n(LO
+.   ds LS\\n(LV \\$4
+.\}
+.if \\n(1T .sp \\n(PDu
+..
+.   \"LI - list item
+.de LI
+.ie \\n(LV=0 ERROR: missing start of list
+.el \{\
+.   if \\n[LT\\n(LV]=0 \{\
+.       RT
+.       if !"\\*[LS\\n(LV]"" .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
+.       el .nr Ls\\n(LV 1
+.       in \\n[LD\\n(LV]u+\\n[LO\\n(LV]u
+.       ti \\n[LD\\n(LV]u
+.       ta \\n[LO\\n(LV]u
+\&\\*[LC\\n(LV]\t\c
+.   \}
+.   if \\n[LT\\n(LV]=1 \{\
+.       RT
+.       if !"\\*[LS\\n(LV]"" .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
+.       el .nr Ls\\n(LV 1
+.       in \\n[LD\\n(LV]u+\\n[LO\\n(LV]u
+.       ti \\n[LD\\n(LV]u
+.       ta \\n[LO\\n(LV]u
+\&\\n+[LC\\n(LV].\t\c
+.   \}
+.\}
+..
+.   \"LE - list end
+.de LE
+.ie \\n(LV=0 ERROR: unmatched list start
+.el .nr LV -1
+.if \\n(LV=0 .in \\n[LD\\n(LV]u
+.RT
+..
