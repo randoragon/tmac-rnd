@@ -47,7 +47,7 @@ The second argument (adjust) is transparently passed to `.ad`.
 
 For all numbered headings, a Neatroff **named reference** is
 automatically created, and the reference name matches the
-"prefix" string of a header. For example, a heading with prefix
+"prefix" string of a heading. For example, a heading with prefix
 equal to "1." will have a reference `h1.`, while a heading with
 prefix "A.3.ii." will have a reference `hA.3.ii.`.
 
