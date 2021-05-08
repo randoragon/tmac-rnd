@@ -129,4 +129,4 @@ To build the file containing all macros, run:
 
     make
 
-This will create a new `rnd.tmac` file in the base directory.
+This will create a new `tmac.rnd` file in the base directory.
