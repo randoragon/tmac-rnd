@@ -30,10 +30,11 @@ the roff language, so nothing is guaranteed.
 3. Added the following macros:
     - **headings:** SHs, NHs, Hs, Hf
     - **lists:** BL, AL, LI, LE
+    - **media:** PDF, URL
 4. Reserved the following number registers:
     - **headings:** SH1..SH5, NH1..NH2
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
-    - **misc:** \_d, \_o
+    - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i
 
 ### New Headings
 
@@ -119,6 +120,32 @@ At the end, the list must be terminated with
     .LE
 
 Lists can be nested up to 9 levels.
+
+### Media Macros
+
+PDF images can be embedded with
+
+    .PDF <adjust> <path> <width> <height> [scale]
+
+- *adjust* - `l`, `c`, `r` or a number denoting indentation
+- *path* - path to the image file
+- *width* - width of the image
+- *height* - height of the image
+- *scale* - scaling factor in 1/1000, 1000 is the maximum available width
+
+The scaling mechanism works in the following way:  
+If *scale* is not supplied, the image will aim to be originally-sized, but
+capped at maximum on-page width (the maximum width is computed as
+`\n(.l-\n(.i`). If *scale* is supplied, 1000 denotes the maximum width.
+
+Hyperlinks can be embedded with
+
+    \*[URL "destination" "text"]
+
+Where *destination* is the URI, and *text* is displayed as a clickable.
+By default, all URLs have a custom color stored in the `def_col_url`
+string. If you want a different color, you should temporarily define the
+`col_url` string. `def_col_url` should be treated as a read-only resource.
 
 ### Miscellaneous Changes
 
