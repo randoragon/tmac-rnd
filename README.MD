@@ -25,7 +25,6 @@ the roff language, so nothing is guaranteed.
     - UX, US
     - MH, PY, AW
 2. Modified the following macros:
-    - RT
     - SH, NH
 3. Added the following macros:
     - **headings:** SHs, NHs, Hs, Hf, H{
