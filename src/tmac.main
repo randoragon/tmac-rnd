@@ -210,14 +210,13 @@
 .ft 3
 .ps \\n(PS
 .if !\\n(TN \{\
-.   ps +2
+.   ps +7
 .   vs \\n(.s+2\}
 .hy 0
 .if h .ce 999
 ..
 .de TX
 .rs
-.sp .5i
 .ce 1000
 .if n .ul 1000
 .ps 12
@@ -255,7 +254,8 @@
 .   el \{\
 .       ft 3
 .       ll 16\}\}
-.ps \\n(PS
+.ps \\n(PS+2
+.vs \\n(.s+2
 .if h .ce 999
 ..
 .de AX
@@ -365,6 +365,8 @@
 .de AI
 .br
 .ft 1
+.ps \\n(PS
+.vs \\n(.s+2
 .di
 .di I\\n(NA
 .nf
@@ -1165,10 +1167,13 @@ ABSTRACT
 .sp
 .if n .ul 100
 .ce 100
-.ps +2
+.ps \\n(PS+7
+.vs \\n(.s+2
 \\..
 .de AU
 .ft 2
+.ps \\n(PS+2
+.vs \\n(.s+2
 .if n .ul 0
 .ce 100
 .sp
@@ -1176,6 +1181,8 @@ ABSTRACT
 \\..
 .de AI
 .ft 1
+.ps \\n(PS
+.vs \\n(.s+2
 .ce 100
 .if n .ul 0
 .if n .sp

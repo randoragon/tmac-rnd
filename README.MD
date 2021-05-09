@@ -28,6 +28,7 @@ the roff language, so nothing is guaranteed.
 2. Removed the following registers:
     - IM, MN, CS, ST
 3. Modified the following macros:
+    - TL, AU, AI (visual tweaks)
     - SH, NH
 4. Added the following macros:
     - **headings:** SHs, NHs, Hs, Hf, H{
