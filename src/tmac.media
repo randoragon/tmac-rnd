@@ -50,7 +50,7 @@
 .de URL
 .ie "\\*[col_url]"" .ds _col \\*[def_col_url]
 .el .ds _col \\*[col_url]
-.post.url "\\$1" "\\m[\\*[_col]]\\$2\\m[]"
+\\*[post.url "\\$1" "\\m[\\*[_col]]\\?'\\n(.$>1@\\$2@\\$1'\\m[]"]
 ..
 .\" Initializes ms configuration for a simple note.
 .de NOTE

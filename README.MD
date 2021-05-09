@@ -140,9 +140,10 @@ capped at maximum on-page width (the maximum width is computed as
 
 Hyperlinks can be embedded with
 
-    \*[URL "destination" "text"]
+    .URL <destination> [text]
 
 Where *destination* is the URI, and *text* is displayed as a clickable.
+If *text* is omitted, *destination* is used instead.  
 By default, all URLs have a custom color stored in the `def_col_url`
 string. If you want a different color, you should temporarily define the
 `col_url` string. `def_col_url` should be treated as a read-only resource.
