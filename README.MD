@@ -28,22 +28,38 @@ the roff language, so nothing is guaranteed.
     - RT
     - SH, NH
 3. Added the following macros:
-    - **headings:** SHs, NHs, Hs, Hf
+    - **headings:** SHs, NHs, Hs, Hf, H{
     - **lists:** BL, AL, LI, LE
     - **media:** PDF, URL
 4. Reserved the following number registers:
-    - **headings:** SH1..SH5, NH1..NH2
+    - **headings:** SH, SH1..SH5, NH1..NH2
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
-    - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i
+    - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i, \_u
+5. Reserved the following string names:
+    - **headings:** \_a, \_f
+    - **media:** def\_col\_url, col\_url, \_col
 
 ### New Headings
 
 The new heading syntax is as follows:
 
-    .SH <level> [adjust] [name]
-    .NH <level> [adjust] [name]
+    .SH [flags] <level> text...
+    .NH [flags] <level> text...
 
-The second argument (adjust) is transparently passed to `.ad`.
+#### Flags
+
+*flags* are a single word composed of lowercase letters of the
+following form:
+
+    [l|c|r][b][i][u]
+
+- *l*, *c*, *r* denote adjustment to the left, center or right
+- *b* denotes **emboldening**
+- *i* denotes *italics*
+- *u* denotes <u>underline</u>
+
+Flags can be skipped, in which case the current settings will
+be used.
 
 #### Point size
 
@@ -77,16 +93,16 @@ all formats are set to arabic (1).
 
 #### Named references
 
-For all numbered headings, a Neatroff **named reference** is
-automatically created, and the reference name matches the
-"prefix" string of a heading. For example, a heading with prefix
-equal to "1." will have a reference `#h1.`, while a heading with
-prefix "A.3.ii." will have a reference `#hA.3.ii.`.
+For all headings, a Neatroff **named reference** is automatically
+created.
 
-Named references can be overridden by supplying the *name*
-argument. Note that section headings don't have implicit
-references like numbered headings, so you have to set a
-name explicitly to create one.
+For numbered headings, the reference name matches the "prefix".
+For example, a numbered heading "1. Example" will have the reference
+`#h1.`, while a heading with prefix "A.3.ii. Nested Example" will
+have the reference `#hA.3.ii.` (**note the trailing periods!**).
+
+Section headings don't have prefixes, so they are enumerated
+normally, i.e. `#h1`, `#h2` and so on (s**no trailing period!**).
 
 ### Lists
 
