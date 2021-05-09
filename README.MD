@@ -164,11 +164,6 @@ By default, all URLs have a custom color stored in the `def_col_url`
 string. If you want a different color, you should temporarily define the
 `col_url` string. `def_col_url` should be treated as a read-only resource.
 
-### Miscellaneous Changes
-
-`RT` now invokes `.ad b` every time. This was a necessary addition
-to allow `.NH` and `.SH` to accept adjust arguments.
-
 ## Dependencies
 
 `rnd` relies on the following packages provided by Neatroff:

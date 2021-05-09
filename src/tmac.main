@@ -10,7 +10,6 @@
 .BG\}
 .if !\\n(1T .BG
 .ce 0
-.ad b
 .if !\\n(IK .if !\\n(IF .if !\\n(IX .if !\\n(BE .if !\\n(FT .di
 .ul 0
 .if \\n(QP \{\
@@ -1198,6 +1197,7 @@ Computing Science Technical Report No. \\*(MN
 .el .ie !"\\*(_f"" .shift 1
 .el .if \\n(_u .shift 1
 .if !\\n[SH\\$1] .nr SH\\$1 \\n(PS
+.nr _d \n(.j
 .if !"\\*(_a"" .ad \\*(_a
 .if n .ul 1000
 .post.name "h\\n+(SH"
@@ -1209,6 +1209,8 @@ Computing Science Technical Report No. \\*(MN
 .el \{\
 .   ie !"\\*(_f"" \\f[\\*(_f]\\$*\\fP
 .   el \\$*\}
+.fl
+.ad \\n(_d
 ..
 .   \"NH - numbered heading
 .de N{
@@ -1240,6 +1242,7 @@ Computing Science Technical Report No. \\*(MN
 .el .ie !"\\*(_f"" .shift 1
 .el .if \\n(_u .shift 1
 .N{ \\$1
+.nr _d \\n(.j
 .if !"\\*(_a"" .ad \\*(_a
 .if !\\n[NH\\$1] .nr NH\\$1 \\n(PS
 .if n .ul 1000
@@ -1252,6 +1255,8 @@ Computing Science Technical Report No. \\*(MN
 .el \{\
 .   ie !"\\*(_f"" \\f[\\*(_f]\\*(SN \\$*\\fP
 .   el \\*(SN \\$*\}
+.fl
+.ad \\n(_d
 ..
 .   \"BG - begin, execute at first PP
 .de BG
