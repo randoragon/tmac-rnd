@@ -230,6 +230,7 @@
 .hy \\n(HY
 .ce 0
 .ul 0
+.sp
 ..
 .   \"  AU - author(s)
 .de AU
@@ -363,7 +364,7 @@
 ..
 .   \"AI - authors institution
 .de AI
-.br
+.sp 1
 .ft 1
 .ps \\n(PS
 .vs \\n(.s+2
@@ -405,7 +406,6 @@ ABSTRACT
 .ps \\n(PS
 .ie \\n(VS>=41 .vs \\n(VSu
 .el .vs \\n(VSp
-.ti +\\n(PIu
 ..
 .   \"AE - end of an abstract
 .de AE
