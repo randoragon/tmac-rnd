@@ -57,8 +57,9 @@
 .       el .ds Li \\*[LC\\n(LV]
 .   \}
 .   if \\n[LT\\n(LV]=1 \{\
+.       nr LC\\n(LV +1
 .       ie !"\\$1"" .ds Li \\$1
-.       el .ds Li \\n+[LC\\n(LV].
+.       el .ds Li \\n[LC\\n(LV].
 .   \}
 .   if !"\\*[LS\\n(LV]"" .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
 .   el .nr Ls\\n(LV 1
