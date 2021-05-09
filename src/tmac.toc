@@ -1,0 +1,63 @@
+. \" Table of Contents generation
+. \" These macros work independently of any
+. \" external packages.
+.
+.   \" Initialization, run once at the start
+.de toc.init
+.nr toc_s 0
+.ev toc
+.di toc.di
+.ft 3
+.ps \\n(PS+6
+.ad l
+.post.name toc
+TABLE OF CONTENTS
+\\l'\\n(.lu-\\n(.iu_'
+.sp 1
+.di
+.ev
+..
+.   \" Append a new chapter
+.de toc.chapter
+.ev toc
+.da toc.di
+.sp 1
+.ft 3
+.ps \\n(PS+4
+.ta .4i
+.ds _s \\$2\t\\$3\\h'\\n(.lu-\\n(.iu-\\w'\t\\$3'u-\\w'\\$4'u'\\$4
+.nr _w \\w'\\*(_s'
+.nr _h 1v+20
+\\v'20u'\\X'link "\\$1" \\n(_w -\\n(_h'\\v'-20u'
+\\*(_s
+.rm _s
+.sp 1
+.di
+.ev
+..
+.   \" Append a new section
+.de toc.section
+.ev toc
+.da toc.di
+.ft 1
+.ps \\n(PS+2
+.ta .4i
+.ds _s \\$2\\l'\\n(.lu-\\n(.iu-\\w'\t\\$2'u-\\w'\\$3'u.'\\$3
+.nr _w \\w'\\*(_s'
+.nr _h 1v+10
+\\h'.4i'\\v'20u'\\X'link "\\$1" \\n(_w -\\n(_h'\\v'-20u'\\h'-.4i'
+\t\\*(_s
+.rm _s
+.br
+.sp .1
+.di
+.ev
+..
+.   \" Print table of contents
+.de TOC
+.bp
+.nr _d \\n(.u
+.nf
+.toc.di
+.if \\n(_d .fi
+..

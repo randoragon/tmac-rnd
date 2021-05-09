@@ -115,6 +115,9 @@
 .nr NH5 12
 . \" Section heading counter
 .nr SH 0 1
+. \" Table of contents
+.toc.init
+.nr TM 2 \" Max heading level to be included in TOC
 ..
 .de OK
 .br
@@ -1202,6 +1205,7 @@ Computing Science Technical Report No. \\*(MN
 .if n .ul 1000
 .post.name "h\\n+(SH"
 .ps \\n[SH\\$1]
+.if \\$1<=\\n(TM .toc.section "#h\\n(SH" "\\$*" \\n%
 .shift 1
 .ie \\n(_u \{\
 .   ie !"\\*(_f"" .UL "\\f[\\*(_f]\\$*\\fP"
@@ -1248,6 +1252,7 @@ Computing Science Technical Report No. \\*(MN
 .if n .ul 1000
 .post.name "h\\*(SN"
 .ps \\n[NH\\$1]
+.if \\$1<=\\n(TM .toc.section "#h\\*(SN" "\\*(SN \\$*" \\n%
 .shift 1
 .ie \\n(_u \{\
 .   ie !"\\*(_f"" .UL "\\f[\\*(_f]\\*(SN \\$*\\fP"
