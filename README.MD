@@ -102,7 +102,7 @@ For example, a numbered heading "1. Example" will have the reference
 have the reference `#hA.3.ii.` (**note the trailing periods!**).
 
 Section headings don't have prefixes, so they are enumerated
-normally, i.e. `#h1`, `#h2` and so on (s**no trailing period!**).
+normally, i.e. `#h1`, `#h2` and so on (**no trailing period!**).
 
 ### Lists
 
