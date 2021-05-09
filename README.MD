@@ -24,19 +24,25 @@ the roff language, so nothing is guaranteed.
     - TM, IM, MF, MR, LT, RP, TR
     - UX, US
     - MH, PY, AW
-2. Modified the following macros:
+    - S1, S2, S3, SY, CS
+2. Removed the following registers:
+    - IM, MN, CS, ST
+3. Modified the following macros:
     - SH, NH
-3. Added the following macros:
+4. Added the following macros:
     - **headings:** SHs, NHs, Hs, Hf, H{
     - **lists:** BL, AL, LI, LE
     - **media:** PDF, URL
-4. Reserved the following number registers:
+    - **toc:** toc.init, toc.chapter, toc.section, TOC
+5. Reserved the following number registers:
     - **headings:** SH, SH1..SH5, NH1..NH2
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
+    - **toc:** TM
     - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i, \_u
-5. Reserved the following string names:
+6. Reserved the following string names:
     - **headings:** \_a, \_f
     - **media:** def\_col\_url, col\_url, \_col
+    - **toc:** \_s
 
 ### New Headings
 

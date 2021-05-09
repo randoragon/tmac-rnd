@@ -5,9 +5,6 @@
 .ds sd \n(.D
 .\" RT -  reset everything to normal state
 .de RT
-.if \\n(CS \{\
-.SR 1
-.BG\}
 .if !\\n(1T .BG
 .ce 0
 .if !\\n(IK .if !\\n(IF .if !\\n(IX .if !\\n(BE .if !\\n(FT .di
@@ -200,8 +197,6 @@
 .de TL
 .br
 .nr TV 1
-.if \\n(IM .rm CS
-.if \\n(MN .rm CS
 .ME
 .rm ME
 .di WT
@@ -216,8 +211,7 @@
 .ps \\n(PS
 .if !\\n(TN \{\
 .   ps +2
-.   vs \\n(.s+2
-.   rm CS\}
+.   vs \\n(.s+2\}
 .hy 0
 .if h .ce 999
 ..
@@ -425,45 +419,6 @@ ABSTRACT
 .nr AJ 0
 .di
 .ce 0
-.if \\n(ST=2 .S2
-.if \\n(ST<3 .rm SY
-..
-.   \"S2 - release paper style
-.   \"SY - cover sheet of released paper
-.de SY
-.ll \\n(LLu
-.ns
-.if \\n(TV .TX
-.if \\n(AV .AX
-.rs
-.ce 0
-.nf
-.sp 3
-.ls 1
-.pn 2
-.WB
-.ls 
-.sp 3v
-\\*(DY
-.sp |9i
-.if \\n(FP .FA
-.FG
-.if \\n(GA=1 .nr GA 2
-.fi
-..
-.   \"S2 - first text page, released paper format
-.de S2
-.ce 0
-.br
-.SY
-.rm SY
-.bp 1
-.if \\n(TV .TX
-.if \\n(AV .AX
-.rs
-.ce 0
-.ft 1
-.ad \\n(SJ
 ..
 .   \"S0- mike lesk conserve paper style
 .de S0
@@ -489,76 +444,6 @@ ABSTRACT
 .ls
 .fi
 .ad \\n(SJ
-..
-.   \"S3 - CSTR style
-.de S3
-.rs
-.sp |2.25i
-.ce 1000
-.I1
-.if \\n(NA>1 \{\
-.   sp .5
-.   I2\}
-.if \\n(NA>2 \{\
-.   sp .5
-.   I3\}
-.if \\n(NA>3 \{\
-.   sp .5
-.   I4\}
-.if \\n(NA>4 \{\
-.   sp .5
-.   I5\}
-.if \\n(NA>5 \{\
-.   sp .5
-.   I6\}
-.if \\n(NA>6 \{\
-.   sp .5
-.   I7\}
-.if \\n(NA>7 \{\
-.   sp .5
-.   I8\}
-.if \\n(NA>8 \{\
-.   sp .5
-.   I9\}
-.sp |4i
-.   \"check how long title is: can space extra .25 inch if short
-.di EZ
-.WT
-.di
-.if \\n(dn<1.5v .if \\n(NA=1 .sp .25i
-.ft 1
-Computing Science Technical Report No. \\*(MN
-.sp
-.if t .ft 3
-.if n .ul 100
-.ps 12
-.vs 15p
-.hy 0
-.WT
-.hy \\n(HY
-.ft 1
-.if n .ul 0
-.ps 10
-.vs 12p
-.sp
-.ft 1
-.A1
-.A2
-.A3
-.A4
-.A5
-.A6
-.A7
-.A8
-.A9
-.ce 0
-.sp |8.5i
-.ce 0
-\\*(DY
-.DZ
-.bp 0
-.ft 1
-.S2
 ..
 .   \"SG - signature
 .de SG
@@ -1273,9 +1158,8 @@ Computing Science Technical Report No. \\*(MN
 .nr KI 0
 .hy \\n(HY
 .nr 1T 1
-.nr CS 0
-.S\\n(ST
-.rm S0 S1 S2 S3 OD OK TX AX WT CS TM IM MF MR RP I1 I2 I3 I4 I5 CB E1 E2
+.S0
+.rm S0 OD OK TX AX WT MF MR I1 I2 I3 I4 I5 CB E1 E2
 .de TL
 .ft 3
 .sp
