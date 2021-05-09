@@ -1,4 +1,4 @@
-FILES = src/media.tmac src/main.tmac src/list.tmac
+FILES = src/tmac.media src/tmac.main src/tmac.list
 TARGET = tmac.rnd
 
 all:
