@@ -8,7 +8,7 @@
     - [New Headings](https://github.com/Randoragon/tmac-rnd#new-headings)
     - [Lists](https://github.com/Randoragon/tmac-rnd#lists)
     - [Media Macros](https://github.com/Randoragon/tmac-rnd#media-macros)
-    - [Table of Contents](https://github.com/Randoragon/tmac-rnd#table-of-contents)
+    - [Table of Contents](https://github.com/Randoragon/tmac-rnd#table-of-contents-1)
 3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
 4. [Installation](https://github.com/Randoragon/tmac-rnd#installation)
 
