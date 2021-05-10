@@ -1,5 +1,17 @@
 # troff rnd macros
 
+## Table of Contents
+
+1. [Description](https://github.com/Randoragon/tmac-rnd#description)
+2. [Features](https://github.com/Randoragon/tmac-rnd#features)
+    - [Differences with vanilla ms](https://github.com/Randoragon/tmac-rnd#differences-with-vanilla-ms)
+    - [New Headings](https://github.com/Randoragon/tmac-rnd#new-headings)
+    - [Lists](https://github.com/Randoragon/tmac-rnd#lists)
+    - [Media Macros](https://github.com/Randoragon/tmac-rnd#media-macros)
+    - [Table of Contents](https://github.com/Randoragon/tmac-rnd#table-of-contents)
+3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
+4. [Installation](https://github.com/Randoragon/tmac-rnd#installation)
+
 ## Description
 
 `rnd` is a general-purpose macro package for troff that is based on
@@ -18,7 +30,9 @@ of features shouldn't rely on Neatroff's extended language, but
 I don't care to check compatibility with other implementations of
 the roff language, so nothing is guaranteed.
 
-## Vanilla ms Modifications
+## Features
+
+### Differences with vanilla ms
 
 1. Removed the following macros:
     - TM, IM, MF, MR, LT, RP, TR
