@@ -5,14 +5,17 @@
 .   \" Initialization, run once at the start
 .de toc.init
 .ev toc
+.nr CH 0 1
 .di toc.di
-.ft 3
-.ps \\n(PS+6
+.ft 1
 .ad l
+.ps 18
+.vs \\n(.s+2
 .post.name toc
 TABLE OF CONTENTS
+.sp -.85
 \\l'\\n(.lu-\\n(.iu_'
-.sp 1
+.br
 .di
 .ev
 ..
@@ -23,6 +26,7 @@ TABLE OF CONTENTS
 .sp 1
 .ft 3
 .ps \\n(PS+4
+.vs \\n(.s+2
 .ta .4i
 .ds _s \\$2\t\\$3\\h'\\n(.lu-\\n(.iu-\\w'\t\\$3'u-\\w'\\$4'u'\\$4
 .nr _w \\w'\\*(_s'
@@ -40,6 +44,7 @@ TABLE OF CONTENTS
 .da toc.di
 .ft 1
 .ps \\n(PS+2
+.vs \\n(.s+2
 .ta .4i
 .ds _s \\$2\\l'\\n(.lu-\\n(.iu-\\w'\t\\$2'u-\\w'\\$3'u.'\\$3
 .nr _w \\w'\\*(_s'

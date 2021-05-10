@@ -34,7 +34,7 @@ the roff language, so nothing is guaranteed.
     - **headings:** SHs, NHs, Hs, Hf, H{
     - **lists:** BL, AL, LI, LE
     - **media:** PDF, URL
-    - **toc:** toc.init, toc.chapter, toc.section, TOC
+    - **toc:** toc.init, toc.chapter, toc.section, TOC, CP, TOC\_
 5. Reserved the following number registers:
     - **headings:** SH, SH1..SH5, NH1..NH2
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
@@ -169,6 +169,37 @@ If *text* is omitted, *destination* is used instead.
 By default, all URLs have a custom color stored in the `def_col_url`
 string. If you want a different color, you should temporarily define the
 `col_url` string. `def_col_url` should be treated as a read-only resource.
+
+### Table of Contents
+
+All headings automatically get diverted to a table of contents.
+You can control which headings get added by changing the value
+of the `TM` register which denotes the largest heading number
+to be included, and is equal to 2 by default (which means
+headings of level 1 and 2 will be included).
+
+Other than headings, you can define new chapters with `CP`:
+
+    .CP <on-page name> <toc prefix> [toc name]
+
+Each chapter will break to a new page, disable the top header
+of that page and replace it with a nice caption.
+
+- *on-page name* is the text that will be printed on the page
+- *toc prefix* is typically a short string that will appear
+in ToC to the left of the chapter name, typically it's the
+chapter number, or something like "A", "B", "C" for appendices
+- *toc name* is an optional alternate title for the ToC
+
+Sometimes you might want to display full text "Chapter 1 - Title"
+on the page, but in the ToC you want a format like "1. Title".
+The *toc name* argument lets you override *on-page name* for
+those purposes. If you don't specify *toc name*, *on-page name*
+will be used by default.
+
+At any time you can call `TOC` to print the table of contents
+starting from a new page. Typically this is done at the end
+of the document, once all headings have been accumulated.
 
 ## Dependencies
 

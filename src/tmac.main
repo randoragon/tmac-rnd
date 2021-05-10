@@ -1551,3 +1551,40 @@ ABSTRACT
 .de ]
 ]
 ..
+.   \" CP - Append a new chapter and print it on a new page
+.de CP
+.ds _a \\*(LH
+.ds _b \\*(CH
+.ds _c \\*(RH
+.rm LH CH RH
+.ps 18
+.vs \\n(.s+2
+.bp
+.ie \\n(.$>2 .toc.chapter \\n+(CH "\\$2" "\\$3" \\n%
+.el .toc.chapter \\n+(CH "\\$2" "\\$1" \\n%
+\\$1
+.br
+\\l'\\n(.lu-\\n(.iu_'
+.ds LH \\*(_a
+.ds CH - % -
+.ds RH \\*(_c
+.rm _a _b _c
+.vs
+.ps
+.sp 2
+..
+.rn TOC TOC_
+.de TOC
+.ds _a \\*(LH
+.ds _b \\*(CH
+.ds _c \\*(RH
+.nr _h \\n(HM
+.nr HM 0
+.rm LH CH RH
+.TOC_
+.ds LH \\*(_a
+.ds CH - % -
+.ds RH \\*(_c
+.rm _a _b _c
+.nr HM \\n(_h
+..
