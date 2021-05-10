@@ -178,9 +178,9 @@ string. If you want a different color, you should temporarily define the
 - `msdisp`: display macros
 - `mskeep`: keep blocks (needed by display macros)
 
-The `rnd` macro file does not source any external files;
-it is up to you to include the dependencies with `-m`
-when calling Neatroff.
+The `tmac.main` file automatically sources these macro packages, and
+there should be no issues (unless you modified them by hand) since
+Neatroff ships with them by default.
 
 ## Installation
 

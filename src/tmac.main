@@ -1,6 +1,10 @@
-.\" ms macros
+.\" modified ms macros
 .\" vim: ft=groff
 .
+.\" External dependencies
+.so \\*(sd/tmac.sdisp
+.so \\*(sd/tmac.skeep
+.so \\*(sd/tmac.srefs
 .
 .ds sd \n(.D
 .\" RT -  reset everything to normal state
