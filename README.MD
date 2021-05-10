@@ -24,11 +24,9 @@ want to fit into my personal workflow. At no point should this
 macro package be considered "complete", for the same reasons.
 
 The macro package is written with Ali Gholami Rudi's Neatroff
-implementation of roff in mind. To learn more about Neatroff you
-can start [here](https://litcave.rudi.ir/neatroff.pdf). The majority
-of features shouldn't rely on Neatroff's extended language, but
-I don't care to check compatibility with other implementations of
-the roff language, so nothing is guaranteed.
+implementation of roff in mind and it relies on many extended
+contructs that Neatroff introduces. To learn more about Neatroff you
+can start [here](https://litcave.rudi.ir/neatroff.pdf).
 
 ## Features
 
