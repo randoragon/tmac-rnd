@@ -46,16 +46,18 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
     - **headings:** SHs, NHs, Hs, Hf, H{
     - **lists:** BL, AL, LI, LE
     - **media:** PDF, URL
-    - **toc:** toc.init, toc.chapter, toc.section, TOC, CP, TOC\_
+    - **toc:** toc.init, toc.chapter, toc.section, TOC, CP
 5. Reserved the following number registers:
     - **headings:** SH, SH1..SH5, NH1..NH5
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
     - **toc:** TM
-    - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i, \_u
+    - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i, \_u, NT
 6. Reserved the following string names:
     - **headings:** \_a, \_f
     - **media:** def\_col\_url, col\_url, \_col
     - **toc:** \_s
+7. Reserved the following environment names:
+    - \_toc
 
 ### New Headings
 
@@ -184,7 +186,7 @@ string. If you want a different color, you should temporarily define the
 
 ### Table of Contents
 
-All headings automatically get diverted to a table of contents.
+All headings can be automatically included into the ToC.
 You can control which headings get added by changing the value
 of the `TM` register which denotes the largest heading number
 to be included, and is equal to 2 by default (which means
@@ -209,9 +211,22 @@ The *toc name* argument lets you override *on-page name* for
 those purposes. If you don't specify *toc name*, *on-page name*
 will be used by default.
 
-At any time you can call `TOC` to print the table of contents
-starting from a new page. Typically this is done at the end
-of the document, once all headings have been accumulated.
+The ToC can be printed anywhere within the document, any number
+of times, without the need to wait for headings/chapters to accumulate.
+To print the ToC, you must supply the **exact line**:
+
+    .TOC
+
+This convenient functionality is made possible by utilizing the
+`stderr` stream as intermediary output instead of relying on diversions.
+However, this comes at a cost:
+
+- An external script must be used to capture and parse `stderr`, then
+merge it into the original document and recompile.
+- Please take a look at the `ntmake` script within this repository
+to see how you can build the document with ToC.
+- **If you don't plan on using .TOC, you can compile as normal,
+without any complications!**
 
 ## Dependencies
 

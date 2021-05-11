@@ -1,0 +1,79 @@
+#!/usr/bin/sh
+
+# Intakes Neatroff source code on stdin, produces a PDF on stdout.
+# This script provides an easy way to compile a Neatroff document
+# formatted with the rnd macro package. The most complex mechanism
+# is Table of Contents generation described below.
+#
+# ToC is generated in the following way:
+# src/tmac.toc uses a set of macros to output neatroff code
+# to stderr. To distinguish ToC code from other stderr output,
+# the relevant lines are always preceded by "toc_begin" and
+# followed by "toc_end", like so:
+#   toc_begin
+#   sloc1
+#   sloc2
+#   sloc3
+#   toc_end
+# This script captures and concatenates the ToC lines, and then
+# looks for this precise line in the source code: ".TOC".
+# This ".TOC" line is not an actual macro that does anything,
+# it is merely a marker for this script. The ".TOC" line is
+# removed and in its place the ToC code is inserted.
+#
+# After the ToC is inserted in the right place, this final
+# version of the source code is once again fed to the neatroff
+# toolchain to produce the final PDF.
+#
+# In total, 2 pass-throughs are required.
+
+# Neatroff executables with flags
+ROFF="ntroff -mpost -msdisp -mskeep -msrefs $*"
+PPDF="ntpdf -pa4"
+EQN="nteqn"
+REFR="ntrefer -p ${XDG_CONFIG_HOME:-$HOME/.config}/refer-bib"
+PIC="ntpic"
+TBL="nttbl"
+SOIN="ntsoin"
+
+# Temporary files for stitching the output together
+raw="$(mktemp --tmpdir ntmake.XXXXX)"
+err="$(mktemp --tmpdir ntmake.XXXXX)"
+toc="$(mktemp --tmpdir ntmake.XXXXX)"
+out="$(mktemp --tmpdir ntmake.XXXXX)"
+chmod 600 -- "$raw" "$err" "$toc" "$out"
+
+# Store source code in raw, stderr output in err
+cat <&0 >"$raw"
+$SOIN <"$raw" | $REFR | $PIC | $TBL | $EQN | $ROFF >/dev/null 2>"$err"
+
+# Parse err so that only the lines between "toc_begin" and "toc_end"
+# are included in the toc file. This is a convention that guarantees
+# no other stderr output will pollute the document.
+in=
+:>"$toc"
+while read -r line; do
+    if [ "$line" = 'toc_begin' ]; then
+        in=1
+    elif [ "$line" = 'toc_end' ]; then
+        in=
+    elif [ -n "$in" ]; then
+        printf "%s\n" "$line" >>"$toc"
+    fi
+done <"$err"
+
+# Insert toc into the part of file where '.TOC' is present
+:>"$out"
+while read -r line; do
+    if [ "$line" = '.TOC' ]; then
+        cat -- "$toc" >>"$out"
+    else
+        printf "%s\n" "$line" >>"$out"
+    fi
+done <"$raw"
+
+# Compile the final source code
+$SOIN <"$out" | $REFR | $PIC | $TBL | $EQN | $ROFF 2>/dev/null | $PPDF
+
+# Cleanup
+rm -rf -- "$raw" "$err" "$toc" "$out"

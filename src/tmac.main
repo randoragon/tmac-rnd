@@ -1,11 +1,6 @@
 .\" modified ms macros
 .\" vim: ft=groff
 .
-.\" External dependencies
-.so \\*(sd/tmac.sdisp
-.so \\*(sd/tmac.skeep
-.so \\*(sd/tmac.srefs
-.
 .ds sd \n(.D
 .\" RT -  reset everything to normal state
 .de RT
@@ -746,6 +741,7 @@ ABSTRACT
 \}
 .mk #T
 ....if t .if \\n(.o+\\n(LL>7.75i .tm Offset + line length exceeds 7.75 inches, too wide
+.rr NT
 ..
 .de XK
 .nr TD 1
@@ -789,7 +785,7 @@ ABSTRACT
 .lt \\n(LLu
 .pc %
 .nr PN \\n%
-.if \\n%-1 .tl \\*(LH\\*(CH\\*(RH
+.if \\n%-1 .if !\\n(NT .tl \\*(LH\\*(CH\\*(RH
 .lt \\n(.lu
 ..
 .   \"FO - footer of page
@@ -1553,10 +1549,7 @@ ABSTRACT
 ..
 .   \" CP - Append a new chapter and print it on a new page
 .de CP
-.ds _a \\*(LH
-.ds _b \\*(CH
-.ds _c \\*(RH
-.rm LH CH RH
+.nr NT 1
 .ps 18
 .vs \\n(.s+2
 .bp
@@ -1565,26 +1558,7 @@ ABSTRACT
 \\$1
 .br
 \\l'\\n(.lu-\\n(.iu_'
-.ds LH \\*(_a
-.ds CH - % -
-.ds RH \\*(_c
-.rm _a _b _c
 .vs
 .ps
 .sp 2
-..
-.rn TOC TOC_
-.de TOC
-.ds _a \\*(LH
-.ds _b \\*(CH
-.ds _c \\*(RH
-.nr _h \\n(HM
-.nr HM 0
-.rm LH CH RH
-.TOC_
-.ds LH \\*(_a
-.ds CH - % -
-.ds RH \\*(_c
-.rm _a _b _c
-.nr HM \\n(_h
 ..

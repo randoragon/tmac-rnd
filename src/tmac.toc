@@ -1,67 +1,73 @@
 . \" Table of Contents generation
-. \" These macros work independently of any
-. \" external packages.
+. \" vim: ft=groff
 .
 .   \" Initialization, run once at the start
 .de toc.init
-.ev toc
 .nr CH 0 1
-.di toc.di
-.ft 1
-.ad l
-.ps 18
-.vs \\n(.s+2
-.post.name toc
-TABLE OF CONTENTS
-.sp -.85
-\\l'\\n(.lu-\\n(.iu_'
-.br
-.di
-.ev
+.tm toc_begin
+.tm .br
+.tm .ev _toc
+.tm .nr NT 1
+.tm .bp
+.tm .ft 1
+.tm .ad l
+.tm .ps 18
+.tm .vs \\\\n(.s+2
+.tm .post.name toc
+.tm TABLE OF CONTENTS
+.tm .sp -.85
+.tm \\\\l'\\\\n(.lu-\\\\n(.iu_'
+.tm .br
+.tm .ev
+.tm toc_end
 ..
 .   \" Append a new chapter
 .de toc.chapter
-.ev toc
-.da toc.di
-.sp 1
-.ft 3
-.ps \\n(PS+4
-.vs \\n(.s+2
-.ta .4i
-.ds _s \\$2\t\\$3\\h'\\n(.lu-\\n(.iu-\\w'\t\\$3'u-\\w'\\$4'u'\\$4
-.nr _w \\w'\\*(_s'
-.nr _h 1v+20
-\\v'20u'\\X'link "\\$1" \\n(_w -\\n(_h'\\v'-20u'
-\\*(_s
-.rm _s
-.sp 1
-.di
-.ev
+.tm toc_begin
+.tm .ev _toc
+.tm .sp 1
+.tm .ft 3
+.tm .ps \\\\n(PS+4
+.tm .vs \\\\n(.s+2
+.tm .ta .4i
+.tm .ds _s \\$2\\\\t\\$3\\\\h'\\\\n(.lu-\\\\n(.iu-\\\\w'\\\\t\\$3'u-\\\\w'\\$4'u'\\$4
+.tm .nr _w \\\\w'\\\\*(_s'
+.tm .nr _h 1v+20
+.tm \\\\v'20u'\\\\X'link "\\$1" \\\\n(_w -\\\\n(_h'\\\\v'-20u'
+.tm \\\\*(_s
+.tm .rm _s
+.tm .sp 1
+.tm .ev
+.tm toc_end
 ..
 .   \" Append a new section
 .de toc.section
-.ev toc
-.da toc.di
-.ft 1
-.ps \\n(PS+2
-.vs \\n(.s+2
-.ta .4i
-.ds _s \\$2\\l'\\n(.lu-\\n(.iu-\\w'\t\\$2'u-\\w'\\$3'u.'\\$3
-.nr _w \\w'\\*(_s'
-.nr _h 1v+10
-\\h'.4i'\\v'20u'\\X'link "\\$1" \\n(_w -\\n(_h'\\v'-20u'\\h'-.4i'
-\t\\*(_s
-.rm _s
-.br
-.sp .1
-.di
-.ev
+.tm toc_begin
+.tm .ev _toc
+.tm .ft 1
+.tm .ps \\\\n(PS+2
+.tm .vs \\\\n(.s+2
+.tm .ta .4i
+.tm .ds _s \\$2\\\\l'\\\\n(.lu-\\\\n(.iu-\\\\w'\\\\t\\$2'u-\\\\w'\\$3'u.'\\$3
+.tm .nr _w \\\\w'\\\\*(_s'
+.tm .nr _h 1v+10
+.tm \\\\h'.4i'\\\\v'20u'\\\\X'link "\\$1" \\\\n(_w -\\\\n(_h'\\\\v'-20u'\\\\h'-.4i'
+.tm \\\\&\\t\\\\*(_s
+.tm .rm _s
+.tm .br
+.tm .sp .1
+.tm .ev
+.tm toc_end
 ..
-.   \" Print table of contents
+.   \" Print Table of Contents.
+.   \" This "macro" doesn't actually do anything.
+.   \" ToC is generated in such a way that all output
+.   \" must be captured from stderr, and then an external
+.   \" script searches through the original source file
+.   \" and substitutes a line ".TOC" with the output
+.   \" from stderr. That way, you can insert ToC anywhere
+.   \" in the document, and don't have to wait until the
+.   \" end like with diversions. The downside is, the
+.   \" document needs several pass-throughs to compile.
 .de TOC
-.bp
-.nr _d \\n(.u
-.nf
-.toc.di
-.if \\n(_d .fi
 ..
