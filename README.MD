@@ -85,7 +85,7 @@ be used.
 
 Headings have configurable point sizes per level. The point size
 of each level is stored in `SH1..SH5` for section headings and
-in `NH1..NH2` for numbered headings. You can easily set these
+in `NH1..NH5` for numbered headings. You can easily set these
 registers to desired values using the new `SHs`, `NHs` and `Hs`
 macros:
 
