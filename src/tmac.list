@@ -1,4 +1,5 @@
 .\" Bulleted and ordered list implementation
+.\" vim: ft=groff
 .
 .\" List level
 .nr LV 0
