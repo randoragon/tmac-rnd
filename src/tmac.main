@@ -34,6 +34,7 @@
 .   \"IZ - initialization
 .de IZ
 .nr TN 0
+.nr NT 1
 .em EM
 . \"  ACCENTS  say \*'e or \*`e to get e acute or e grave both were 4/10
 .ds ' \h'\w'e'u*1/10'\z\(aa\h'-\w'e'u*1/10'
@@ -427,6 +428,7 @@ ABSTRACT
 .br
 .ll \\n(LLu
 .if \\n(TV+\\n(AV .ns
+.di _d
 .if \\n(TV .TX
 .if \\n(AV .AX
 .if \\n(TV+\\n(AV .rs
@@ -443,6 +445,28 @@ ABSTRACT
 .nf
 .WB
 .ls
+.di
+.nf
+.ie \\n(DT=3 \{\
+. \" book profile
+. \" separate cover page
+.nr _h \\n(.pu-\\n(HMu-\\n(FMu-\\n(dnu
+.fl
+.rs
+.sp \\n(_hu/2u
+._d\}
+.el .ie \\n(DT=2 \{\
+. \" report profile
+. \" separate cover page
+.nr _h \\n(.pu-\\n(HMu-\\n(FMu-\\n(dnu
+.fl
+.rs
+.sp \\n(_hu/2u
+._d\}
+.el \{\
+. \" note profile
+._d\}
+.rm _d
 .fi
 .ad \\n(SJ
 ..
@@ -785,7 +809,7 @@ ABSTRACT
 .lt \\n(LLu
 .pc %
 .nr PN \\n%
-.if \\n%-1 .if !\\n(NT .tl \\*(LH\\*(CH\\*(RH
+.if !\\n(NT .tl \\*(LH\\*(CH\\*(RH
 .lt \\n(.lu
 ..
 .   \"FO - footer of page
@@ -1152,6 +1176,7 @@ ABSTRACT
 ..
 .   \"BG - begin, execute at first PP
 .de BG
+.if !\\n(DT .note
 .br
 .ME
 .rm ME
@@ -1547,18 +1572,36 @@ ABSTRACT
 .de ]
 ]
 ..
-.   \" CP - Append a new chapter and print it on a new page
+.   \" CP - Append and print a new chapter
 .de CP
-.nr NT 1
-.ps 18
-.vs \\n(.s+2
-.bp
-.ie \\n(.$>2 .toc.chapter \\n+(CH "\\$2" "\\$3" \\n%
-.el .toc.chapter \\n+(CH "\\$2" "\\$1" \\n%
+.RT
+.ie \\n(DT=1 \{\
+.   ps \\n(PS+8
+.   vs \\n(.s+2
+.   sp 2
+.\}
+.el .ie \\n(DT=2 \{\
+.   ps \\n(PS+10
+.   vs \\n(.s+2
+.   nr NT 1
+.   bp
+.\}
+.el .ie \\n(DT=3 \{\
+.   ps \\n(PS+14
+.   vs \\n(.s+2
+.   nr NT 1
+.   bp
+.   rs
+.   nr _d \\n(.pu-\\n(HMu-\\n(FMu
+.   sp \\n(_du/3u
+.\}
+.el ERROR: Invalid DT register value \\n(DT
+.ie \\n(.$>2 .toc.chapter \\n+(CH "\\$2" "\\$3" \\n(PN
+.el .toc.chapter \\n+(CH "\\$2" "\\$1" \\n(PN
 \\$1
-.br
+.sp -0.7
 \\l'\\n(.lu-\\n(.iu_'
-.vs
-.ps
 .sp 2
+.ps
+.vs
 ..

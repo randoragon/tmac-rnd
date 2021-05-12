@@ -9,6 +9,8 @@
     - [Lists](https://github.com/Randoragon/tmac-rnd#lists)
     - [Media Macros](https://github.com/Randoragon/tmac-rnd#media-macros)
     - [Table of Contents](https://github.com/Randoragon/tmac-rnd#table-of-contents-1)
+    - [Document Profiles](https://github.com/Randoragon/tmac-rnd#document-profiles)
+3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
 3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
 4. [Installation](https://github.com/Randoragon/tmac-rnd#installation)
 
@@ -47,10 +49,12 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
     - **lists:** BL, AL, LI, LE
     - **media:** PDF, URL
     - **toc:** toc.init, toc.chapter, toc.section, TOC, CP
+    - **profile:** note, report, book, fmt
 5. Reserved the following number registers:
     - **headings:** SH, SH1..SH5, NH1..NH5
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
     - **toc:** TM
+    - **profile:** DT
     - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i, \_u, NT
 6. Reserved the following string names:
     - **headings:** \_a, \_f
@@ -227,6 +231,37 @@ merge it into the original document and recompile.
 to see how you can build the document with ToC.
 - **If you don't plan on using .TOC, you can compile as normal,
 without any complications!**
+
+### Document Profiles
+
+In order to provide minimal support for different document
+types, there are a couple of macros that control the global
+configuration. All of these should be invoked as one of the
+first macros (if not first).
+
+    .note
+    .report
+    .book
+
+1. `note` is the default profile which aims to provide
+sane defaults for writing quick notes, akin to markdown.
+2. `report` is for writing technical reports.
+3. `book` is for writing simple books.
+
+#### Brief profiles comparison
+
+Feature | `note` | `report` | `book`
+---: | :---: | :---: | :---:
+page numbering | | ✗ | ✗
+separate cover page | | ✗ | ✗
+`.TOC` causes page break | | ✗ | ✗
+`.CP` causes page break | | ✗ | ✗
+
+The `book` and `report` produce slightly different output
+visually in some aspects. For example, a new chapter in a
+report starts from the top of the page, whereas in a book
+there is additional spacing from the top of the page and
+the chapter name point size is slightly bigger, etc.
 
 ## Dependencies
 

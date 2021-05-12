@@ -5,17 +5,20 @@
 .de toc.init
 .nr CH 0 1
 .tm toc_begin
-.tm .br
+.tm .fl
 .tm .ev _toc
-.tm .nr NT 1
-.tm .bp
+.tm .if \\\\n(DT=1 .sp 4
+.tm .if \\\\n(DT=2 .nr NT 1
+.tm .if \\\\n(DT=2 .bp
+.tm .if \\\\n(DT=3 .nr NT 1
+.tm .if \\\\n(DT=3 .bp
 .tm .ft 1
 .tm .ad l
-.tm .ps 18
+.tm .ps \\n(PS+6
 .tm .vs \\\\n(.s+2
 .tm .post.name toc
 .tm TABLE OF CONTENTS
-.tm .sp -.85
+.tm .sp -0.7
 .tm \\\\l'\\\\n(.lu-\\\\n(.iu_'
 .tm .br
 .tm .ev
