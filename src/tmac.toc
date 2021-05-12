@@ -14,12 +14,12 @@
 .tm .if \\\\n(DT=3 .bp
 .tm .ft 1
 .tm .ad l
-.tm .ps \\n(PS+6
+.tm .ps \\\\n(PS+6
 .tm .vs \\\\n(.s+2
 .tm .post.name toc
 .tm TABLE OF CONTENTS
 .tm .sp -0.7
-.tm \\\\l'\\\\n(.lu-\\\\n(.iu_'
+.tm \\\\l'\\n(.lu-\\n(.iu_'
 .tm .br
 .tm .ev
 .tm toc_end
@@ -33,7 +33,7 @@
 .tm .ps \\\\n(PS+4
 .tm .vs \\\\n(.s+2
 .tm .ta .4i
-.tm .ds _s \\$2\\\\t\\$3\\\\h'\\\\n(.lu-\\\\n(.iu-\\\\w'\\\\t\\$3'u-\\\\w'\\$4'u'\\$4
+.tm .ds _s \\$2\\\\t\\$3\\\\h'\\n(.lu-\\n(.iu-\\\\w'\\\\t\\$3'u-\\\\w'\\$4'u'\\$4
 .tm .nr _w \\\\w'\\\\*(_s'
 .tm .nr _h 1v+20
 .tm \\\\v'20u'\\\\X'link "\\$1" \\\\n(_w -\\\\n(_h'\\\\v'-20u'
@@ -51,7 +51,7 @@
 .tm .ps \\\\n(PS+2
 .tm .vs \\\\n(.s+2
 .tm .ta .4i
-.tm .ds _s \\$2\\\\l'\\\\n(.lu-\\\\n(.iu-\\\\w'\\\\t\\$2'u-\\\\w'\\$3'u.'\\$3
+.tm .ds _s \\$2\\\\l'\\n(.lu-\\n(.iu-\\\\w'\\\\t\\$2'u-\\\\w'\\$3'u.'\\$3
 .tm .nr _w \\\\w'\\\\*(_s'
 .tm .nr _h 1v+10
 .tm \\\\h'.4i'\\\\v'20u'\\\\X'link "\\$1" \\\\n(_w -\\\\n(_h'\\\\v'-20u'\\\\h'-.4i'
