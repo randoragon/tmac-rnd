@@ -1596,8 +1596,9 @@ ABSTRACT
 .   sp \\n(_du/3u
 .\}
 .el ERROR: Invalid DT register value \\n(DT
-.ie \\n(.$>2 .toc.chapter \\n+(CH "\\$2" "\\$3" \\n(PN
-.el .toc.chapter \\n+(CH "\\$2" "\\$1" \\n(PN
+.post.name "c\\n+(CH"
+.ie \\n(.$>2 .toc.chapter "#c\\n(CH" "\\$2" "\\$3" \\n(PN
+.el .toc.chapter "#c\\n(CH" "\\$2" "\\$1" \\n(PN
 \\$1
 .sp -0.7
 \\l'\\n(.lu-\\n(.iu_'

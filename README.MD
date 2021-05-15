@@ -215,6 +215,10 @@ The *toc name* argument lets you override *on-page name* for
 those purposes. If you don't specify *toc name*, *on-page name*
 will be used by default.
 
+Chapters automatically create named references of the form
+`#c1`, `#c2`, `#c3` and so on. These references are used when
+generating the table of contents.
+
 The ToC can be printed anywhere within the document, any number
 of times, without the need to wait for headings/chapters to accumulate.
 To print the ToC, you must supply the **exact line**:
