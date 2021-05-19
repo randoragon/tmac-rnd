@@ -1163,8 +1163,10 @@ ABSTRACT
 .if n .ul 1000
 .post.name "h\\*(SN"
 .ps \\n[NH\\$1]
-.if \\$1<=\\n(TM .toc.section "#h\\*(SN" "\\*(SN \\$*" \\n%
-.shift 1
+.ie \\$1<=\\n(TM \{\
+.   shift 1
+.   toc.section "#h\\*(SN" "\\*(SN \\$*" \\n%\}
+.el .shift 1
 .ie \\n(_u \{\
 .   ie !"\\*(_f"" .UL "\\f[\\*(_f]\\*(SN \\$*\\fP"
 .   el .UL "\\*(SN \\$*"\}
@@ -1575,6 +1577,11 @@ ABSTRACT
 .   \" CP - Append and print a new chapter
 .de CP
 .RT
+.nr H1 0
+.nr H2 0
+.nr H3 0
+.nr H4 0
+.nr H5 0
 .ie \\n(DT=1 \{\
 .   ps \\n(PS+8
 .   vs \\n(.s+2
