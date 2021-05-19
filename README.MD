@@ -59,7 +59,7 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
 6. Reserved the following string names:
     - **headings:** \_a, \_f
     - **media:** def\_col\_url, col\_url, \_col
-    - **toc:** \_s
+    - **toc:** \_s, HP
 7. Reserved the following environment names:
     - \_toc
 
@@ -120,13 +120,20 @@ all formats are set to arabic (1).
 For all headings, a Neatroff **named reference** is automatically
 created.
 
-For numbered headings, the reference name matches the "prefix".
-For example, a numbered heading "1. Example" will have the reference
-`#h1.`, while a heading with prefix "A.3.ii. Nested Example" will
-have the reference `#hA.3.ii.` (**note the trailing periods!**).
+For numbered headings, the reference name matches the current
+chapter prefix (*toc prefix*) followed by the heading "prefix".
+For example, if you start a new chapter with prefix "1", a
+numbered heading "1. Example" will have the reference
+`#h11.`, while a heading with prefix "A.3.ii. Nested Example"
+within a chapter prefixed "B" will have the reference `#hBA.3.ii.`
+(**note the trailing periods!**). If a heading appears outside
+of a chapter, the *toc prefix* part is an empty string (i.e.
+it should be skipped).
 
 Section headings don't have prefixes, so they are enumerated
 normally, i.e. `#h1`, `#h2` and so on (**no trailing period!**).
+The rules for chapter prefixes are the same as with numbered
+headings.
 
 ### Lists
 

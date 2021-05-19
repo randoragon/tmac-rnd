@@ -112,6 +112,8 @@
 .nr NH5 12
 . \" Section heading counter
 .nr SH 0 1
+. \" Last chapter prefix (initially empty)
+.rm HP
 . \" Table of contents
 .toc.init
 .nr TM 2 \" Max heading level to be included in TOC
@@ -1114,9 +1116,9 @@ ABSTRACT
 .nr _d \n(.j
 .if !"\\*(_a"" .ad \\*(_a
 .if n .ul 1000
-.post.name "h\\n+(SH"
+.post.name "h\\*(HP\\n+(SH"
 .ps \\n[SH\\$1]
-.if \\$1<=\\n(TM .toc.section "#h\\n(SH" "\\$*" \\n%
+.if \\$1<=\\n(TM .toc.section "#h\\*(HP\\n(SH" "\\$*" \\n%
 .shift 1
 .ie \\n(_u \{\
 .   ie !"\\*(_f"" .UL "\\f[\\*(_f]\\$*\\fP"
@@ -1161,11 +1163,11 @@ ABSTRACT
 .if !"\\*(_a"" .ad \\*(_a
 .if !\\n[NH\\$1] .nr NH\\$1 \\n(PS
 .if n .ul 1000
-.post.name "h\\*(SN"
+.post.name "h\\*(HP\\*(SN"
 .ps \\n[NH\\$1]
 .ie \\$1<=\\n(TM \{\
 .   shift 1
-.   toc.section "#h\\*(SN" "\\*(SN \\$*" \\n%\}
+.   toc.section "#h\\*(HP\\*(SN" "\\*(SN \\$*" \\n%\}
 .el .shift 1
 .ie \\n(_u \{\
 .   ie !"\\*(_f"" .UL "\\f[\\*(_f]\\*(SN \\$*\\fP"
@@ -1603,6 +1605,7 @@ ABSTRACT
 .   sp \\n(_du/3u
 .\}
 .el ERROR: Invalid DT register value \\n(DT
+.ds HP \\$2
 .post.name "c\\n+(CH"
 .ie \\n(.$>2 .toc.chapter "#c\\n(CH" "\\$2" "\\$3" \\n(PN
 .el .toc.chapter "#c\\n(CH" "\\$2" "\\$1" \\n(PN
