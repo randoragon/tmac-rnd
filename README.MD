@@ -51,7 +51,7 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
     - **toc:** toc.init, toc.chapter, toc.section, TOC, CP
     - **profile:** note, report, book, fmt
 5. Reserved the following number registers:
-    - **headings:** SH, SH1..SH5, NH1..NH5
+    - **headings:** SH, SH1..SH5, NH1..NH5, \_s, \_a
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
     - **toc:** TM
     - **profile:** DT
@@ -65,14 +65,28 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
 
 ### New Headings
 
-The new heading syntax is as follows:
+The new heading syntax comes in 2 forms which look as follows:
 
     .SH [flags] <level> text...
     .NH [flags] <level> text...
 
+**or**
+
+    .SH [flags] <level>
+    text...
+    .HE
+    .NH [flags] <level>
+    text...
+    .HE
+
+The second form exists in case you want to have a URL in your
+heading, or any other advanced formatting that can't be done
+in-line. There is one caveat: the second form does not support
+the *u* flag (flags are explained below).
+
 #### Flags
 
-*flags* are a single word composed of lowercase letters of the
+*flags* is a single word composed of lowercase letters of the
 following form:
 
     [l|c|r][b][i][u]
@@ -82,7 +96,7 @@ following form:
 - *i* denotes *italics*
 - *u* denotes <u>underline</u>
 
-Flags can be skipped, in which case the current settings will
+Flags can be skipped, in which case the default settings will
 be used.
 
 #### Point size

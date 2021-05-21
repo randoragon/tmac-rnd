@@ -4,6 +4,7 @@
 .ds sd \n(.D
 .\" RT -  reset everything to normal state
 .de RT
+.if \\n(HE ERROR: Missing .HE macro
 .if !\\n(1T .BG
 .ce 0
 .if !\\n(IK .if !\\n(IF .if !\\n(IX .if !\\n(BE .if !\\n(FT .di
@@ -936,7 +937,7 @@ ABSTRACT
 .el .nr SH4 \\n[SH3]
 .ie !"\\$5"" .nr SH5 \\$5
 .el .nr SH5 \\n[SH4]
-.
+..
 .   \"NHs - set numbered heading point sizes
 .de NHs
 .nr NH1 \\$1
@@ -1113,21 +1114,31 @@ ABSTRACT
 .el .ie !"\\*(_f"" .shift 1
 .el .if \\n(_u .shift 1
 .if !\\n[SH\\$1] .nr SH\\$1 \\n(PS
-.nr _d \n(.j
+.nr _a \\n(.j
 .if !"\\*(_a"" .ad \\*(_a
+.rm _a
 .if n .ul 1000
 .post.name "h\\*(HP\\n+(SH"
+.nr _s \\n(.s
 .ps \\n[SH\\$1]
 .if \\$1<=\\n(TM .toc.section "#h\\*(HP\\n(SH" "\\$*" \\n%
 .shift 1
-.ie \\n(_u \{\
-.   ie !"\\*(_f"" .UL "\\f[\\*(_f]\\$*\\fP"
-.   el .UL "\\$*"\}
+.ie \\n.$>0 \{\
+.   ie \\n(_u \{\
+.      ie !"\\*(_f"" .UL "\\f[\\*(_f]\\$*\\fP"
+.      el .UL "\\$*"\}
+.   el \{\
+.      ie !"\\*(_f"" \\f[\\*(_f]\\$*\\fP
+.      el \\$*\}
+.   fl
+.   ad \\n(_a
+.   rr _a
+.   ps
+.\}
 .el \{\
-.   ie !"\\*(_f"" \\f[\\*(_f]\\$*\\fP
-.   el \\$*\}
-.fl
-.ad \\n(_d
+.   nr HE 1
+.   if !"\\*(_f"" .ft \\*(_f\}
+.rm _f
 ..
 .   \"NH - numbered heading
 .de N{
@@ -1159,24 +1170,45 @@ ABSTRACT
 .el .ie !"\\*(_f"" .shift 1
 .el .if \\n(_u .shift 1
 .N{ \\$1
-.nr _d \\n(.j
+.nr _a \\n(.j
 .if !"\\*(_a"" .ad \\*(_a
+.rm _a
 .if !\\n[NH\\$1] .nr NH\\$1 \\n(PS
 .if n .ul 1000
 .post.name "h\\*(HP\\*(SN"
+.nr _s \\n(.s
 .ps \\n[NH\\$1]
 .ie \\$1<=\\n(TM \{\
 .   shift 1
 .   toc.section "#h\\*(HP\\*(SN" "\\*(SN \\$*" \\n%\}
 .el .shift 1
-.ie \\n(_u \{\
-.   ie !"\\*(_f"" .UL "\\f[\\*(_f]\\*(SN \\$*\\fP"
-.   el .UL "\\*(SN \\$*"\}
+.ie \\n(.$>0 \{\
+.   ie \\n(_u \{\
+.      ie !"\\*(_f"" .UL "\\f[\\*(_f]\\*(SN \\$*\\fP"
+.      el .UL "\\*(SN \\$*"\}
+.   el \{\
+.      ie !"\\*(_f"" \\f[\\*(_f]\\*(SN \\$*\\fP
+.      el \\*(SN \\$*\}
+.   fl
+.   ad \\n(_a
+.   rr _a
+.   ps
+.\}
 .el \{\
-.   ie !"\\*(_f"" \\f[\\*(_f]\\*(SN \\$*\\fP
-.   el \\*(SN \\$*\}
-.fl
-.ad \\n(_d
+.   nr HE 1
+.   ie !"\\*(_f"" \\f[\\*(_f]\\*(SN 
+.   el \\*(SN \}
+.rm _f
+..
+.   \"HE - finish header
+.de HE
+.ie \\n(HE=0 ERROR: No heading macro is active
+.el \{\
+.   fl
+.   ps \\n(_s
+.   ad \\n(_a
+.   rr HE _a _s
+.\}
 ..
 .   \"BG - begin, execute at first PP
 .de BG
