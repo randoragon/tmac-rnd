@@ -51,9 +51,9 @@
 .\" which will be printed after the hyperlink
 .\" text, similar to how .B and .I macros behave.
 .de URL
-.ie "\\*[col_url]"" .ds _col \\*[def_col_url]
+.ie \\*[col_url] .ds _col \\*[def_col_url]
 .el .ds _col \\*[col_url]
-.ie !"\\$2"" \\*[post.url "\\$1" "\\m[\\*[_col]]\\$2\\m[]"]\\$3
+.ie !\\$2 \\*[post.url "\\$1" "\\m[\\*[_col]]\\$2\\m[]"]\\$3
 .el \\*[post.url "\\$1" "\\m[\\*[_col]]\\$1\\m[]"]\\$3
 ..
 .\" Initializes ms configuration for a simple note.

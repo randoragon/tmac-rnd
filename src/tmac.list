@@ -13,12 +13,12 @@
 .nr LT\\n(LV 0
 .ie \\n(LV>9 ERROR: maximum list level surpassed
 .el \{\
-.   ie !"\\$1"" .ds LC\\n(LV \\$1
+.   ie !\\$1 .ds LC\\n(LV \\$1
 .   el .ds LC\\n(LV \(bu
 .   if \\n(Lv=0 .nr LD\\n(Lv \\n(.i
-.   ie !"\\$2"" .nr LD\\n(LV \\n[LD\\n(Lv]+\\$2
+.   ie !\\$2 .nr LD\\n(LV \\n[LD\\n(Lv]+\\$2
 .   el .nr LD\\n(LV \\n[LD\\n(Lv]+4n
-.   ie !"\\$3"" .nr LO\\n(LV \\$3
+.   ie !\\$3 .nr LO\\n(LV \\$3
 .   el .nr LO\\n(LV \\n(LO
 .   ds LS\\n(LV \\$4
 .\}
@@ -31,13 +31,13 @@
 .nr LT\\n(LV 1
 .ie \\n(LV>9 ERROR: maximum list level surpassed
 .el \{\
-.   ie !"\\$1"" .af LC\\n(LV \\$1
+.   ie !\\$1 .af LC\\n(LV \\$1
 .   el .af LC\\n(LV 1
 .   nr LC\\n(LV 0 1
 .   if \\n(Lv=0 .nr LD\\n(Lv \\n(.i
-.   ie !"\\$2"" .nr LD\\n(LV \\n[LD\\n(Lv]+\\$2
+.   ie !\\$2 .nr LD\\n(LV \\n[LD\\n(Lv]+\\$2
 .   el .nr LD\\n(LV \\n[LD\\n(Lv]+4n
-.   ie !"\\$3"" .nr LO\\n(LV \\$3
+.   ie !\\$3 .nr LO\\n(LV \\$3
 .   el .nr LO\\n(LV \\n(LO
 .   ds LS\\n(LV \\$4
 .\}
@@ -48,21 +48,21 @@
 .ie \\n(LV=0 ERROR: missing start of list
 .el \{\
 .   nr Lv \\n(LV-1
-.   ie !"\\$2"" .nr _d \\n[LD\\n(Lv]u+\\$2
+.   ie !\\$2 .nr _d \\n[LD\\n(Lv]u+\\$2
 .   el .nr _d \\n[LD\\n(LV]
-.   ie !"\\$3"" .nr _o \\$3
+.   ie !\\$3 .nr _o \\$3
 .   el .nr _o \\n[LO\\n(LV]
 .   RT
 .   if \\n[LT\\n(LV]=0 \{\
-.       ie !"\\$1"" .ds Li \\$1
+.       ie !\\$1 .ds Li \\$1
 .       el .ds Li \\*[LC\\n(LV]
 .   \}
 .   if \\n[LT\\n(LV]=1 \{\
 .       nr LC\\n(LV +1
-.       ie !"\\$1"" .ds Li \\$1
+.       ie !\\$1 .ds Li \\$1
 .       el .ds Li \\n[LC\\n(LV].
 .   \}
-.   if !"\\*[LS\\n(LV]"" .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
+.   if !\\*[LS\\n(LV] .ie \\n[Ls\\n(LV] .sp \\*[LS\\n(LV]
 .   el .nr Ls\\n(LV 1
 .   in \\n(_du+\\n(_ou
 .   ti \\n(_du
