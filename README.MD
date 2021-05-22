@@ -18,7 +18,12 @@
 
 `rnd` is a general-purpose macro package for troff that is based on
 the old `ms` macros originally used by Bell Labs, with numerous
-extensions and/or slight modifications.
+extensions, additions and modifications.
+
+The package aims to provide a flexible interface with many settings
+that globally affect the document (inspired by the `mm` macros), but
+unlike `mm` it enables the user to override most defaults on an
+individual basis.
 
 The `rnd` macros serve as my primary tool for writing documents in
 troff, and as such I reserve the right to change them in any way I
