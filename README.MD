@@ -45,19 +45,19 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
     - TL, AU, AI (visual tweaks)
     - SH, NH
 4. Added the following macros:
-    - **headings:** SHs, NHs, Hs, Hf, H{
+    - **headings:** SHs, NHs, Hs, SHo, NHo, Ho, NHf, HE, H{
     - **lists:** BL, AL, LI, LE
     - **media:** PDF, URL
     - **toc:** toc.init, toc.chapter, toc.section, TOC, CP
     - **profile:** note, report, book, fmt
 5. Reserved the following number registers:
-    - **headings:** SH, SH1..SH5, NH1..NH5, \_s, \_a
+    - **headings:** SH, SH1..SH5, NH1..NH5, HE, \_s, \_a
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
     - **toc:** TM
     - **profile:** DT
     - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i, \_u, NT
 6. Reserved the following string names:
-    - **headings:** \_a, \_f
+    - **headings:** SH1..SH5, NH1..NH5, \_a, \_f
     - **media:** def\_col\_url, col\_url, \_col
     - **toc:** \_s, HP
 7. Reserved the following environment names:
@@ -67,26 +67,31 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
 
 The new heading syntax comes in 2 forms which look as follows:
 
-    .SH [flags] <level> text...
-    .NH [flags] <level> text...
+    .SH [options] <level> text...
+    .NH [options] <level> text...
 
 **or**
 
-    .SH [flags] <level>
+    .SH [options] <level>
     text...
-    .HE
-    .NH [flags] <level>
+    .HE <toc name>
+    .NH [options] <level>
     text...
-    .HE
+    .HE <toc name>
 
 The second form exists in case you want to have a URL in your
 heading, or any other advanced formatting that can't be done
 in-line. There is one caveat: the second form does not support
-the *u* flag (flags are explained below).
+the *u* option (options are explained below).
 
-#### Flags
+*toc name* is the name displayed in a table of contents. Only
+headings of the second form require it to be specified separately
+in the `HE` macro, because for headings of the first form, the
+text is taken directly from the `NH` or `SH` macro.
 
-*flags* is a single word composed of lowercase letters of the
+#### Options
+
+*options* is a single word composed of lowercase letters of the
 following form:
 
     [l|c|r][b][i][u]
@@ -96,8 +101,20 @@ following form:
 - *i* denotes *italics*
 - *u* denotes <u>underline</u>
 
-Flags can be skipped, in which case the default settings will
-be used.
+Options can be skipped, in which case the default settings will
+be used. The default option strings for each level of section
+and numbered headings are stored in `SH1..SH5` and `NH1..NH5`
+strings. You can change these defaults easily with `SHo`, `NHo`
+and `Ho` macros:
+
+    .SHo cb b bi i i
+    .NHo cb b bi i i
+    .Ho  cb b bi i i
+
+The above macros change level one headings to be centered and
+bold, level 2 headings to be bold, level 3 to be bold and italic,
+and level 4 and 5 headings to be italic. You can override these
+defaults in each individual heading invocation, though.
 
 #### Point size
 
@@ -122,9 +139,9 @@ to the last one. The following 2 lines do the same thing:
 This functionality is inspired by the `mm` macros.
 
 For numbered headings, you can also set number formats for each
-level separately with the `Hf` macro, e.g.:
+level separately with the `NHf` macro, e.g.:
 
-    .Hf A a i 1 1
+    .NHf A a i 1 1
 
 Empty or missing arguments will be silently ignored. By default,
 all formats are set to arabic (1).
@@ -132,7 +149,7 @@ all formats are set to arabic (1).
 #### Named references
 
 For all headings, a Neatroff **named reference** is automatically
-created.
+created, for the purpose of generating tables of contents.
 
 For numbered headings, the reference name matches the current
 chapter prefix (*toc prefix*) followed by the heading "prefix".
