@@ -56,13 +56,13 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
     - **toc:** toc.init, toc.chapter, toc.section, TOC, CP
     - **profile:** note, report, book, fmt
 5. Reserved the following number registers:
-    - **headings:** SH, SH1..SH5, NH1..NH5, HE, \_s, \_a
+    - **headings:** SH, SH1..SH5, NH1..NH5, HE, \_s, \_a, \_f
     - **lists:** LV, Lv, LT1..LT9, LD0..LD9, LO1..LO9, LS1..LS9, Ls1..Ls9, LC1..LC9, Li
     - **toc:** TM
     - **profile:** DT
     - **misc:** \_d, \_o, \_maxw, \_w, \_h, \_i, \_u, NT
 6. Reserved the following string names:
-    - **headings:** SH1..SH5, NH1..NH5, \_a, \_f
+    - **headings:** SH1..SH5, NH1..NH5, \_a
     - **media:** def\_col\_url, col\_url, \_col
     - **toc:** \_s, HP
 7. Reserved the following environment names:

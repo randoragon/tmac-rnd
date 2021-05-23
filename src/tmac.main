@@ -657,7 +657,7 @@ ABSTRACT
 .nf
 .ps -\\n(XP
 .vs -\\n(XVu
-.ft CW
+.ft 5
 .nr t \\n(XT*\\w'x'u
 .ta 1u*\\ntu 2u*\\ntu 3u*\\ntu 4u*\\ntu 5u*\\ntu 6u*\\ntu 7u*\\ntu 8u*\\ntu 9u*\\ntu 10u*\\ntu 11u*\\ntu 12u*\\ntu 13u*\\ntu 14u*\\ntu
 ..
@@ -989,8 +989,8 @@ ABSTRACT
 ..
 .   \"H{ - parse heading options (internal)
 .de H{
-.rm _a _f
-.rr _u _d
+.rm _a
+.rr _u _d _f
 .ie "\\$1"l" \{\
 .   ds _a l
 .\}
@@ -1001,37 +1001,37 @@ ABSTRACT
 .   ds _a r
 .\}
 .el .ie "\\$1"b" \{\
-.   ds _f B
+.   nr _f 3
 .\}
 .el .ie "\\$1"i" \{\
-.   ds _f I
+.   nr _f 2
 .\}
 .el .ie "\\$1"u" \{\
 .   nr _u 1
 .\}
 .el .ie "\\$1"lb" \{\
 .   ds _a l
-.   ds _f B
+.   nr _f 3
 .\}
 .el .ie "\\$1"cb" \{\
 .   ds _a c
-.   ds _f B
+.   nr _f 3
 .\}
 .el .ie "\\$1"rb" \{\
 .   ds _a r
-.   ds _f B
+.   nr _f 3
 .\}
 .el .ie "\\$1"li" \{\
 .   ds _a l
-.   ds _f I
+.   nr _f 2
 .\}
 .el .ie "\\$1"ci" \{\
 .   ds _a c
-.   ds _f I
+.   nr _f 2
 .\}
 .el .ie "\\$1"ri" \{\
 .   ds _a r
-.   ds _f I
+.   nr _f 2
 .\}
 .el .ie "\\$1"lu" \{\
 .   ds _a l
@@ -1047,82 +1047,82 @@ ABSTRACT
 .\}
 .el .ie "\\$1"lbi" \{\
 .   ds _a l
-.   ds _f BI
+.   nr _f 4
 .\}
 .el .ie "\\$1"cbi" \{\
 .   ds _a c
-.   ds _f BI
+.   nr _f 4
 .\}
 .el .ie "\\$1"rbi" \{\
 .   ds _a r
-.   ds _f BI
+.   nr _f 4
 .\}
 .el .ie "\\$1"lbu" \{\
 .   ds _a l
-.   ds _f B
+.   nr _f 3
 .   nr _u 1
 .\}
 .el .ie "\\$1"cbu" \{\
 .   ds _a c
-.   ds _f B
+.   nr _f 3
 .   nr _u 1
 .\}
 .el .ie "\\$1"rbu" \{\
 .   ds _a r
-.   ds _f B
+.   nr _f 3
 .   nr _u 1
 .\}
 .el .ie "\\$1"liu" \{\
 .   ds _a l
-.   ds _f I
+.   nr _f 2
 .   nr _u 1
 .\}
 .el .ie "\\$1"ciu" \{\
 .   ds _a c
-.   ds _f I
+.   nr _f 2
 .   nr _u 1
 .\}
 .el .ie "\\$1"riu" \{\
 .   ds _a r
-.   ds _f I
+.   nr _f 2
 .   nr _u 1
 .\}
 .el .ie "\\$1"lbiu" \{\
 .   ds _a l
-.   ds _f BI
+.   nr _f 4
 .   nr _u 1
 .\}
 .el .ie "\\$1"cbiu" \{\
 .   ds _a c
-.   ds _f BI
+.   nr _f 4
 .   nr _u 1
 .\}
 .el .ie "\\$1"rbiu" \{\
 .   ds _a r
-.   ds _f BI
+.   nr _f 4
 .   nr _u 1
 .\}
 .el .ie "\\$1"bi" \{\
-.   ds _f BI
+.   nr _f 4
 .\}
 .el .ie "\\$1"bu" \{\
-.   ds _f B
+.   nr _f 3
 .   nr _u 1
 .\}
 .el .ie "\\$1"iu" \{\
-.   ds _f I
+.   nr _f 2
 .   nr _u 1
 .\}
 .el .ie "\\$1"biu" \{\
-.   ds _f BI
+.   nr _f 4
 .   nr _u 1
 .\}
 .el .ie "\\$1"biu" \{\
-.   ds _f BI
+.   nr _f 
 .   nr _u 1
 .\}
 .el .ie "\\$1"biu" \{\
-.   ds _f BI
+.   nr _f 4
 .   nr _u 1
 .\}
 .el .nr _d 1
@@ -1151,10 +1151,10 @@ ABSTRACT
 .   if \\n(HE<=\\n(TM .toc.section "#h\\*(HP\\n(SH" "\\$*" \\n%
 .   rr HE
 .   ie \\n(_u \{\
-.      ie !\\*(_f .UL "\\f[\\*(_f]\\$*\\fP"
+.      ie !\\n(_f .UL "\\f\\n(_f\\$*\\fP"
 .      el .UL "\\$*"\}
 .   el \{\
-.      ie !\\*(_f \\f[\\*(_f]\\$*\\fP
+.      ie !\\n(_f \\f\\n(_f\\$*\\fP
 .      el \\$*\}
 .   fl
 .   ad \\n(_a
@@ -1162,8 +1162,8 @@ ABSTRACT
 .   ps
 .\}
 .el \{\
-.   if !\\*(_f .ft \\*(_f\}
-.rm _f
+.   if !\\n(_f .ft \\n(_f\}
+.rr _f
 ..
 .   \"NH - numbered heading
 .de N{
@@ -1208,10 +1208,10 @@ ABSTRACT
 .   if \\n(HE<=\\n(TM .toc.section "#h\\*(HP\\*(SN" "\\*(SN \\$*" \\n%
 .   rr HE
 .   ie \\n(_u \{\
-.      ie !\\*(_f .UL "\\f[\\*(_f]\\*(SN \\$*\\fP"
+.      ie !\\n(_f .UL "\\f\\n(_f\\*(SN \\$*\\fP"
 .      el .UL "\\*(SN \\$*"\}
 .   el \{\
-.      ie !\\*(_f \\f[\\*(_f]\\*(SN \\$*\\fP
+.      ie !\\n(_f \\f\\n(_f\\*(SN \\$*\\fP
 .      el \\*(SN \\$*\}
 .   fl
 .   ad \\n(_a
@@ -1219,9 +1219,9 @@ ABSTRACT
 .   ps
 .\}
 .el \{\
-.   ie !\\*(_f \\f[\\*(_f]\\*(SN 
+.   ie !\\n(_f \\f\\n(_f\\*(SN 
 .   el \\*(SN \}
-.rm _f
+.rr _f
 ..
 .   \"HE - finish header
 .de HE
