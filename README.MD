@@ -12,7 +12,6 @@
     - [Fonts](https://github.com/Randoragon/tmac-rnd#fonts)
     - [Document Profiles](https://github.com/Randoragon/tmac-rnd#document-profiles)
 3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
-3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
 4. [Installation](https://github.com/Randoragon/tmac-rnd#installation)
 
 ## Description
@@ -50,6 +49,7 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
 3. Modified the following macros:
     - TL, AU, AI (visual tweaks)
     - SH, NH
+    - FP
 4. Added the following macros:
     - **headings:** SHs, NHs, Hs, SHo, NHo, Ho, NHf, HE, H{
     - **lists:** BL, AL, LI, LE
