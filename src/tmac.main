@@ -121,83 +121,81 @@
 . \" Table of contents
 .toc.init
 .nr TM 2 \" Max heading level to be included in TOC
+. \" Set default fonts
+.FP times
+.FC courier
 ..
 .de OK
 .br
 .di
 .di OD
 ..
-.   \"FP - font position for a family
+.   \"FP - font position for a family (main font)
 .de FP
 .ds TF \\$1
 .if '\\$1'palatino'\{\
-.   fp 1 R PA
+.   fp 1 R PR
 .   fp 2 I PI
 .   fp 3 B PB
 .   fp 4 BI PX\}
-.if '\\$1'lucidabright'\{\
-.   fp 1 R LucidaBright
-.   fp 2 I LucidaBright-Italic
-.   fp 3 B LucidaBright-Demi
-.   fp 4 BI LucidaBright-DemiItalic
-.   fp 5 CW LucidaSansCW\}
-.if '\\$1'lucidasans'\{\
-.   fp 1 R LucidaSans
-.   fp 2 I LucidaSansI
-.   fp 3 B LucidaSansB
-.   fp 5 CW LucidaCW\}
-.if '\\$1'syntax'\{\
-.   fp 1 R Syntax
-.   fp 2 I SyntaxI
-.   fp 3 B SyntaxB
-.   fp 5 CW LucidaCW\}
-.if '\\$1'century'\{\
-.   ie '\\*(.T'202'\{\
-.       fp 1 NR Centsb
-.       fp 2 NI CentI
-.       fp 3 NB CentB
-.       fp 4 NX CentBI\}
-.   el \{\
-.       fp 1 NR
-.       fp 2 NI
-.       fp 3 NB
-.       fp 4 NX\}\}
+.if '\\$1'avantgarde'\{\
+.   fp 1 R AR
+.   fp 2 I AI
+.   fp 3 B AB
+.   fp 4 BI AX\}
+.if '\\$1'courier'\{\
+.   fp 1 R CR
+.   fp 2 I CI
+.   fp 3 B CB
+.   fp 4 BI CX\}
+.if '\\$1'newcentury'\{\
+.   fp 1 R NR
+.   fp 2 I NI
+.   fp 3 B NB
+.   fp 4 BI NX\}
 .if '\\$1'helvetica'\{\
-.   fp 1 H
-.   fp 2 HI
-.   fp 3 HB
-.   fp 4 HX\}
-.if '\\$1'bembo'\{\
-.   ie '\\*(.T'202'\{\
-.       fp 1 B1 Bembo
-.       fp 2 B2 BemboI
-.       fp 3 B3 BemboB
-.       fp 4 B4 BemboBI\}
-.   el \{\
-.       fp 1 B1
-.       fp 2 B2
-.       fp 3 B3
-.       fp 4 B4\}\}
-.if '\\$1'optima'\{\
-.   fp 1 R Optima
-.   fp 2 I OptimaI
-.   fp 3 B OptimaB
-.   fp 4 BI OptimaBI\}
-.if '\\$1'souvenir'\{\
-.   fp 1 R Souvenir
-.   fp 2 I SouvenirI
-.   fp 3 B SouvenirB
-.   fp 4 BI SouvenirBI\}
-.if '\\$1'melior'\{\
-.   fp 1 R Melior
-.   fp 2 I MeliorI
-.   fp 3 B MeliorB
-.   fp 4 BI MeliorBI\}
+.   fp 1 R HR
+.   fp 2 I HI
+.   fp 3 B HB
+.   fp 4 BI HX\}
+.if '\\$1'dejavu'\{\
+.   fp 1 R DejaVuSans
+.   fp 2 I DejaVuSansI
+.   fp 3 B DejaVuSansB
+.   fp 4 BI DejaVuSansBI\}
+.if '\\$1'bookman'\{\
+.   fp 1 R KR
+.   fp 2 I KI
+.   fp 3 B KB
+.   fp 4 BI KX\}
+.if '\\$1'lato'\{\
+.   fp 1 R Lato
+.   fp 2 I LatoI
+.   fp 3 B LatoB
+.   fp 4 BI LatoBI\}
+.if '\\$1'carlito'\{\
+.   fp 1 R Carlito
+.   fp 2 I CarlitoI
+.   fp 3 B CarlitoB
+.   fp 4 BI CarlitoBI\}
 .if '\\$1'times'\{\
 .   fp 1 R
 .   fp 2 I
 .   fp 3 B
 .   fp 4 BI\}
+..
+.   \"FC - font position for a family (constant-width font)
+.de FC
+.if '\\$1'dejavu'\{\
+.   fp 5 CW DejaVuSansMono
+.   fp 6 CI DejaVuSansMonoI
+.   fp 7 CB DejaVuSansMonoB
+.   fp 8 CX DejaVuSansMonoBI\}
+.if '\\$1'courier'\{\
+.   fp 5 CW CR
+.   fp 6 CI CI
+.   fp 7 CB CB
+.   fp 8 CX CX\}
 ..
 .   \"TL - title and initialization
 .de TL

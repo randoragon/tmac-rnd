@@ -9,6 +9,7 @@
     - [Lists](https://github.com/Randoragon/tmac-rnd#lists)
     - [Media Macros](https://github.com/Randoragon/tmac-rnd#media-macros)
     - [Table of Contents](https://github.com/Randoragon/tmac-rnd#table-of-contents-1)
+    - [Fonts](https://github.com/Randoragon/tmac-rnd#fonts)
     - [Document Profiles](https://github.com/Randoragon/tmac-rnd#document-profiles)
 3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
 3. [Dependencies](https://github.com/Randoragon/tmac-rnd#dependencies)
@@ -54,6 +55,7 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
     - **lists:** BL, AL, LI, LE
     - **media:** PDF, URL
     - **toc:** toc.init, toc.chapter, toc.section, TOC, CP
+    - **fonts:** FC
     - **profile:** note, report, book, fmt
 5. Reserved the following number registers:
     - **headings:** SH, SH1..SH5, NH1..NH5, HE, \_s, \_a, \_f
@@ -67,6 +69,8 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
     - **toc:** \_s, HP
 7. Reserved the following environment names:
     - \_toc
+8. Changed font names recognized by the FP macro
+    - for a full list of names refer to `tmac.main`, the list might change with time
 
 ### New Headings
 
@@ -280,6 +284,30 @@ merge it into the original document and recompile.
 to see how you can build the document with ToC.
 - **If you don't plan on using .TOC, you can compile as normal,
 without any complications!**
+
+### Fonts
+
+The `FP` macro has been modified with new font names. Some additional font
+description files have been provided in the `devutf` directory of this repository.
+
+There is a slight change in convention - `FP` changes the "main" fonts, while
+a new macro - `FC` changes constant width fonts. These two have been separated
+to make adding features like code blocks easier.
+
+The default layout of font positions is as follows:
+
+pos  | font
+:--- | :---
+1    | R
+2    | I
+3    | B
+4    | BI
+5    | CR
+6    | CI
+7    | CB
+8    | CX
+
+The first 4 positions are controlled by `FP`, the last 4 by `FC`.
 
 ### Document Profiles
 
