@@ -348,9 +348,10 @@ the chapter name point size is slightly bigger, etc.
 - `msdisp`: display macros
 - `mskeep`: keep blocks (needed by display macros)
 
-The `tmac.main` file automatically sources these macro packages, and
-there should be no issues (unless you modified them by hand) since
-Neatroff ships with them by default.
+These macros are **not** sourced by `rnd`, and you have to
+manually specify `-mpost`, `-msdisp` and `-mskeep` when compiling.
+Neatroff automatically ships with these though, so there
+shouldn't be a problem.
 
 ## Installation
 
