@@ -163,6 +163,13 @@
 .   fp 2 I DejaVuSansI
 .   fp 3 B DejaVuSansB
 .   fp 4 BI DejaVuSansBI\}
+. \" Vera is mostly identical to DejaVu, but
+. \" it has less glyphs, which can be useful.
+.if '\\$1'vera'\{\
+.   fp 1 R VeraSans
+.   fp 2 I VeraSansI
+.   fp 3 B VeraSansB
+.   fp 4 BI VeraSansBI\}
 .if '\\$1'bookman'\{\
 .   fp 1 R KR
 .   fp 2 I KI
@@ -191,6 +198,11 @@
 .   fp 6 CI DejaVuSansMonoI
 .   fp 7 CB DejaVuSansMonoB
 .   fp 8 CX DejaVuSansMonoBI\}
+.if '\\$1'vera'\{\
+.   fp 5 CW VeraMono
+.   fp 6 CI VeraMonoI
+.   fp 7 CB VeraMonoB
+.   fp 8 CX VeraMonoBI\}
 .if '\\$1'courier'\{\
 .   fp 5 CW CR
 .   fp 6 CI CI

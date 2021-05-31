@@ -1,0 +1,1945 @@
+fontname BitstreamVeraSans-Roman
+spacewidth 32
+ligatures fi fl 0
+char ---	60,5,-18,55,71	3	.notdef	
+char ---	0	3	.null	
+char ---	32	3	nonmarkingreturn	
+char ---	32	0	space	32
+char !	40,15,0,25,73	2	exclam	33
+char "	46,10,46,36,73	2	quotedbl	34
+char dq	"
+char #	84,8,0,76,72	2	numbersign	35
+char $	64,8,-15,55,76	2	dollar	36
+char %	95,6,-1,90,74	2	percent	37
+char &	78,6,-1,75,74	2	ampersand	38
+char aq	28,10,46,18,73	3	quotesingle	
+char (	39,9,-13,31,76	3	parenleft	40
+char )	39,8,-13,30,76	3	parenright	41
+char *	50,3,29,47,74	2	asterisk	42
+char +	84,11,0,73,63	0	plus	43
+char pl	"
+char ,	32,8,-12,22,12	1	comma	44
+char -	36,5,23,31,31	0	hyphen	45
+char hy	"
+char .	32,11,0,21,12	0	period	46
+char /	34,0,-9,34,73	2	slash	47
+char sl	"
+char 0	64,7,-1,57,74	2	zero	48
+char 1	64,11,0,54,73	2	one	49
+char 2	64,7,0,54,74	2	two	50
+char 3	64,8,-1,56,74	2	three	51
+char 4	64,5,0,58,73	2	four	52
+char 5	64,8,-1,55,73	2	five	53
+char 6	64,7,-1,57,74	2	six	54
+char 7	64,8,0,55,73	2	seven	55
+char 8	64,7,-1,57,74	2	eight	56
+char 9	64,6,-1,57,74	2	nine	57
+char :	34,12,0,22,52	0	colon	58
+char ;	34,8,-12,22,52	1	semicolon	59
+char <	84,11,5,73,58	0	less	60
+char =	84,11,17,73,45	0	equal	61
+char eq	"
+char >	84,11,5,73,58	0	greater	62
+char ?	53,7,0,46,74	2	question	63
+char @	100,7,-17,93,70	3	at	64
+char A	68,1,0,68,73	2	A	65
+char B	69,10,0,62,73	2	B	66
+char C	70,6,-1,64,74	2	C	67
+char D	77,10,0,71,73	2	D	68
+char E	63,10,0,57,73	2	E	69
+char F	58,10,0,52,73	2	F	70
+char G	78,6,-1,69,74	2	G	71
+char H	75,10,0,65,73	2	H	72
+char I	30,10,0,20,73	2	I	73
+char J	30,-5,-20,20,73	3	J	74
+char K	66,10,0,68,73	2	K	75
+char L	56,10,0,55,73	2	L	76
+char M	86,10,0,77,73	2	M	77
+char N	75,10,0,65,73	2	N	78
+char O	79,6,-1,73,74	2	O	79
+char P	60,10,0,57,73	2	P	80
+char Q	79,6,-13,73,74	3	Q	81
+char R	70,10,0,67,73	2	R	82
+char S	64,7,-1,58,74	2	S	83
+char T	61,0,0,61,73	2	T	84
+char U	73,9,-1,65,73	2	U	85
+char V	68,1,0,68,73	2	V	86
+char W	99,3,0,96,73	2	W	87
+char X	69,3,0,65,73	2	X	88
+char Y	61,0,0,61,73	2	Y	89
+char Z	69,5,0,64,73	2	Z	90
+char [	39,9,-13,29,76	3	bracketleft	91
+char \	34,0,-9,34,73	2	backslash	92
+char bs	"
+char rs	"
+char ]	39,10,-13,30,76	3	bracketright	93
+char ha	84,11,46,73,73	3	asciicircum	
+char _	50,-1,-24,51,-17	1	underscore	95
+char ru	"
+char ul	"
+char ga	50,8,62,32,80	3	grave	
+char \`	"
+char a	61,6,-1,52,56	0	a	97
+char b	64,9,-1,58,76	2	b	98
+char c	55,6,-1,49,56	0	c	99
+char d	64,6,-1,54,76	2	d	100
+char e	62,6,-1,56,56	0	e	101
+char f	35,2,0,37,76	2	f	102
+char g	64,6,-21,54,56	1	g	103
+char h	63,9,0,55,76	2	h	104
+char i	28,9,0,18,76	2	i	105
+char j	28,-2,-21,18,76	3	j	106
+char k	58,9,0,58,76	2	k	107
+char l	28,9,0,18,76	2	l	108
+char m	97,9,0,89,56	0	m	109
+char n	63,9,0,55,56	0	n	110
+char o	61,6,-1,56,56	0	o	111
+char p	64,9,-21,58,56	1	p	112
+char q	64,6,-21,54,56	1	q	113
+char r	41,9,0,41,56	0	r	114
+char s	52,5,-1,47,56	0	s	115
+char t	39,3,0,37,70	2	t	116
+char u	63,9,-1,54,55	0	u	117
+char v	59,3,0,56,55	0	v	118
+char w	82,4,0,78,55	0	w	119
+char x	59,3,0,56,55	0	x	120
+char y	59,3,-21,56,55	1	y	121
+char z	53,4,0,48,55	0	z	122
+char {	64,13,-16,51,76	2	braceleft	123
+char |	34,13,-24,21,76	3	bar	124
+char or	"
+char }	64,13,-16,51,76	2	braceright	125
+char ti	84,11,23,73,40	0	asciitilde	
+char Ä	68,1,0,68,91	2	Adieresis	
+char A:	"
+char A"	"
+char Å	68,1,0,68,93	2	Aring	
+char A*	"
+char Ç	70,6,-19,64,74	2	Ccedilla	
+char C,	"
+char É	63,10,0,57,93	2	Eacute	
+char E'	"
+char Ñ	75,10,0,65,92	2	Ntilde	
+char N~	"
+char Ö	79,6,-1,73,91	2	Odieresis	
+char O:	"
+char Ü	73,9,-1,65,91	2	Udieresis	
+char U:	"
+char á	61,6,-1,52,80	2	aacute	
+char a'	"
+char à	61,6,-1,52,80	2	agrave	
+char a`	"
+char â	61,6,-1,52,80	2	acircumflex	
+char a^	"
+char ä	61,6,-1,52,76	2	adieresis	
+char a:	"
+char ã	61,6,-1,52,78	2	atilde	
+char a~	"
+char å	61,6,-1,52,88	2	aring	
+char a*	"
+char ç	55,6,-19,49,56	0	ccedilla	
+char c,	"
+char é	62,6,-1,56,80	2	eacute	
+char e'	"
+char è	62,6,-1,56,80	2	egrave	
+char e`	"
+char ê	62,6,-1,56,80	2	ecircumflex	
+char e^	"
+char ë	62,6,-1,56,76	2	edieresis	
+char e:	"
+char í	28,7,0,30,80	2	iacute	
+char i'	"
+char ì	28,-3,0,21,80	2	igrave	
+char i`	"
+char î	28,-2,0,30,80	2	icircumflex	
+char i^	"
+char ï	28,-1,0,28,76	2	idieresis	
+char i:	"
+char ñ	63,9,0,55,78	2	ntilde	
+char n~	"
+char ó	61,6,-1,56,80	2	oacute	
+char o'	"
+char ò	61,6,-1,56,80	2	ograve	
+char o`	"
+char ô	61,6,-1,56,80	2	ocircumflex	
+char o^	"
+char ö	61,6,-1,56,76	2	odieresis	
+char o:	"
+char õ	61,6,-1,56,78	2	otilde	
+char o~	"
+char ú	63,9,-1,54,80	2	uacute	
+char u'	"
+char ù	63,9,-1,54,80	2	ugrave	
+char u`	"
+char û	63,9,-1,54,80	2	ucircumflex	
+char u^	"
+char ü	63,9,-1,54,76	2	udieresis	
+char u:	"
+char †	50,3,-10,47,73	2	dagger	
+char dg	"
+char °	50,10,43,41,74	2	degree	
+char 0^	"
+char de	"
+char ¢	64,8,-15,52,70	2	cent	
+char c|	"
+char ct	"
+char £	64,6,0,55,74	2	sterling	
+char L-	"
+char ps	"
+char §	50,5,-10,45,74	2	section	
+char so	"
+char sc	"
+char •	59,15,23,44,52	0	bullet	
+char bu	"
+char ¶	64,8,-10,53,73	2	paragraph	
+char P!	"
+char pg	"
+char ß	63,9,-1,58,76	2	germandbls	
+char ss	"
+char ®	100,14,0,86,73	2	registered	
+char ro	"
+char rg	"
+char ©	100,14,0,86,73	2	copyright	
+char co	"
+char ™	100,14,45,78,73	2	trademark	
+char ´	50,18,62,42,80	2	acute	
+char aa	"
+char \'	"
+char ¨	50,11,66,40,76	2	dieresis	
+char ""	"
+char :a	"
+char ≠	84,11,2,73,61	0	notequal	
+char !=	"
+char Æ	97,0,0,91,73	2	AE	
+char AE	"
+char Ø	79,5,-3,74,76	2	Oslash	
+char O/	"
+char ∞	83,11,11,73,49	0	infinity	
+char if	"
+char ±	84,11,0,73,63	0	plusminus	
+char +-	"
+char ≤	84,11,0,73,58	0	lessequal	
+char <=	"
+char ≥	84,11,0,73,58	0	greaterequal	
+char >=	"
+char ¥	64,4,0,60,73	2	yen	
+char Y-	"
+char yn	"
+char µ	64,9,-21,61,55	1	mu	
+char /u	"
+char *m	"
+char μ	"
+char ∂	52,5,-1,47,65	0	partialdiff	
+char pd	"
+char ∑	67,1,-19,65,72	2	summation	
+char su	"
+char ∏	76,8,-19,68,72	2	product	
+char pr	"
+char π	59,-2,-1,58,52	0	pi	
+char *p	"
+char ∫	52,2,-18,50,76	2	integral	
+char is	"
+char ª	47,6,23,40,74	2	ordfeminine	
+char a_	"
+char º	47,5,23,42,74	2	ordmasculine	
+char o_	"
+char Ω	76,4,0,73,74	2	Omega	
+char *W	"
+char Ω	"
+char æ	98,6,-1,93,56	0	ae	
+char ae	"
+char ø	61,4,-5,58,59	0	oslash	
+char o/	"
+char ¿	53,7,-1,46,73	2	questiondown	
+char ??	"
+char r?	"
+char ¡	40,15,0,25,73	2	exclamdown	
+char !!	"
+char r!	"
+char ¬	84,11,14,73,42	0	logicalnot	
+char -,	"
+char no	"
+char √	64,3,-2,64,81	2	radical	
+char sr	"
+char ƒ	64,2,-21,63,76	3	florin	
+char fn	"
+char ≈	84,11,13,73,49	0	approxequal	
+char ~~	"
+char ∆	67,0,0,67,72	2	Delta	
+char *D	"
+char Δ	"
+char «	61,8,7,52,52	0	guillemotleft	
+char <<	"
+char Fo	"
+char »	61,9,7,54,52	0	guillemotright	
+char >>	"
+char Fc	"
+char …	100,12,0,89,12	0	ellipsis	
+char el	"
+char  	64	0	nonbreakingspace	
+char À	68,1,0,68,93	2	Agrave	
+char A`	"
+char Ã	68,1,0,68,92	2	Atilde	
+char A~	"
+char Õ	79,6,-1,73,92	2	Otilde	
+char O~	"
+char Œ	107,6,0,101,73	2	OE	
+char OE	"
+char œ	102,6,-1,97,56	0	oe	
+char oe	"
+char –	50,0,24,50,31	0	endash	
+char en	"
+char \-	"
+char —	100,0,24,100,31	0	emdash	
+char em	"
+char --	"
+char “	52,9,49,43,73	2	quotedblleft	
+char ``	"
+char lq	"
+char ”	52,9,49,43,73	2	quotedblright	
+char ''	"
+char rq	"
+char ‘	32,9,49,23,73	2	quoteleft	
+char `	"
+char oq	"
+char ’	32,9,50,23,73	2	quoteright	
+char '	"
+char cq	"
+char ÷	84,11,7,73,55	0	divide	
+char di	"
+char -:	"
+char ◊	49,0,-23,49,81	3	lozenge	
+char lz	"
+char ÿ	59,3,-21,56,76	3	ydieresis	
+char y:	"
+char Ÿ	61,0,0,61,91	2	Ydieresis	
+char Y:	"
+char ∕	17,-18,-1,35,74	2	fraction	
+char ¤	64,5,4,59,59	0	currency	
+char xo	"
+char cr	"
+char ‹	40,8,7,31,52	0	guilsinglleft	
+char fo	"
+char ›	40,9,7,32,52	0	guilsinglright	
+char fc	"
+char ﬁ	63,2,0,54,76	2	fi	
+char fi	"
+char ﬂ	63,2,0,54,76	2	fl	
+char fl	"
+char ‡	50,3,-10,47,73	2	daggerdbl	
+char dd	"
+char ·	32,11,29,21,41	0	periodcentered	
+char .^	"
+char ‚	32,9,-12,23,12	0	quotesinglbase	
+char bq	"
+char „	52,9,-12,43,12	0	quotedblbase	
+char ‰	134,6,-1,129,74	2	perthousand	
+char %0	"
+char Â	68,1,0,68,93	2	Acircumflex	
+char A^	"
+char Ê	63,10,0,57,93	2	Ecircumflex	
+char E^	"
+char Á	68,1,0,68,93	2	Aacute	
+char A'	"
+char Ë	63,10,0,57,91	2	Edieresis	
+char E:	"
+char È	63,10,0,57,93	2	Egrave	
+char E`	"
+char Í	30,8,0,27,93	2	Iacute	
+char I'	"
+char Î	30,0,0,30,93	2	Icircumflex	
+char I^	"
+char Ï	30,0,0,29,91	2	Idieresis	
+char I:	"
+char Ì	30,3,0,22,93	2	Igrave	
+char I`	"
+char Ó	79,6,-1,73,93	2	Oacute	
+char O'	"
+char Ô	79,6,-1,73,93	2	Ocircumflex	
+char O^	"
+char Ò	79,6,-1,73,93	2	Ograve	
+char O`	"
+char Ú	73,9,-1,65,93	2	Uacute	
+char U'	"
+char Û	73,9,-1,65,93	2	Ucircumflex	
+char U^	"
+char Ù	73,9,-1,65,93	2	Ugrave	
+char U`	"
+char ı	28,9,0,18,55	0	dotlessi	
+char ˆ	50,9,62,41,80	2	circumflex	
+char ^	"
+char ^a	"
+char ˜	50,9,64,41,78	2	tilde	
+char ~	"
+char ¯	50,10,67,40,75	2	macron	
+char -a	"
+char ˘	50,10,65,40,79	2	breve	
+char Ua	"
+char ˙	50,20,66,30,76	2	dotaccent	
+char .a	"
+char ˚	50,12,61,38,88	2	ring	
+char oa	"
+char ¸	50,14,-19,34,0	0	cedilla	
+char ,,	"
+char ,a	"
+char ˝	50,12,62,46,80	2	hungarumlaut	
+char "a	"
+char ˛	50,16,-19,34,0	0	ogonek	
+char Ca	"
+char ˇ	50,9,62,41,80	2	caron	
+char va	"
+char Ł	56,-1,0,56,73	2	Lslash	
+char ł	28,0,0,29,76	2	lslash	
+char Š	64,7,-1,58,93	2	Scaron	
+char S<	"
+char š	52,5,-1,47,80	2	scaron	
+char s<	"
+char Ž	69,5,0,64,93	2	Zcaron	
+char Z<	"
+char ž	53,4,0,48,80	2	zcaron	
+char z<	"
+char ¦	34,13,-17,21,70	2	brokenbar	
+char ||	"
+char Ð	78,1,0,72,73	2	Eth	
+char D-	"
+char ð	61,6,-1,56,76	2	eth	
+char d-	"
+char Ý	61,0,0,61,93	2	Yacute	
+char Y'	"
+char ý	59,3,-21,56,80	3	yacute	
+char y'	"
+char Þ	61,10,0,57,73	2	Thorn	
+char TH	"
+char þ	64,9,-21,58,76	3	thorn	
+char th	"
+char −	84,11,27,73,36	0	minus	
+char mi	"
+char ×	84,14,3,70,60	0	multiply	
+char xx	"
+char mu	"
+char ¹	40,7,33,35,73	2	onesuperior	
+char 1^	"
+char ²	40,5,33,34,74	2	twosuperior	
+char 2^	"
+char ³	40,5,32,35,74	2	threesuperior	
+char 3^	"
+char ¼	97,7,-1,94,74	2	onequarter	
+char 14	"
+char ½	97,7,-1,91,74	2	onehalf	
+char 12	"
+char ¾	97,5,-1,94,74	2	threequarters	
+char 34	"
+char Ğ	78,6,-1,69,93	2	Gbreve	
+char ğ	64,6,-21,54,79	3	gbreve	
+char İ	30,10,0,20,91	2	Idotaccent	
+char Ş	64,7,-19,58,74	2	Scedilla	
+char ş	52,5,-19,47,56	0	scedilla	
+char Ć	70,6,-1,64,93	2	Cacute	
+char ć	55,6,-1,49,80	2	cacute	
+char Č	70,6,-1,64,93	2	Ccaron	
+char C<	"
+char č	55,6,-1,49,80	2	ccaron	
+char c<	"
+char đ	64,6,-1,62,76	2	dcroat	
+char ­	36,5,23,31,31	0	sfthyphen	
+char ∙	32,11,29,21,41	0	periodcentered	
+char €	64,0,-1,57,74	2	Euro	
+char ---	50,11,63,40,73	2	c6459	
+char ---	50,18,62,37,75	2	c6460	
+char ---	50,9,63,41,74	2	c6461	
+char ---	50,13,62,32,75	2	c6462	
+char ---	50,10,62,40,75	2	c6463	
+char ---	50,10,62,40,75	2	c6466	
+char ---	40,3,33,37,73	2	c6467	
+char ---	50,10,63,40,75	2	c6468	
+char ---	50,20,63,30,73	2	c6469	
+kern hyphen	A	-2
+kern hyphen	B	-4
+kern hyphen	G	4
+kern hyphen	J	6
+kern hyphen	O	3
+kern hyphen	Q	4
+kern hyphen	T	-9
+kern hyphen	V	-6
+kern hyphen	W	-4
+kern hyphen	X	-5
+kern hyphen	Y	-12
+kern hyphen	o	2
+kern hyphen	v	-3
+kern hyphen	y	-2
+kern hyphen	Adieresis	-2
+kern hyphen	Odieresis	3
+kern hyphen	oacute	2
+kern hyphen	ograve	2
+kern hyphen	ocircumflex	2
+kern hyphen	odieresis	2
+kern hyphen	otilde	2
+kern hyphen	Agrave	-2
+kern hyphen	Atilde	-2
+kern hyphen	Otilde	3
+kern hyphen	ydieresis	-2
+kern hyphen	Ydieresis	-12
+kern hyphen	Acircumflex	-2
+kern hyphen	Aacute	-2
+kern hyphen	Oacute	3
+kern hyphen	Ocircumflex	3
+kern hyphen	Ograve	3
+kern hyphen	Yacute	-12
+kern hyphen	yacute	-2
+kern hyphen	Gbreve	4
+kern A	hyphen	-2
+kern A	period	-2
+kern A	colon	-2
+kern A	A	3
+kern A	C	-2
+kern A	G	-2
+kern A	O	-2
+kern A	Q	-2
+kern A	T	-8
+kern A	V	-6
+kern A	W	-6
+kern A	Y	-8
+kern A	c	-2
+kern A	d	-2
+kern A	e	-2
+kern A	f	-4
+kern A	o	-2
+kern A	q	-2
+kern A	t	-2
+kern A	v	-6
+kern A	w	-4
+kern A	y	-7
+kern A	Adieresis	3
+kern A	Ccedilla	-2
+kern A	Odieresis	-2
+kern A	ccedilla	-2
+kern A	eacute	-2
+kern A	egrave	-2
+kern A	ecircumflex	-2
+kern A	edieresis	-2
+kern A	oacute	-2
+kern A	ograve	-2
+kern A	ocircumflex	-2
+kern A	odieresis	-2
+kern A	otilde	-2
+kern A	guillemotleft	-4
+kern A	Agrave	3
+kern A	Atilde	3
+kern A	Otilde	-2
+kern A	quotedblleft	-13
+kern A	quotedblright	-12
+kern A	ydieresis	-7
+kern A	Ydieresis	-8
+kern A	quotedblbase	2
+kern A	Acircumflex	3
+kern A	Aacute	3
+kern A	Oacute	-2
+kern A	Ocircumflex	-2
+kern A	Ograve	-2
+kern A	Yacute	-8
+kern A	yacute	-7
+kern A	Gbreve	-2
+kern A	Cacute	-2
+kern A	cacute	-2
+kern A	Ccaron	-2
+kern A	ccaron	-2
+kern B	C	-2
+kern B	G	-2
+kern B	O	-2
+kern B	S	-2
+kern B	V	-3
+kern B	W	-4
+kern B	Y	-6
+kern B	Ccedilla	-2
+kern B	Odieresis	-2
+kern B	guillemotleft	-3
+kern B	guillemotright	-2
+kern B	Otilde	-2
+kern B	quotedblleft	-6
+kern B	quotedblright	-6
+kern B	Ydieresis	-6
+kern B	quotedblbase	-4
+kern B	Oacute	-2
+kern B	Ocircumflex	-2
+kern B	Ograve	-2
+kern B	Scaron	-2
+kern B	Yacute	-6
+kern B	Gbreve	-2
+kern B	Scedilla	-2
+kern B	Cacute	-2
+kern B	Ccaron	-2
+kern C	Y	-2
+kern C	guillemotleft	-2
+kern C	guillemotright	-2
+kern C	quotedblright	2
+kern C	Ydieresis	-2
+kern C	Yacute	-2
+kern D	A	-2
+kern D	V	-2
+kern D	Y	-6
+kern D	Adieresis	-2
+kern D	guillemotleft	-2
+kern D	guillemotright	-2
+kern D	Agrave	-2
+kern D	Atilde	-2
+kern D	quotedblleft	-2
+kern D	quotedblright	-3
+kern D	Ydieresis	-6
+kern D	quotedblbase	-9
+kern D	Acircumflex	-2
+kern D	Aacute	-2
+kern D	Yacute	-6
+kern F	period	-16
+kern F	colon	-8
+kern F	A	-9
+kern F	S	-2
+kern F	T	-2
+kern F	a	-9
+kern F	e	-6
+kern F	i	-7
+kern F	o	-4
+kern F	r	-7
+kern F	u	-6
+kern F	y	-9
+kern F	Adieresis	-9
+kern F	aacute	-9
+kern F	agrave	-9
+kern F	acircumflex	-9
+kern F	adieresis	-9
+kern F	atilde	-9
+kern F	aring	-9
+kern F	eacute	-6
+kern F	egrave	-6
+kern F	ecircumflex	-6
+kern F	edieresis	-6
+kern F	oacute	-4
+kern F	ograve	-4
+kern F	ocircumflex	-4
+kern F	odieresis	-4
+kern F	otilde	-4
+kern F	uacute	-6
+kern F	ugrave	-6
+kern F	ucircumflex	-6
+kern F	udieresis	-6
+kern F	Agrave	-9
+kern F	Atilde	-9
+kern F	quotedblleft	-2
+kern F	ydieresis	-9
+kern F	quotedblbase	-18
+kern F	Acircumflex	-9
+kern F	Aacute	-9
+kern F	Scaron	-2
+kern F	yacute	-9
+kern F	Scedilla	-2
+kern G	T	-4
+kern G	Y	-5
+kern G	guillemotleft	-2
+kern G	guillemotright	-2
+kern G	quotedblleft	-2
+kern G	quotedblright	-2
+kern G	Ydieresis	-5
+kern G	quotedblbase	-3
+kern G	Yacute	-5
+kern H	period	-2
+kern H	quotedblleft	-4
+kern H	quotedblright	-3
+kern H	quotedblbase	-4
+kern J	hyphen	-4
+kern J	A	-2
+kern J	Adieresis	-2
+kern J	guillemotleft	-2
+kern J	guillemotright	-2
+kern J	Agrave	-2
+kern J	Atilde	-2
+kern J	quotedblleft	-4
+kern J	quotedblright	-3
+kern J	quotedblbase	-6
+kern J	Acircumflex	-2
+kern J	Aacute	-2
+kern K	hyphen	-11
+kern K	A	-2
+kern K	C	-6
+kern K	O	-6
+kern K	T	-8
+kern K	U	-3
+kern K	W	-4
+kern K	Y	-4
+kern K	a	-2
+kern K	e	-5
+kern K	o	-5
+kern K	u	-5
+kern K	y	-7
+kern K	Adieresis	-2
+kern K	Ccedilla	-6
+kern K	Odieresis	-6
+kern K	Udieresis	-3
+kern K	aacute	-2
+kern K	agrave	-2
+kern K	acircumflex	-2
+kern K	adieresis	-2
+kern K	atilde	-2
+kern K	aring	-2
+kern K	eacute	-5
+kern K	egrave	-5
+kern K	ecircumflex	-5
+kern K	edieresis	-5
+kern K	oacute	-5
+kern K	ograve	-5
+kern K	ocircumflex	-5
+kern K	odieresis	-5
+kern K	otilde	-5
+kern K	uacute	-5
+kern K	ugrave	-5
+kern K	ucircumflex	-5
+kern K	udieresis	-5
+kern K	guillemotleft	-6
+kern K	Agrave	-2
+kern K	Atilde	-2
+kern K	Otilde	-6
+kern K	quotedblleft	-3
+kern K	quotedblright	-3
+kern K	ydieresis	-7
+kern K	Ydieresis	-4
+kern K	Acircumflex	-2
+kern K	Aacute	-2
+kern K	Oacute	-6
+kern K	Ocircumflex	-6
+kern K	Ograve	-6
+kern K	Uacute	-3
+kern K	Ucircumflex	-3
+kern K	Ugrave	-3
+kern K	Yacute	-4
+kern K	yacute	-7
+kern K	Cacute	-6
+kern K	Ccaron	-6
+kern L	hyphen	-2
+kern L	A	2
+kern L	O	-4
+kern L	T	-14
+kern L	U	-5
+kern L	V	-11
+kern L	W	-9
+kern L	Y	-13
+kern L	e	-2
+kern L	o	-2
+kern L	u	-2
+kern L	y	-9
+kern L	Adieresis	2
+kern L	Odieresis	-4
+kern L	Udieresis	-5
+kern L	eacute	-2
+kern L	egrave	-2
+kern L	ecircumflex	-2
+kern L	edieresis	-2
+kern L	oacute	-2
+kern L	ograve	-2
+kern L	ocircumflex	-2
+kern L	odieresis	-2
+kern L	otilde	-2
+kern L	uacute	-2
+kern L	ugrave	-2
+kern L	ucircumflex	-2
+kern L	udieresis	-2
+kern L	Agrave	2
+kern L	Atilde	2
+kern L	Otilde	-4
+kern L	quotedblleft	-20
+kern L	quotedblright	-26
+kern L	ydieresis	-9
+kern L	Ydieresis	-13
+kern L	Acircumflex	2
+kern L	Aacute	2
+kern L	Oacute	-4
+kern L	Ocircumflex	-4
+kern L	Ograve	-4
+kern L	Uacute	-5
+kern L	Ucircumflex	-5
+kern L	Ugrave	-5
+kern L	Yacute	-13
+kern L	yacute	-9
+kern O	hyphen	3
+kern O	period	-4
+kern O	colon	-2
+kern O	A	-2
+kern O	V	-2
+kern O	X	-6
+kern O	Y	-6
+kern O	Adieresis	-2
+kern O	guillemotleft	-2
+kern O	Agrave	-2
+kern O	Atilde	-2
+kern O	quotedblleft	-2
+kern O	quotedblright	-2
+kern O	Ydieresis	-6
+kern O	quotedblbase	-9
+kern O	Acircumflex	-2
+kern O	Aacute	-2
+kern O	Yacute	-6
+kern P	hyphen	-2
+kern P	period	-16
+kern P	A	-6
+kern P	Y	-2
+kern P	a	-5
+kern P	e	-4
+kern P	i	-2
+kern P	n	-2
+kern P	o	-4
+kern P	r	-2
+kern P	s	-2
+kern P	u	-2
+kern P	Adieresis	-6
+kern P	aacute	-5
+kern P	agrave	-5
+kern P	acircumflex	-5
+kern P	adieresis	-5
+kern P	atilde	-5
+kern P	aring	-5
+kern P	eacute	-4
+kern P	egrave	-4
+kern P	ecircumflex	-4
+kern P	edieresis	-4
+kern P	ntilde	-2
+kern P	oacute	-4
+kern P	ograve	-4
+kern P	ocircumflex	-4
+kern P	odieresis	-4
+kern P	otilde	-4
+kern P	uacute	-2
+kern P	ugrave	-2
+kern P	ucircumflex	-2
+kern P	udieresis	-2
+kern P	guillemotleft	-2
+kern P	Agrave	-6
+kern P	Atilde	-6
+kern P	quotedblleft	2
+kern P	quotedblright	2
+kern P	Ydieresis	-2
+kern P	quotedblbase	-16
+kern P	Acircumflex	-6
+kern P	Aacute	-6
+kern P	scaron	-2
+kern P	Yacute	-2
+kern P	scedilla	-2
+kern Q	hyphen	3
+kern Q	quotedblleft	-2
+kern Q	quotedblright	-2
+kern Q	quotedblbase	-6
+kern R	hyphen	-4
+kern R	period	-4
+kern R	colon	-3
+kern R	A	-4
+kern R	C	-5
+kern R	T	-7
+kern R	V	-6
+kern R	W	-4
+kern R	Y	-6
+kern R	a	-2
+kern R	e	-5
+kern R	o	-5
+kern R	u	-5
+kern R	y	-6
+kern R	Adieresis	-4
+kern R	Ccedilla	-5
+kern R	aacute	-2
+kern R	agrave	-2
+kern R	acircumflex	-2
+kern R	adieresis	-2
+kern R	atilde	-2
+kern R	aring	-2
+kern R	eacute	-5
+kern R	egrave	-5
+kern R	ecircumflex	-5
+kern R	edieresis	-5
+kern R	oacute	-5
+kern R	ograve	-5
+kern R	ocircumflex	-5
+kern R	odieresis	-5
+kern R	otilde	-5
+kern R	uacute	-5
+kern R	ugrave	-5
+kern R	ucircumflex	-5
+kern R	udieresis	-5
+kern R	guillemotleft	-6
+kern R	guillemotright	-2
+kern R	Agrave	-4
+kern R	Atilde	-4
+kern R	quotedblleft	-7
+kern R	quotedblright	-6
+kern R	ydieresis	-6
+kern R	Ydieresis	-6
+kern R	quotedblbase	-2
+kern R	Acircumflex	-4
+kern R	Aacute	-4
+kern R	Yacute	-6
+kern R	yacute	-6
+kern R	Cacute	-5
+kern R	Ccaron	-5
+kern S	A	2
+kern S	Adieresis	2
+kern S	Agrave	2
+kern S	Atilde	2
+kern S	Acircumflex	2
+kern S	Aacute	2
+kern T	hyphen	-9
+kern T	period	-12
+kern T	colon	-11
+kern T	A	-8
+kern T	C	-6
+kern T	T	-2
+kern T	a	-17
+kern T	c	-17
+kern T	e	-17
+kern T	i	-3
+kern T	o	-17
+kern T	r	-15
+kern T	s	-17
+kern T	u	-15
+kern T	w	-17
+kern T	y	-16
+kern T	Adieresis	-8
+kern T	Ccedilla	-6
+kern T	aacute	-17
+kern T	agrave	-17
+kern T	acircumflex	-17
+kern T	adieresis	-17
+kern T	atilde	-17
+kern T	aring	-17
+kern T	ccedilla	-17
+kern T	eacute	-17
+kern T	egrave	-17
+kern T	ecircumflex	-17
+kern T	edieresis	-17
+kern T	oacute	-17
+kern T	ograve	-17
+kern T	ocircumflex	-17
+kern T	odieresis	-17
+kern T	otilde	-17
+kern T	uacute	-15
+kern T	ugrave	-15
+kern T	ucircumflex	-15
+kern T	udieresis	-15
+kern T	guillemotleft	-9
+kern T	guillemotright	-6
+kern T	Agrave	-8
+kern T	Atilde	-8
+kern T	quotedblright	-2
+kern T	ydieresis	-16
+kern T	quotedblbase	-13
+kern T	Acircumflex	-8
+kern T	Aacute	-8
+kern T	scaron	-17
+kern T	yacute	-16
+kern T	scedilla	-17
+kern T	Cacute	-6
+kern T	cacute	-17
+kern T	Ccaron	-6
+kern T	ccaron	-17
+kern U	Z	-2
+kern U	Zcaron	-2
+kern V	hyphen	-6
+kern V	period	-13
+kern V	colon	-8
+kern V	A	-6
+kern V	O	-2
+kern V	a	-8
+kern V	e	-8
+kern V	i	-2
+kern V	o	-8
+kern V	u	-7
+kern V	y	-3
+kern V	Adieresis	-6
+kern V	Odieresis	-2
+kern V	aacute	-8
+kern V	agrave	-8
+kern V	acircumflex	-8
+kern V	adieresis	-8
+kern V	atilde	-8
+kern V	aring	-8
+kern V	eacute	-8
+kern V	egrave	-8
+kern V	ecircumflex	-8
+kern V	edieresis	-8
+kern V	oacute	-8
+kern V	ograve	-8
+kern V	ocircumflex	-8
+kern V	odieresis	-8
+kern V	otilde	-8
+kern V	uacute	-7
+kern V	ugrave	-7
+kern V	ucircumflex	-7
+kern V	udieresis	-7
+kern V	guillemotleft	-9
+kern V	guillemotright	-6
+kern V	Agrave	-6
+kern V	Atilde	-6
+kern V	Otilde	-2
+kern V	ydieresis	-3
+kern V	quotedblbase	-14
+kern V	Acircumflex	-6
+kern V	Aacute	-6
+kern V	Oacute	-2
+kern V	Ocircumflex	-2
+kern V	Ograve	-2
+kern V	yacute	-3
+kern W	hyphen	-4
+kern W	period	-12
+kern W	colon	-6
+kern W	A	-6
+kern W	a	-6
+kern W	e	-6
+kern W	i	-2
+kern W	o	-6
+kern W	r	-5
+kern W	u	-4
+kern W	y	-2
+kern W	Adieresis	-6
+kern W	aacute	-6
+kern W	agrave	-6
+kern W	acircumflex	-6
+kern W	adieresis	-6
+kern W	atilde	-6
+kern W	aring	-6
+kern W	eacute	-6
+kern W	egrave	-6
+kern W	ecircumflex	-6
+kern W	edieresis	-6
+kern W	oacute	-6
+kern W	ograve	-6
+kern W	ocircumflex	-6
+kern W	odieresis	-6
+kern W	otilde	-6
+kern W	uacute	-4
+kern W	ugrave	-4
+kern W	ucircumflex	-4
+kern W	udieresis	-4
+kern W	guillemotleft	-6
+kern W	guillemotright	-2
+kern W	Agrave	-6
+kern W	Atilde	-6
+kern W	quotedblleft	-2
+kern W	ydieresis	-2
+kern W	quotedblbase	-13
+kern W	Acircumflex	-6
+kern W	Aacute	-6
+kern W	yacute	-2
+kern X	hyphen	-5
+kern X	C	-7
+kern X	O	-6
+kern X	T	-2
+kern X	e	-5
+kern X	Ccedilla	-7
+kern X	Odieresis	-6
+kern X	eacute	-5
+kern X	egrave	-5
+kern X	ecircumflex	-5
+kern X	edieresis	-5
+kern X	guillemotleft	-6
+kern X	Otilde	-6
+kern X	quotedblleft	-8
+kern X	quotedblright	-4
+kern X	quotedblbase	-2
+kern X	Oacute	-6
+kern X	Ocircumflex	-6
+kern X	Ograve	-6
+kern X	Cacute	-7
+kern X	Ccaron	-7
+kern Y	hyphen	-12
+kern Y	period	-20
+kern Y	colon	-13
+kern Y	A	-8
+kern Y	C	-6
+kern Y	O	-6
+kern Y	a	-14
+kern Y	e	-13
+kern Y	i	-4
+kern Y	o	-13
+kern Y	u	-12
+kern Y	Adieresis	-8
+kern Y	Ccedilla	-6
+kern Y	Odieresis	-6
+kern Y	aacute	-14
+kern Y	agrave	-14
+kern Y	acircumflex	-14
+kern Y	adieresis	-14
+kern Y	atilde	-14
+kern Y	aring	-14
+kern Y	eacute	-13
+kern Y	egrave	-13
+kern Y	ecircumflex	-13
+kern Y	edieresis	-13
+kern Y	oacute	-13
+kern Y	ograve	-13
+kern Y	ocircumflex	-13
+kern Y	odieresis	-13
+kern Y	otilde	-13
+kern Y	uacute	-12
+kern Y	ugrave	-12
+kern Y	ucircumflex	-12
+kern Y	udieresis	-12
+kern Y	guillemotleft	-11
+kern Y	guillemotright	-7
+kern Y	Agrave	-8
+kern Y	Atilde	-8
+kern Y	Otilde	-6
+kern Y	quotedblleft	-6
+kern Y	quotedblright	-2
+kern Y	quotedblbase	-13
+kern Y	Acircumflex	-8
+kern Y	Aacute	-8
+kern Y	Oacute	-6
+kern Y	Ocircumflex	-6
+kern Y	Ograve	-6
+kern Y	Cacute	-6
+kern Y	Ccaron	-6
+kern Z	hyphen	-2
+kern Z	quotedblleft	-2
+kern Z	quotedblright	-2
+kern Z	quotedblbase	-2
+kern e	x	-2
+kern f	hyphen	-6
+kern f	period	-7
+kern f	colon	-4
+kern f	t	-2
+kern f	w	-2
+kern f	y	-2
+kern f	guillemotleft	-4
+kern f	guillemotright	-2
+kern f	quotedblleft	3
+kern f	ydieresis	-2
+kern f	quotedblbase	-12
+kern f	yacute	-2
+kern k	a	-2
+kern k	e	-4
+kern k	o	-4
+kern k	u	-3
+kern k	y	-4
+kern k	aacute	-2
+kern k	agrave	-2
+kern k	acircumflex	-2
+kern k	adieresis	-2
+kern k	atilde	-2
+kern k	aring	-2
+kern k	eacute	-4
+kern k	egrave	-4
+kern k	ecircumflex	-4
+kern k	edieresis	-4
+kern k	oacute	-4
+kern k	ograve	-4
+kern k	ocircumflex	-4
+kern k	odieresis	-4
+kern k	otilde	-4
+kern k	uacute	-3
+kern k	ugrave	-3
+kern k	ucircumflex	-3
+kern k	udieresis	-3
+kern k	ydieresis	-4
+kern k	yacute	-4
+kern n	quotedblleft	-7
+kern n	quotedblright	-6
+kern n	quotedblbase	-5
+kern o	hyphen	2
+kern o	period	-2
+kern o	x	-3
+kern o	quotedblleft	-7
+kern o	quotedblright	-4
+kern o	quotedblbase	-6
+kern r	hyphen	-6
+kern r	period	-9
+kern r	colon	-2
+kern r	c	-2
+kern r	d	-2
+kern r	e	-2
+kern r	g	-2
+kern r	h	-2
+kern r	m	-2
+kern r	n	-2
+kern r	o	-2
+kern r	q	-2
+kern r	r	-2
+kern r	x	-3
+kern r	ccedilla	-2
+kern r	eacute	-2
+kern r	egrave	-2
+kern r	ecircumflex	-2
+kern r	edieresis	-2
+kern r	ntilde	-2
+kern r	oacute	-2
+kern r	ograve	-2
+kern r	ocircumflex	-2
+kern r	odieresis	-2
+kern r	otilde	-2
+kern r	guillemotleft	-4
+kern r	quotedblright	4
+kern r	quotedblbase	-15
+kern r	gbreve	-2
+kern r	cacute	-2
+kern r	ccaron	-2
+kern v	hyphen	-3
+kern v	period	-8
+kern v	colon	-6
+kern v	guillemotleft	-2
+kern v	guillemotright	-2
+kern v	quotedblright	-2
+kern v	quotedblbase	-13
+kern w	period	-9
+kern w	colon	-6
+kern w	guillemotleft	-2
+kern w	guillemotright	-2
+kern w	quotedblbase	-11
+kern x	c	-2
+kern x	e	-3
+kern x	o	-3
+kern x	ccedilla	-2
+kern x	eacute	-3
+kern x	egrave	-3
+kern x	ecircumflex	-3
+kern x	edieresis	-3
+kern x	oacute	-3
+kern x	ograve	-3
+kern x	ocircumflex	-3
+kern x	odieresis	-3
+kern x	otilde	-3
+kern x	cacute	-2
+kern x	ccaron	-2
+kern y	hyphen	-2
+kern y	period	-14
+kern y	colon	-7
+kern y	guillemotleft	-2
+kern y	guillemotright	-2
+kern y	quotedblbase	-15
+kern Adieresis	hyphen	-2
+kern Adieresis	period	-2
+kern Adieresis	colon	-2
+kern Adieresis	A	3
+kern Adieresis	C	-2
+kern Adieresis	G	-2
+kern Adieresis	O	-2
+kern Adieresis	Q	-2
+kern Adieresis	T	-8
+kern Adieresis	V	-6
+kern Adieresis	W	-6
+kern Adieresis	Y	-8
+kern Adieresis	c	-2
+kern Adieresis	d	-2
+kern Adieresis	e	-2
+kern Adieresis	f	-4
+kern Adieresis	o	-2
+kern Adieresis	q	-2
+kern Adieresis	t	-2
+kern Adieresis	v	-6
+kern Adieresis	w	-4
+kern Adieresis	y	-7
+kern Adieresis	Adieresis	3
+kern Adieresis	Ccedilla	-2
+kern Adieresis	Odieresis	-2
+kern Adieresis	ccedilla	-2
+kern Adieresis	eacute	-2
+kern Adieresis	egrave	-2
+kern Adieresis	ecircumflex	-2
+kern Adieresis	edieresis	-2
+kern Adieresis	oacute	-2
+kern Adieresis	ograve	-2
+kern Adieresis	ocircumflex	-2
+kern Adieresis	odieresis	-2
+kern Adieresis	otilde	-2
+kern Adieresis	guillemotleft	-4
+kern Adieresis	Agrave	3
+kern Adieresis	Atilde	3
+kern Adieresis	Otilde	-2
+kern Adieresis	quotedblleft	-13
+kern Adieresis	quotedblright	-12
+kern Adieresis	ydieresis	-7
+kern Adieresis	Ydieresis	-8
+kern Adieresis	quotedblbase	2
+kern Adieresis	Acircumflex	3
+kern Adieresis	Aacute	3
+kern Adieresis	Oacute	-2
+kern Adieresis	Ocircumflex	-2
+kern Adieresis	Ograve	-2
+kern Adieresis	Yacute	-8
+kern Adieresis	yacute	-7
+kern Adieresis	Gbreve	-2
+kern Adieresis	Cacute	-2
+kern Adieresis	cacute	-2
+kern Adieresis	Ccaron	-2
+kern Adieresis	ccaron	-2
+kern Ccedilla	Y	-2
+kern Ccedilla	guillemotleft	-2
+kern Ccedilla	guillemotright	-2
+kern Ccedilla	quotedblright	2
+kern Ccedilla	Ydieresis	-2
+kern Ccedilla	Yacute	-2
+kern Odieresis	hyphen	3
+kern Odieresis	period	-4
+kern Odieresis	colon	-2
+kern Odieresis	A	-2
+kern Odieresis	V	-2
+kern Odieresis	X	-6
+kern Odieresis	Y	-6
+kern Odieresis	Adieresis	-2
+kern Odieresis	guillemotleft	-2
+kern Odieresis	Agrave	-2
+kern Odieresis	Atilde	-2
+kern Odieresis	quotedblleft	-2
+kern Odieresis	quotedblright	-2
+kern Odieresis	Ydieresis	-6
+kern Odieresis	quotedblbase	-9
+kern Odieresis	Acircumflex	-2
+kern Odieresis	Aacute	-2
+kern Odieresis	Yacute	-6
+kern Udieresis	Z	-2
+kern Udieresis	Zcaron	-2
+kern eacute	x	-2
+kern egrave	x	-2
+kern ecircumflex	x	-2
+kern edieresis	x	-2
+kern ntilde	quotedblleft	-7
+kern ntilde	quotedblright	-6
+kern ntilde	quotedblbase	-5
+kern oacute	hyphen	2
+kern oacute	period	-2
+kern oacute	x	-3
+kern oacute	quotedblleft	-7
+kern oacute	quotedblright	-4
+kern oacute	quotedblbase	-6
+kern ograve	hyphen	2
+kern ograve	period	-2
+kern ograve	x	-3
+kern ograve	quotedblleft	-7
+kern ograve	quotedblright	-4
+kern ograve	quotedblbase	-6
+kern ocircumflex	hyphen	2
+kern ocircumflex	period	-2
+kern ocircumflex	x	-3
+kern ocircumflex	quotedblleft	-7
+kern ocircumflex	quotedblright	-4
+kern ocircumflex	quotedblbase	-6
+kern odieresis	hyphen	2
+kern odieresis	period	-2
+kern odieresis	x	-3
+kern odieresis	quotedblleft	-7
+kern odieresis	quotedblright	-4
+kern odieresis	quotedblbase	-6
+kern otilde	hyphen	2
+kern otilde	period	-2
+kern otilde	x	-3
+kern otilde	quotedblleft	-7
+kern otilde	quotedblright	-4
+kern otilde	quotedblbase	-6
+kern germandbls	hyphen	2
+kern germandbls	quotedblleft	-6
+kern germandbls	quotedblright	-6
+kern germandbls	quotedblbase	-4
+kern AE	quotedblleft	-4
+kern AE	quotedblright	-5
+kern AE	quotedblbase	-6
+kern guillemotleft	B	-2
+kern guillemotleft	C	-2
+kern guillemotleft	D	-2
+kern guillemotleft	G	-2
+kern guillemotleft	J	-2
+kern guillemotleft	T	-6
+kern guillemotleft	V	-6
+kern guillemotleft	W	-2
+kern guillemotleft	Y	-7
+kern guillemotleft	v	-2
+kern guillemotleft	w	-2
+kern guillemotleft	y	-2
+kern guillemotleft	Ccedilla	-2
+kern guillemotleft	AE	7
+kern guillemotleft	ydieresis	-2
+kern guillemotleft	Ydieresis	-7
+kern guillemotleft	Yacute	-7
+kern guillemotleft	yacute	-2
+kern guillemotleft	Gbreve	-2
+kern guillemotleft	Cacute	-2
+kern guillemotleft	Ccaron	-2
+kern guillemotright	A	-4
+kern guillemotright	B	-4
+kern guillemotright	C	-2
+kern guillemotright	D	-2
+kern guillemotright	J	-2
+kern guillemotright	O	-2
+kern guillemotright	T	-9
+kern guillemotright	V	-9
+kern guillemotright	W	-6
+kern guillemotright	X	-6
+kern guillemotright	Y	-11
+kern guillemotright	v	-2
+kern guillemotright	w	-2
+kern guillemotright	y	-2
+kern guillemotright	Adieresis	-4
+kern guillemotright	Ccedilla	-2
+kern guillemotright	Odieresis	-2
+kern guillemotright	Agrave	-4
+kern guillemotright	Atilde	-4
+kern guillemotright	Otilde	-2
+kern guillemotright	ydieresis	-2
+kern guillemotright	Ydieresis	-11
+kern guillemotright	Acircumflex	-4
+kern guillemotright	Aacute	-4
+kern guillemotright	Oacute	-2
+kern guillemotright	Ocircumflex	-2
+kern guillemotright	Ograve	-2
+kern guillemotright	Yacute	-11
+kern guillemotright	yacute	-2
+kern guillemotright	Cacute	-2
+kern guillemotright	Ccaron	-2
+kern Agrave	hyphen	-2
+kern Agrave	period	-2
+kern Agrave	colon	-2
+kern Agrave	A	3
+kern Agrave	C	-2
+kern Agrave	G	-2
+kern Agrave	O	-2
+kern Agrave	Q	-2
+kern Agrave	T	-8
+kern Agrave	V	-6
+kern Agrave	W	-6
+kern Agrave	Y	-8
+kern Agrave	c	-2
+kern Agrave	d	-2
+kern Agrave	e	-2
+kern Agrave	f	-4
+kern Agrave	o	-2
+kern Agrave	q	-2
+kern Agrave	t	-2
+kern Agrave	v	-6
+kern Agrave	w	-4
+kern Agrave	y	-7
+kern Agrave	Adieresis	3
+kern Agrave	Ccedilla	-2
+kern Agrave	Odieresis	-2
+kern Agrave	ccedilla	-2
+kern Agrave	eacute	-2
+kern Agrave	egrave	-2
+kern Agrave	ecircumflex	-2
+kern Agrave	edieresis	-2
+kern Agrave	oacute	-2
+kern Agrave	ograve	-2
+kern Agrave	ocircumflex	-2
+kern Agrave	odieresis	-2
+kern Agrave	otilde	-2
+kern Agrave	guillemotleft	-4
+kern Agrave	Agrave	3
+kern Agrave	Atilde	3
+kern Agrave	Otilde	-2
+kern Agrave	quotedblleft	-13
+kern Agrave	quotedblright	-12
+kern Agrave	ydieresis	-7
+kern Agrave	Ydieresis	-8
+kern Agrave	quotedblbase	2
+kern Agrave	Acircumflex	3
+kern Agrave	Aacute	3
+kern Agrave	Oacute	-2
+kern Agrave	Ocircumflex	-2
+kern Agrave	Ograve	-2
+kern Agrave	Yacute	-8
+kern Agrave	yacute	-7
+kern Agrave	Gbreve	-2
+kern Agrave	Cacute	-2
+kern Agrave	cacute	-2
+kern Agrave	Ccaron	-2
+kern Agrave	ccaron	-2
+kern Atilde	hyphen	-2
+kern Atilde	period	-2
+kern Atilde	colon	-2
+kern Atilde	A	3
+kern Atilde	C	-2
+kern Atilde	G	-2
+kern Atilde	O	-2
+kern Atilde	Q	-2
+kern Atilde	T	-8
+kern Atilde	V	-6
+kern Atilde	W	-6
+kern Atilde	Y	-8
+kern Atilde	c	-2
+kern Atilde	d	-2
+kern Atilde	e	-2
+kern Atilde	f	-4
+kern Atilde	o	-2
+kern Atilde	q	-2
+kern Atilde	t	-2
+kern Atilde	v	-6
+kern Atilde	w	-4
+kern Atilde	y	-7
+kern Atilde	Adieresis	3
+kern Atilde	Ccedilla	-2
+kern Atilde	Odieresis	-2
+kern Atilde	ccedilla	-2
+kern Atilde	eacute	-2
+kern Atilde	egrave	-2
+kern Atilde	ecircumflex	-2
+kern Atilde	edieresis	-2
+kern Atilde	oacute	-2
+kern Atilde	ograve	-2
+kern Atilde	ocircumflex	-2
+kern Atilde	odieresis	-2
+kern Atilde	otilde	-2
+kern Atilde	guillemotleft	-4
+kern Atilde	Agrave	3
+kern Atilde	Atilde	3
+kern Atilde	Otilde	-2
+kern Atilde	quotedblleft	-13
+kern Atilde	quotedblright	-12
+kern Atilde	ydieresis	-7
+kern Atilde	Ydieresis	-8
+kern Atilde	quotedblbase	2
+kern Atilde	Acircumflex	3
+kern Atilde	Aacute	3
+kern Atilde	Oacute	-2
+kern Atilde	Ocircumflex	-2
+kern Atilde	Ograve	-2
+kern Atilde	Yacute	-8
+kern Atilde	yacute	-7
+kern Atilde	Gbreve	-2
+kern Atilde	Cacute	-2
+kern Atilde	cacute	-2
+kern Atilde	Ccaron	-2
+kern Atilde	ccaron	-2
+kern Otilde	hyphen	3
+kern Otilde	period	-4
+kern Otilde	colon	-2
+kern Otilde	A	-2
+kern Otilde	V	-2
+kern Otilde	X	-6
+kern Otilde	Y	-6
+kern Otilde	Adieresis	-2
+kern Otilde	guillemotleft	-2
+kern Otilde	Agrave	-2
+kern Otilde	Atilde	-2
+kern Otilde	quotedblleft	-2
+kern Otilde	quotedblright	-2
+kern Otilde	Ydieresis	-6
+kern Otilde	quotedblbase	-9
+kern Otilde	Acircumflex	-2
+kern Otilde	Aacute	-2
+kern Otilde	Yacute	-6
+kern quotedblleft	A	-13
+kern quotedblleft	B	-3
+kern quotedblleft	C	-4
+kern quotedblleft	D	-3
+kern quotedblleft	F	-3
+kern quotedblleft	G	-4
+kern quotedblleft	H	-3
+kern quotedblleft	J	-3
+kern quotedblleft	K	-3
+kern quotedblleft	L	-3
+kern quotedblleft	O	-4
+kern quotedblleft	P	-3
+kern quotedblleft	Q	-4
+kern quotedblleft	R	-3
+kern quotedblleft	X	-6
+kern quotedblleft	Z	-2
+kern quotedblleft	f	-4
+kern quotedblleft	n	-6
+kern quotedblleft	o	-7
+kern quotedblleft	r	-6
+kern quotedblleft	v	-4
+kern quotedblleft	w	-4
+kern quotedblleft	y	-4
+kern quotedblleft	Adieresis	-13
+kern quotedblleft	Ccedilla	-4
+kern quotedblleft	Odieresis	-4
+kern quotedblleft	ntilde	-6
+kern quotedblleft	oacute	-7
+kern quotedblleft	ograve	-7
+kern quotedblleft	ocircumflex	-7
+kern quotedblleft	odieresis	-7
+kern quotedblleft	otilde	-7
+kern quotedblleft	germandbls	-3
+kern quotedblleft	AE	-19
+kern quotedblleft	Agrave	-13
+kern quotedblleft	Atilde	-13
+kern quotedblleft	Otilde	-4
+kern quotedblleft	ydieresis	-4
+kern quotedblleft	Acircumflex	-13
+kern quotedblleft	Aacute	-13
+kern quotedblleft	Oacute	-4
+kern quotedblleft	Ocircumflex	-4
+kern quotedblleft	Ograve	-4
+kern quotedblleft	Zcaron	-2
+kern quotedblleft	eth	-4
+kern quotedblleft	yacute	-4
+kern quotedblleft	Thorn	-3
+kern quotedblleft	Gbreve	-4
+kern quotedblleft	Cacute	-4
+kern quotedblleft	Ccaron	-4
+kern ydieresis	hyphen	-2
+kern ydieresis	period	-14
+kern ydieresis	colon	-7
+kern ydieresis	guillemotleft	-2
+kern ydieresis	guillemotright	-2
+kern ydieresis	quotedblbase	-15
+kern Ydieresis	hyphen	-12
+kern Ydieresis	period	-20
+kern Ydieresis	colon	-13
+kern Ydieresis	A	-8
+kern Ydieresis	C	-6
+kern Ydieresis	O	-6
+kern Ydieresis	a	-14
+kern Ydieresis	e	-13
+kern Ydieresis	i	-4
+kern Ydieresis	o	-13
+kern Ydieresis	u	-12
+kern Ydieresis	Adieresis	-8
+kern Ydieresis	Ccedilla	-6
+kern Ydieresis	Odieresis	-6
+kern Ydieresis	aacute	-14
+kern Ydieresis	agrave	-14
+kern Ydieresis	acircumflex	-14
+kern Ydieresis	adieresis	-14
+kern Ydieresis	atilde	-14
+kern Ydieresis	aring	-14
+kern Ydieresis	eacute	-13
+kern Ydieresis	egrave	-13
+kern Ydieresis	ecircumflex	-13
+kern Ydieresis	edieresis	-13
+kern Ydieresis	oacute	-13
+kern Ydieresis	ograve	-13
+kern Ydieresis	ocircumflex	-13
+kern Ydieresis	odieresis	-13
+kern Ydieresis	otilde	-13
+kern Ydieresis	uacute	-12
+kern Ydieresis	ugrave	-12
+kern Ydieresis	ucircumflex	-12
+kern Ydieresis	udieresis	-12
+kern Ydieresis	guillemotleft	-11
+kern Ydieresis	guillemotright	-7
+kern Ydieresis	Agrave	-8
+kern Ydieresis	Atilde	-8
+kern Ydieresis	Otilde	-6
+kern Ydieresis	quotedblleft	-6
+kern Ydieresis	quotedblright	-2
+kern Ydieresis	quotedblbase	-13
+kern Ydieresis	Acircumflex	-8
+kern Ydieresis	Aacute	-8
+kern Ydieresis	Oacute	-6
+kern Ydieresis	Ocircumflex	-6
+kern Ydieresis	Ograve	-6
+kern Ydieresis	Cacute	-6
+kern Ydieresis	Ccaron	-6
+kern quotedblbase	A	2
+kern quotedblbase	B	-4
+kern quotedblbase	C	-6
+kern quotedblbase	D	-4
+kern quotedblbase	F	-4
+kern quotedblbase	G	-4
+kern quotedblbase	H	-4
+kern quotedblbase	J	2
+kern quotedblbase	K	-4
+kern quotedblbase	L	-4
+kern quotedblbase	O	-6
+kern quotedblbase	P	-4
+kern quotedblbase	Q	-6
+kern quotedblbase	R	-4
+kern quotedblbase	T	-14
+kern quotedblbase	V	-18
+kern quotedblbase	W	-12
+kern quotedblbase	X	-4
+kern quotedblbase	Y	-18
+kern quotedblbase	f	-2
+kern quotedblbase	n	-4
+kern quotedblbase	o	-4
+kern quotedblbase	r	-4
+kern quotedblbase	v	-12
+kern quotedblbase	w	-10
+kern quotedblbase	y	-6
+kern quotedblbase	Adieresis	2
+kern quotedblbase	Ccedilla	-6
+kern quotedblbase	Odieresis	-6
+kern quotedblbase	ntilde	-4
+kern quotedblbase	oacute	-4
+kern quotedblbase	ograve	-4
+kern quotedblbase	ocircumflex	-4
+kern quotedblbase	odieresis	-4
+kern quotedblbase	otilde	-4
+kern quotedblbase	germandbls	-4
+kern quotedblbase	AE	2
+kern quotedblbase	Agrave	2
+kern quotedblbase	Atilde	2
+kern quotedblbase	Otilde	-6
+kern quotedblbase	ydieresis	-6
+kern quotedblbase	Ydieresis	-18
+kern quotedblbase	Acircumflex	2
+kern quotedblbase	Aacute	2
+kern quotedblbase	Oacute	-6
+kern quotedblbase	Ocircumflex	-6
+kern quotedblbase	Ograve	-6
+kern quotedblbase	eth	-4
+kern quotedblbase	Yacute	-18
+kern quotedblbase	yacute	-6
+kern quotedblbase	Thorn	-4
+kern quotedblbase	Gbreve	-4
+kern quotedblbase	Cacute	-6
+kern quotedblbase	Ccaron	-6
+kern Acircumflex	hyphen	-2
+kern Acircumflex	period	-2
+kern Acircumflex	colon	-2
+kern Acircumflex	A	3
+kern Acircumflex	C	-2
+kern Acircumflex	G	-2
+kern Acircumflex	O	-2
+kern Acircumflex	Q	-2
+kern Acircumflex	T	-8
+kern Acircumflex	V	-6
+kern Acircumflex	W	-6
+kern Acircumflex	Y	-8
+kern Acircumflex	c	-2
+kern Acircumflex	d	-2
+kern Acircumflex	e	-2
+kern Acircumflex	f	-4
+kern Acircumflex	o	-2
+kern Acircumflex	q	-2
+kern Acircumflex	t	-2
+kern Acircumflex	v	-6
+kern Acircumflex	w	-4
+kern Acircumflex	y	-7
+kern Acircumflex	Adieresis	3
+kern Acircumflex	Ccedilla	-2
+kern Acircumflex	Odieresis	-2
+kern Acircumflex	ccedilla	-2
+kern Acircumflex	eacute	-2
+kern Acircumflex	egrave	-2
+kern Acircumflex	ecircumflex	-2
+kern Acircumflex	edieresis	-2
+kern Acircumflex	oacute	-2
+kern Acircumflex	ograve	-2
+kern Acircumflex	ocircumflex	-2
+kern Acircumflex	odieresis	-2
+kern Acircumflex	otilde	-2
+kern Acircumflex	guillemotleft	-4
+kern Acircumflex	Agrave	3
+kern Acircumflex	Atilde	3
+kern Acircumflex	Otilde	-2
+kern Acircumflex	quotedblleft	-13
+kern Acircumflex	quotedblright	-12
+kern Acircumflex	ydieresis	-7
+kern Acircumflex	Ydieresis	-8
+kern Acircumflex	quotedblbase	2
+kern Acircumflex	Acircumflex	3
+kern Acircumflex	Aacute	3
+kern Acircumflex	Oacute	-2
+kern Acircumflex	Ocircumflex	-2
+kern Acircumflex	Ograve	-2
+kern Acircumflex	Yacute	-8
+kern Acircumflex	yacute	-7
+kern Acircumflex	Gbreve	-2
+kern Acircumflex	Cacute	-2
+kern Acircumflex	cacute	-2
+kern Acircumflex	Ccaron	-2
+kern Acircumflex	ccaron	-2
+kern Aacute	hyphen	-2
+kern Aacute	period	-2
+kern Aacute	colon	-2
+kern Aacute	A	3
+kern Aacute	C	-2
+kern Aacute	G	-2
+kern Aacute	O	-2
+kern Aacute	Q	-2
+kern Aacute	T	-8
+kern Aacute	V	-6
+kern Aacute	W	-6
+kern Aacute	Y	-8
+kern Aacute	c	-2
+kern Aacute	d	-2
+kern Aacute	e	-2
+kern Aacute	f	-4
+kern Aacute	o	-2
+kern Aacute	q	-2
+kern Aacute	t	-2
+kern Aacute	v	-6
+kern Aacute	w	-4
+kern Aacute	y	-7
+kern Aacute	Adieresis	3
+kern Aacute	Ccedilla	-2
+kern Aacute	Odieresis	-2
+kern Aacute	ccedilla	-2
+kern Aacute	eacute	-2
+kern Aacute	egrave	-2
+kern Aacute	ecircumflex	-2
+kern Aacute	edieresis	-2
+kern Aacute	oacute	-2
+kern Aacute	ograve	-2
+kern Aacute	ocircumflex	-2
+kern Aacute	odieresis	-2
+kern Aacute	otilde	-2
+kern Aacute	guillemotleft	-4
+kern Aacute	Agrave	3
+kern Aacute	Atilde	3
+kern Aacute	Otilde	-2
+kern Aacute	quotedblleft	-13
+kern Aacute	quotedblright	-12
+kern Aacute	ydieresis	-7
+kern Aacute	Ydieresis	-8
+kern Aacute	quotedblbase	2
+kern Aacute	Acircumflex	3
+kern Aacute	Aacute	3
+kern Aacute	Oacute	-2
+kern Aacute	Ocircumflex	-2
+kern Aacute	Ograve	-2
+kern Aacute	Yacute	-8
+kern Aacute	yacute	-7
+kern Aacute	Gbreve	-2
+kern Aacute	Cacute	-2
+kern Aacute	cacute	-2
+kern Aacute	Ccaron	-2
+kern Aacute	ccaron	-2
+kern Oacute	hyphen	3
+kern Oacute	period	-4
+kern Oacute	colon	-2
+kern Oacute	A	-2
+kern Oacute	V	-2
+kern Oacute	X	-6
+kern Oacute	Y	-6
+kern Oacute	Adieresis	-2
+kern Oacute	guillemotleft	-2
+kern Oacute	Agrave	-2
+kern Oacute	Atilde	-2
+kern Oacute	quotedblleft	-2
+kern Oacute	quotedblright	-2
+kern Oacute	Ydieresis	-6
+kern Oacute	quotedblbase	-9
+kern Oacute	Acircumflex	-2
+kern Oacute	Aacute	-2
+kern Oacute	Yacute	-6
+kern Ocircumflex	hyphen	3
+kern Ocircumflex	period	-4
+kern Ocircumflex	colon	-2
+kern Ocircumflex	A	-2
+kern Ocircumflex	V	-2
+kern Ocircumflex	X	-6
+kern Ocircumflex	Y	-6
+kern Ocircumflex	Adieresis	-2
+kern Ocircumflex	guillemotleft	-2
+kern Ocircumflex	Agrave	-2
+kern Ocircumflex	Atilde	-2
+kern Ocircumflex	quotedblleft	-2
+kern Ocircumflex	quotedblright	-2
+kern Ocircumflex	Ydieresis	-6
+kern Ocircumflex	quotedblbase	-9
+kern Ocircumflex	Acircumflex	-2
+kern Ocircumflex	Aacute	-2
+kern Ocircumflex	Yacute	-6
+kern Ograve	hyphen	3
+kern Ograve	period	-4
+kern Ograve	colon	-2
+kern Ograve	A	-2
+kern Ograve	V	-2
+kern Ograve	X	-6
+kern Ograve	Y	-6
+kern Ograve	Adieresis	-2
+kern Ograve	guillemotleft	-2
+kern Ograve	Agrave	-2
+kern Ograve	Atilde	-2
+kern Ograve	quotedblleft	-2
+kern Ograve	quotedblright	-2
+kern Ograve	Ydieresis	-6
+kern Ograve	quotedblbase	-9
+kern Ograve	Acircumflex	-2
+kern Ograve	Aacute	-2
+kern Ograve	Yacute	-6
+kern Uacute	Z	-2
+kern Uacute	Zcaron	-2
+kern Ucircumflex	Z	-2
+kern Ucircumflex	Zcaron	-2
+kern Ugrave	Z	-2
+kern Ugrave	Zcaron	-2
+kern Scaron	A	2
+kern Scaron	Adieresis	2
+kern Scaron	Agrave	2
+kern Scaron	Atilde	2
+kern Scaron	Acircumflex	2
+kern Scaron	Aacute	2
+kern Zcaron	hyphen	-2
+kern Zcaron	quotedblleft	-2
+kern Zcaron	quotedblright	-2
+kern Zcaron	quotedblbase	-2
+kern eth	quotedblleft	-5
+kern eth	quotedblright	-6
+kern eth	quotedblbase	-4
+kern Yacute	hyphen	-12
+kern Yacute	period	-20
+kern Yacute	colon	-13
+kern Yacute	A	-8
+kern Yacute	C	-6
+kern Yacute	O	-6
+kern Yacute	a	-14
+kern Yacute	e	-13
+kern Yacute	i	-4
+kern Yacute	o	-13
+kern Yacute	u	-12
+kern Yacute	Adieresis	-8
+kern Yacute	Ccedilla	-6
+kern Yacute	Odieresis	-6
+kern Yacute	aacute	-14
+kern Yacute	agrave	-14
+kern Yacute	acircumflex	-14
+kern Yacute	adieresis	-14
+kern Yacute	atilde	-14
+kern Yacute	aring	-14
+kern Yacute	eacute	-13
+kern Yacute	egrave	-13
+kern Yacute	ecircumflex	-13
+kern Yacute	edieresis	-13
+kern Yacute	oacute	-13
+kern Yacute	ograve	-13
+kern Yacute	ocircumflex	-13
+kern Yacute	odieresis	-13
+kern Yacute	otilde	-13
+kern Yacute	uacute	-12
+kern Yacute	ugrave	-12
+kern Yacute	ucircumflex	-12
+kern Yacute	udieresis	-12
+kern Yacute	guillemotleft	-11
+kern Yacute	guillemotright	-7
+kern Yacute	Agrave	-8
+kern Yacute	Atilde	-8
+kern Yacute	Otilde	-6
+kern Yacute	quotedblleft	-6
+kern Yacute	quotedblright	-2
+kern Yacute	quotedblbase	-13
+kern Yacute	Acircumflex	-8
+kern Yacute	Aacute	-8
+kern Yacute	Oacute	-6
+kern Yacute	Ocircumflex	-6
+kern Yacute	Ograve	-6
+kern Yacute	Cacute	-6
+kern Yacute	Ccaron	-6
+kern yacute	hyphen	-2
+kern yacute	period	-14
+kern yacute	colon	-7
+kern yacute	guillemotleft	-2
+kern yacute	guillemotright	-2
+kern yacute	quotedblbase	-15
+kern Thorn	period	-7
+kern Thorn	colon	-4
+kern Thorn	quotedblleft	-2
+kern Thorn	quotedblbase	-9
+kern Gbreve	T	-4
+kern Gbreve	Y	-5
+kern Gbreve	guillemotleft	-2
+kern Gbreve	guillemotright	-2
+kern Gbreve	quotedblleft	-2
+kern Gbreve	quotedblright	-2
+kern Gbreve	Ydieresis	-5
+kern Gbreve	quotedblbase	-3
+kern Gbreve	Yacute	-5
+kern Scedilla	A	2
+kern Scedilla	Adieresis	2
+kern Scedilla	Agrave	2
+kern Scedilla	Atilde	2
+kern Scedilla	Acircumflex	2
+kern Scedilla	Aacute	2
+kern Cacute	Y	-2
+kern Cacute	guillemotleft	-2
+kern Cacute	guillemotright	-2
+kern Cacute	quotedblright	2
+kern Cacute	Ydieresis	-2
+kern Cacute	Yacute	-2
+kern Ccaron	Y	-2
+kern Ccaron	guillemotleft	-2
+kern Ccaron	guillemotright	-2
+kern Ccaron	quotedblright	2
+kern Ccaron	Ydieresis	-2
+kern Ccaron	Yacute	-2

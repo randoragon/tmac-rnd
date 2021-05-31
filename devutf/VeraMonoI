@@ -1,0 +1,456 @@
+fontname BitstreamVeraSansMono-Oblique
+spacewidth 60
+ligatures fi fl 0
+char ---	60,5,-18,55,71	3	.notdef	
+char ---	0	3	.null	
+char ---	60	3	nonmarkingreturn	
+char ---	60	0	space	32
+char !	60,18,0,42,73	2	exclam	33
+char "	60,17,46,44,73	2	quotedbl	34
+char dq	"
+char #	60,0,0,60,72	2	numbersign	35
+char $	60,2,-15,53,76	2	dollar	36
+char %	60,2,0,59,70	2	percent	37
+char &	60,-1,-1,58,74	2	ampersand	38
+char aq	60,26,46,34,73	3	quotesingle	
+char (	60,18,-13,51,76	3	parenleft	40
+char )	60,7,-13,40,76	3	parenright	41
+char *	60,8,29,52,74	2	asterisk	42
+char +	60,4,6,56,57	0	plus	43
+char pl	"
+char ,	60,10,-14,33,15	1	comma	44
+char -	60,15,23,42,31	0	hyphen	45
+char hy	"
+char .	60,17,0,33,15	0	period	46
+char /	60,1,-9,52,73	2	slash	47
+char sl	"
+char 0	60,5,-1,55,74	2	zero	48
+char 1	60,6,0,48,73	2	one	49
+char 2	60,0,0,55,74	2	two	50
+char 3	60,-1,-1,54,74	2	three	51
+char 4	60,1,0,53,73	2	four	52
+char 5	60,0,-1,54,73	2	five	53
+char 6	60,5,-1,55,74	2	six	54
+char 7	60,9,0,59,73	2	seven	55
+char 8	60,2,-1,55,74	2	eight	56
+char 9	60,3,-1,54,74	2	nine	57
+char :	60,17,0,39,52	0	colon	58
+char ;	60,10,-14,39,52	1	semicolon	59
+char <	60,4,7,56,56	0	less	60
+char =	60,4,17,56,45	0	equal	61
+char eq	"
+char >	60,4,7,56,56	0	greater	62
+char ?	60,16,0,55,74	2	question	63
+char @	60,-1,-16,59,68	3	at	64
+char A	60,-5,0,51,73	2	A	65
+char B	60,1,0,57,73	2	B	66
+char C	60,6,-1,59,74	2	C	67
+char D	60,0,0,55,73	2	D	68
+char E	60,3,0,60,73	2	E	69
+char F	60,5,0,62,73	2	F	70
+char G	60,4,-1,57,74	2	G	71
+char H	60,0,0,61,73	2	H	72
+char I	60,3,0,57,73	2	I	73
+char J	60,-1,-1,54,73	3	J	74
+char K	60,0,0,66,73	2	K	75
+char L	60,4,0,51,73	2	L	76
+char M	60,-3,0,63,73	2	M	77
+char N	60,0,0,61,73	2	N	78
+char O	60,4,-1,56,74	2	O	79
+char P	60,3,0,59,73	2	P	80
+char Q	60,4,-13,56,74	3	Q	81
+char R	60,1,0,56,73	2	R	82
+char S	60,1,-1,56,74	2	S	83
+char T	60,8,0,65,73	2	T	84
+char U	60,4,-1,60,73	2	U	85
+char V	60,10,0,65,73	2	V	86
+char W	60,4,0,67,73	2	W	87
+char X	60,-6,0,65,73	2	X	88
+char Y	60,10,0,66,73	2	Y	89
+char Z	60,0,0,62,73	2	Z	90
+char [	60,13,-13,51,76	3	bracketleft	91
+char \	60,17,-9,35,73	2	backslash	92
+char bs	"
+char rs	"
+char ]	60,7,-13,45,76	3	bracketright	93
+char ha	60,4,46,57,73	3	asciicircum	
+char _	60,0,-24,50,-20	1	underscore	95
+char ru	"
+char ul	"
+char ga	60,22,62,41,80	3	grave	
+char \`	"
+char a	60,4,-1,53,56	0	a	97
+char b	60,3,-1,54,76	2	b	98
+char c	60,8,-1,56,56	0	c	99
+char d	60,6,-1,61,76	2	d	100
+char e	60,5,-1,55,56	0	e	101
+char f	60,13,0,61,76	2	f	102
+char g	60,3,-22,56,56	1	g	103
+char h	60,4,0,54,76	2	h	104
+char i	60,3,0,49,76	2	i	105
+char j	60,0,-21,48,76	3	j	106
+char k	60,4,0,59,76	2	k	107
+char l	60,15,0,48,77	2	l	108
+char m	60,-1,0,58,56	0	m	109
+char n	60,4,0,54,56	0	n	110
+char o	60,6,-1,54,56	0	o	111
+char p	60,0,-21,55,56	1	p	112
+char q	60,5,-21,56,56	1	q	113
+char r	60,11,0,60,56	0	r	114
+char s	60,6,-1,53,56	0	s	115
+char t	60,10,0,55,70	2	t	116
+char u	60,6,-1,55,55	0	u	117
+char v	60,9,0,59,55	0	v	118
+char w	60,5,0,64,55	0	w	119
+char x	60,-3,0,59,55	0	x	120
+char y	60,-2,-21,60,55	1	y	121
+char z	60,4,0,55,55	0	z	122
+char {	60,9,-16,57,76	2	braceleft	123
+char |	60,26,-24,34,76	3	bar	124
+char or	"
+char }	60,-1,-16,48,76	2	braceright	125
+char ti	60,4,24,56,38	0	asciitilde	
+char Ä	60,-5,0,54,91	2	Adieresis	
+char A:	"
+char A"	"
+char Å	60,-5,0,51,93	2	Aring	
+char A*	"
+char Ç	60,6,-19,59,74	2	Ccedilla	
+char C,	"
+char É	60,3,0,60,93	2	Eacute	
+char E'	"
+char Ñ	60,0,0,61,92	2	Ntilde	
+char N~	"
+char Ö	60,4,-1,56,91	2	Odieresis	
+char O:	"
+char Ü	60,4,-1,60,91	2	Udieresis	
+char U:	"
+char á	60,4,-1,55,80	2	aacute	
+char a'	"
+char à	60,4,-1,53,80	2	agrave	
+char a`	"
+char â	60,4,-1,53,80	2	acircumflex	
+char a^	"
+char ä	60,4,-1,53,76	2	adieresis	
+char a:	"
+char ã	60,4,-1,54,78	2	atilde	
+char a~	"
+char å	60,4,-1,53,91	2	aring	
+char a*	"
+char ç	60,8,-19,56,56	0	ccedilla	
+char c,	"
+char é	60,5,-1,55,80	2	eacute	
+char e'	"
+char è	60,5,-1,55,80	2	egrave	
+char e`	"
+char ê	60,5,-1,55,80	2	ecircumflex	
+char e^	"
+char ë	60,5,-1,55,76	2	edieresis	
+char e:	"
+char í	60,3,0,54,80	2	iacute	
+char i'	"
+char ì	60,3,0,49,80	2	igrave	
+char i`	"
+char î	60,3,0,49,80	2	icircumflex	
+char i^	"
+char ï	60,3,0,51,76	2	idieresis	
+char i:	"
+char ñ	60,4,0,54,78	2	ntilde	
+char n~	"
+char ó	60,6,-1,55,80	2	oacute	
+char o'	"
+char ò	60,6,-1,54,80	2	ograve	
+char o`	"
+char ô	60,6,-1,54,80	2	ocircumflex	
+char o^	"
+char ö	60,6,-1,54,76	2	odieresis	
+char o:	"
+char õ	60,6,-1,54,78	2	otilde	
+char o~	"
+char ú	60,6,-1,55,80	2	uacute	
+char u'	"
+char ù	60,6,-1,55,80	2	ugrave	
+char u`	"
+char û	60,6,-1,55,80	2	ucircumflex	
+char u^	"
+char ü	60,6,-1,55,76	2	udieresis	
+char u:	"
+char †	60,10,-10,55,73	2	dagger	
+char dg	"
+char °	60,15,43,46,74	2	degree	
+char 0^	"
+char de	"
+char ¢	60,6,-15,53,70	2	cent	
+char c|	"
+char ct	"
+char £	60,0,0,60,74	2	sterling	
+char L-	"
+char ps	"
+char §	60,5,-10,52,74	2	section	
+char so	"
+char sc	"
+char •	60,16,23,45,52	0	bullet	
+char bu	"
+char ¶	60,6,-10,56,73	2	paragraph	
+char P!	"
+char pg	"
+char ß	60,3,-1,55,76	2	germandbls	
+char ss	"
+char ®	60,0,6,60,66	0	registered	
+char ro	"
+char rg	"
+char ©	60,0,6,60,66	0	copyright	
+char co	"
+char ™	60,0,45,55,73	2	trademark	
+char ´	60,28,62,55,80	2	acute	
+char aa	"
+char \'	"
+char ¨	60,21,66,52,76	2	dieresis	
+char ""	"
+char :a	"
+char ≠	60,4,2,56,61	0	notequal	
+char !=	"
+char Æ	60,-7,0,64,73	2	AE	
+char AE	"
+char Ø	60,1,-3,59,76	2	Oslash	
+char O/	"
+char ∞	60,2,12,58,49	0	infinity	
+char if	"
+char ±	60,4,0,56,57	0	plusminus	
+char +-	"
+char ≤	60,4,0,56,53	0	lessequal	
+char <=	"
+char ≥	60,4,0,56,53	0	greaterequal	
+char >=	"
+char ¥	60,2,0,62,73	2	yen	
+char Y-	"
+char yn	"
+char µ	60,-2,-21,57,55	1	mu	
+char /u	"
+char *m	"
+char μ	"
+char ∂	60,9,-1,51,65	0	partialdiff	
+char pd	"
+char ∑	60,7,-21,53,74	3	summation	
+char su	"
+char ∏	60,7,-21,53,74	3	product	
+char pr	"
+char π	60,4,-2,58,54	0	pi	
+char *p	"
+char ∫	60,6,-18,54,76	2	integral	
+char is	"
+char ª	60,11,23,51,74	2	ordfeminine	
+char a_	"
+char º	60,11,23,52,74	2	ordmasculine	
+char o_	"
+char Ω	60,4,0,57,71	2	Omega	
+char *W	"
+char Ω	"
+char æ	60,-2,-1,59,56	0	ae	
+char ae	"
+char ø	60,2,-5,57,59	0	oslash	
+char o/	"
+char ¿	60,7,-1,46,73	2	questiondown	
+char ??	"
+char r?	"
+char ¡	60,19,0,43,73	2	exclamdown	
+char !!	"
+char r!	"
+char ¬	60,4,18,56,42	0	logicalnot	
+char -,	"
+char no	"
+char √	60,3,-2,58,83	2	radical	
+char sr	"
+char ƒ	60,0,-21,59,76	3	florin	
+char fn	"
+char ≈	60,4,15,56,47	0	approxequal	
+char ~~	"
+char ∆	60,0,0,61,70	2	Delta	
+char *D	"
+char Δ	"
+char «	60,4,7,54,52	0	guillemotleft	
+char <<	"
+char Fo	"
+char »	60,4,7,54,52	0	guillemotright	
+char >>	"
+char Fc	"
+char …	60,-3,0,52,15	0	ellipsis	
+char el	"
+char  	60	0	nonbreakingspace	
+char À	60,-5,0,51,93	2	Agrave	
+char A`	"
+char Ã	60,-5,0,57,92	2	Atilde	
+char A~	"
+char Õ	60,4,-1,56,92	2	Otilde	
+char O~	"
+char Œ	60,2,0,66,73	2	OE	
+char OE	"
+char œ	60,0,-1,62,56	0	oe	
+char oe	"
+char –	60,-3,24,59,31	0	endash	
+char en	"
+char \-	"
+char —	60,-3,24,59,31	0	emdash	
+char em	"
+char --	"
+char “	60,12,47,57,76	2	quotedblleft	
+char ``	"
+char lq	"
+char ”	60,11,47,56,76	2	quotedblright	
+char ''	"
+char rq	"
+char ‘	60,23,47,45,76	2	quoteleft	
+char `	"
+char oq	"
+char ’	60,23,47,45,76	2	quoteright	
+char '	"
+char cq	"
+char ÷	60,4,7,56,55	0	divide	
+char di	"
+char -:	"
+char ◊	60,6,-23,55,81	3	lozenge	
+char lz	"
+char ÿ	60,-2,-21,60,76	3	ydieresis	
+char y:	"
+char Ÿ	60,10,0,66,91	2	Ydieresis	
+char Y:	"
+char ∕	60,1,-9,52,73	2	fraction	
+char ¤	60,10,10,54,53	0	currency	
+char xo	"
+char cr	"
+char ‹	60,15,7,43,52	0	guilsinglleft	
+char fo	"
+char ›	60,16,7,43,52	0	guilsinglright	
+char fc	"
+char ﬁ	60,5,0,61,76	2	fi	
+char fi	"
+char ﬂ	60,5,0,61,76	2	fl	
+char fl	"
+char ‡	60,3,-10,55,73	2	daggerdbl	
+char dd	"
+char ·	60,22,27,37,42	0	periodcentered	
+char .^	"
+char ‚	60,10,-14,33,15	0	quotesinglbase	
+char bq	"
+char „	60,-1,-14,44,15	0	quotedblbase	
+char ‰	60,0,0,60,70	2	perthousand	
+char %0	"
+char Â	60,-5,0,53,93	2	Acircumflex	
+char A^	"
+char Ê	60,3,0,60,93	2	Ecircumflex	
+char E^	"
+char Á	60,-5,0,53,93	2	Aacute	
+char A'	"
+char Ë	60,3,0,60,91	2	Edieresis	
+char E:	"
+char È	60,3,0,60,93	2	Egrave	
+char E`	"
+char Í	60,3,0,57,93	2	Iacute	
+char I'	"
+char Î	60,3,0,57,93	2	Icircumflex	
+char I^	"
+char Ï	60,3,0,57,91	2	Idieresis	
+char I:	"
+char Ì	60,3,0,57,93	2	Igrave	
+char I`	"
+char Ó	60,4,-1,56,93	2	Oacute	
+char O'	"
+char Ô	60,4,-1,56,93	2	Ocircumflex	
+char O^	"
+char Ò	60,4,-1,56,93	2	Ograve	
+char O`	"
+char Ú	60,4,-1,60,93	2	Uacute	
+char U'	"
+char Û	60,4,-1,60,93	2	Ucircumflex	
+char U^	"
+char Ù	60,4,-1,60,93	2	Ugrave	
+char U`	"
+char ı	60,3,0,49,55	0	dotlessi	
+char ˆ	60,19,62,50,80	2	circumflex	
+char ^	"
+char ^a	"
+char ˜	60,20,64,54,78	2	tilde	
+char ~	"
+char ¯	60,22,67,52,75	2	macron	
+char -a	"
+char ˘	60,23,65,54,79	2	breve	
+char Ua	"
+char ˙	60,31,66,43,76	2	dotaccent	
+char .a	"
+char ˚	60,25,65,51,91	2	ring	
+char oa	"
+char ¸	60,9,-19,31,0	0	cedilla	
+char ,,	"
+char ,a	"
+char ˝	60,22,62,60,80	2	hungarumlaut	
+char "a	"
+char ˛	60,11,-19,29,0	0	ogonek	
+char Ca	"
+char ˇ	60,23,62,54,80	2	caron	
+char va	"
+char Ł	60,-1,0,51,73	2	Lslash	
+char ł	60,4,0,54,77	2	lslash	
+char Š	60,1,-1,56,93	2	Scaron	
+char S<	"
+char š	60,6,-1,54,80	2	scaron	
+char s<	"
+char Ž	60,0,0,62,93	2	Zcaron	
+char Z<	"
+char ž	60,4,0,55,80	2	zcaron	
+char z<	"
+char ¦	60,26,-17,34,70	2	brokenbar	
+char ||	"
+char Ð	60,0,0,55,73	2	Eth	
+char D-	"
+char ð	60,6,-1,55,76	2	eth	
+char d-	"
+char Ý	60,10,0,66,93	2	Yacute	
+char Y'	"
+char ý	60,-2,-21,60,80	3	yacute	
+char y'	"
+char Þ	60,3,0,57,73	2	Thorn	
+char TH	"
+char þ	60,0,-21,55,77	3	thorn	
+char th	"
+char −	60,4,27,56,36	0	minus	
+char mi	"
+char ×	60,7,9,53,54	0	multiply	
+char xx	"
+char mu	"
+char ¹	60,17,33,45,73	2	onesuperior	
+char 1^	"
+char ²	60,15,33,48,74	2	twosuperior	
+char 2^	"
+char ³	60,14,32,48,74	2	threesuperior	
+char 3^	"
+char ¼	60,2,-13,55,81	2	onequarter	
+char 14	"
+char ½	60,2,-13,56,81	2	onehalf	
+char 12	"
+char ¾	60,2,-13,55,82	2	threequarters	
+char 34	"
+char Ğ	60,4,-1,57,93	2	Gbreve	
+char ğ	60,3,-22,56,79	3	gbreve	
+char İ	60,3,0,57,91	2	Idotaccent	
+char Ş	60,1,-19,56,74	2	Scedilla	
+char ş	60,6,-19,53,56	0	scedilla	
+char Ć	60,6,-1,59,93	2	Cacute	
+char ć	60,8,-1,59,80	2	cacute	
+char Č	60,6,-1,61,93	2	Ccaron	
+char C<	"
+char č	60,8,-1,58,80	2	ccaron	
+char c<	"
+char đ	60,6,-1,69,76	2	dcroat	
+char ­	60,15,23,42,31	0	sfthyphen	
+char ∙	60,22,27,37,42	0	periodcentered	
+char €	60,-1,-1,58,74	2	Euro	
+char ---	60,20,63,51,73	2	c6459	
+char ---	60,28,62,51,75	2	c6460	
+char ---	60,19,63,54,74	2	c6461	
+char ---	60,24,62,41,75	2	c6468	
+char ---	60,19,62,50,75	2	c6470	
+char ---	60,22,62,53,75	2	c6472	
+char ---	60,2,25,55,43	0	c6477	
+char ---	60,14,33,46,73	2	c6478	
+char ---	60,22,63,53,75	2	c6475	
+char ---	60,30,63,42,73	2	c6476	
