@@ -1161,10 +1161,10 @@ ABSTRACT
 .   if \\n(HE<=\\n(TM .toc.section "#h\\*(HP\\n(SH" "\\$*" \\n%
 .   rr HE
 .   ie \\n(_u \{\
-.      ie !\\n(_f .UL "\\f\\n(_f\\$*\\fP"
+.      ie \\n(_f .UL "\\f\\n(_f\\$*\\fP"
 .      el .UL "\\$*"\}
 .   el \{\
-.      ie !\\n(_f \\f\\n(_f\\$*\\fP
+.      ie \\n(_f \\f\\n(_f\\$*\\fP
 .      el \\$*\}
 .   fl
 .   ad \\n(_a
@@ -1172,7 +1172,7 @@ ABSTRACT
 .   ps
 .\}
 .el \{\
-.   if !\\n(_f .ft \\n(_f\}
+.   if \\n(_f .ft \\n(_f\}
 .rr _f
 ..
 .   \"NH - numbered heading
@@ -1218,10 +1218,10 @@ ABSTRACT
 .   if \\n(HE<=\\n(TM .toc.section "#h\\*(HP\\*(SN" "\\*(SN \\$*" \\n%
 .   rr HE
 .   ie \\n(_u \{\
-.      ie !\\n(_f .UL "\\f\\n(_f\\*(SN \\$*\\fP"
+.      ie \\n(_f .UL "\\f\\n(_f\\*(SN \\$*\\fP"
 .      el .UL "\\*(SN \\$*"\}
 .   el \{\
-.      ie !\\n(_f \\f\\n(_f\\*(SN \\$*\\fP
+.      ie \\n(_f \\f\\n(_f\\*(SN \\$*\\fP
 .      el \\*(SN \\$*\}
 .   fl
 .   ad \\n(_a
@@ -1229,7 +1229,7 @@ ABSTRACT
 .   ps
 .\}
 .el \{\
-.   ie !\\n(_f \\f\\n(_f\\*(SN 
+.   ie \\n(_f \\f\\n(_f\\*(SN 
 .   el \\*(SN \}
 .rr _f
 ..
