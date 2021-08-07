@@ -287,8 +287,9 @@ without any complications!**
 
 ### Fonts
 
-The `FP` macro has been modified with new font names. Some additional font
-description files have been provided in the `devutf` directory of this repository.
+The `FP` macro has been modified with new font names. It is up to the user to
+ensure that appropriate font description files have been provided to neatroff
+(inside the devutf directory).
 
 There is a slight change in convention - `FP` changes the "main" fonts, while
 a new macro - `FC` changes constant width fonts. These two have been separated
