@@ -47,7 +47,7 @@ can start [here](https://litcave.rudi.ir/neatroff.pdf).
 2. Removed the following registers:
     - IM, MN, CS, ST
 3. Modified the following macros:
-    - TL, AU, AI (visual tweaks)
+    - TL, AU, AI, BX (visual tweaks)
     - SH, NH
     - FP
 4. Added the following macros:
