@@ -1,5 +1,9 @@
 # troff rnd macros
 
+**NOTE** This is an abandoned project. I ditched the troff/neatroff world,
+because there were just too many inconveniencing factors along the way, despite
+the many positives.
+
 ## Table of Contents
 
 1. [Description](https://github.com/Randoragon/tmac-rnd#description)
